@@ -1,0 +1,41 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1e1e1e"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#333" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  
+  <!-- Browser window -->
+  <rect x="150" y="100" width="500" height="400" rx="8" fill="#252525" stroke="#4a6bff" stroke-width="2"/>
+  
+  <!-- Browser header -->
+  <rect x="150" y="100" width="500" height="40" rx="8" fill="#333" stroke="#4a6bff" stroke-width="2"/>
+  
+  <!-- Browser buttons -->
+  <circle cx="175" cy="120" r="7" fill="#ff5f57"/>
+  <circle cx="195" cy="120" r="7" fill="#febc2e"/>
+  <circle cx="215" cy="120" r="7" fill="#28c840"/>
+  
+  <!-- Address bar -->
+  <rect x="240" y="110" width="390" height="20" rx="4" fill="#1e1e1e"/>
+  
+  <!-- Website content -->
+  <rect x="170" y="160" width="180" height="180" rx="4" fill="#4a6bff" opacity="0.7"/>
+  <rect x="370" y="160" width="260" height="60" rx="4" fill="#333"/>
+  <rect x="370" y="230" width="260" height="20" rx="4" fill="#444"/>
+  <rect x="370" y="260" width="260" height="20" rx="4" fill="#444"/>
+  <rect x="370" y="290" width="260" height="20" rx="4" fill="#444"/>
+  <rect x="370" y="320" width="120" height="30" rx="15" fill="#4a6bff"/>
+  
+  <!-- Bottom section -->
+  <rect x="170" y="360" width="460" height="120" rx="4" fill="#333"/>
+  <rect x="190" y="380" width="100" height="80" rx="4" fill="#444"/>
+  <rect x="310" y="380" width="100" height="80" rx="4" fill="#444"/>
+  <rect x="430" y="380" width="100" height="80" rx="4" fill="#444"/>
+  
+  <!-- Text label -->
+  <text x="400" y="550" font-family="Arial" font-size="24" text-anchor="middle" fill="#4a6bff">Portfolio Website</text>
+</svg> 

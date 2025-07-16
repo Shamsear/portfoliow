@@ -1,0 +1,142 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#121212"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#222" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  
+  <!-- Futuristic glow effects -->
+  <circle cx="400" cy="300" r="250" fill="url(#radialGradient)" opacity="0.15"/>
+  <defs>
+    <radialGradient id="radialGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#4a6bff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#121212" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Main interface -->
+  <rect x="150" y="100" width="500" height="400" rx="20" fill="#1e1e1e" stroke="#4a6bff" stroke-width="2" opacity="0.9"/>
+  
+  <!-- Header -->
+  <rect x="150" y="100" width="500" height="60" rx="20" fill="#252525"/>
+  <text x="400" y="140" font-family="Arial" font-size="24" text-anchor="middle" fill="#4a6bff">TypeVelocity</text>
+  
+  <!-- Speed meter -->
+  <circle cx="230" cy="180" r="40" fill="none" stroke="#4a6bff" stroke-width="3"/>
+  <path d="M 230 180 L 230 150" stroke="#4a6bff" stroke-width="2"/>
+  <text x="230" y="195" font-family="Arial" font-size="14" text-anchor="middle" fill="#ffffff">78 WPM</text>
+  
+  <!-- Accuracy meter -->
+  <circle cx="570" cy="180" r="40" fill="none" stroke="#4a6bff" stroke-width="3"/>
+  <path d="M 570 180 L 590 170" stroke="#4a6bff" stroke-width="2"/>
+  <text x="570" y="195" font-family="Arial" font-size="14" text-anchor="middle" fill="#ffffff">96%</text>
+  
+  <!-- Text display area -->
+  <rect x="180" y="230" width="440" height="100" rx="10" fill="#252525"/>
+  
+  <!-- Text being typed -->
+  <text x="200" y="270" font-family="Courier New" font-size="18" fill="#ffffff">The quick brown fox jumps over</text>
+  <text x="200" y="300" font-family="Courier New" font-size="18" fill="#ffffff">the lazy dog. Pack my box with</text>
+  
+  <!-- Current word highlight -->
+  <rect x="200" y="310" width="100" height="3" fill="#4a6bff"/>
+  
+  <!-- Keyboard visualization -->
+  <rect x="180" y="350" width="440" height="120" rx="10" fill="#252525"/>
+  
+  <!-- Keyboard rows -->
+  <!-- Row 1 -->
+  <g transform="translate(200, 370)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">Q</text>
+  </g>
+  <g transform="translate(235, 370)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">W</text>
+  </g>
+  <g transform="translate(270, 370)">
+    <rect width="30" height="30" rx="5" fill="#4a6bff" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">E</text>
+  </g>
+  <g transform="translate(305, 370)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">R</text>
+  </g>
+  <g transform="translate(340, 370)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">T</text>
+  </g>
+  <g transform="translate(375, 370)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">Y</text>
+  </g>
+  <g transform="translate(410, 370)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">U</text>
+  </g>
+  <g transform="translate(445, 370)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">I</text>
+  </g>
+  <g transform="translate(480, 370)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">O</text>
+  </g>
+  <g transform="translate(515, 370)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">P</text>
+  </g>
+  
+  <!-- Row 2 -->
+  <g transform="translate(217, 405)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">A</text>
+  </g>
+  <g transform="translate(252, 405)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">S</text>
+  </g>
+  <g transform="translate(287, 405)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">D</text>
+  </g>
+  <g transform="translate(322, 405)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">F</text>
+  </g>
+  <g transform="translate(357, 405)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">G</text>
+  </g>
+  <g transform="translate(392, 405)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">H</text>
+  </g>
+  <g transform="translate(427, 405)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">J</text>
+  </g>
+  <g transform="translate(462, 405)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">K</text>
+  </g>
+  <g transform="translate(497, 405)">
+    <rect width="30" height="30" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+    <text x="15" y="20" font-family="Arial" font-size="12" text-anchor="middle" fill="#ffffff">L</text>
+  </g>
+  
+  <!-- Row 3 (spacebar) -->
+  <g transform="translate(300, 440)">
+    <rect width="200" height="20" rx="5" fill="#333" stroke="#555" stroke-width="1"/>
+  </g>
+  
+  <!-- Progress bar -->
+  <rect x="180" y="480" width="440" height="6" rx="3" fill="#252525"/>
+  <rect x="180" y="480" width="220" height="6" rx="3" fill="#4a6bff"/>
+  
+  <!-- Text label -->
+  <text x="400" y="550" font-family="Arial" font-size="24" text-anchor="middle" fill="#4a6bff">TypeVelocity - Typing Speed Test</text>
+</svg> 
