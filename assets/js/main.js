@@ -123,27 +123,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Filter projects
                 projectCards.forEach(card => {
-                    if (filter === 'all') {
+                    const categories = card.getAttribute('data-category').split(' ');
+                    const isMatched = (filter === 'all' || categories.includes(filter));
+                    
+                    if (isMatched) {
                         card.style.display = 'block';
-                        setTimeout(() => {
-                            card.style.opacity = '1';
-                            card.style.transform = 'scale(1)';
-                        }, 100);
+                        // Force a DOM reflow to make sure the transition triggers
+                        void card.offsetWidth;
+                        card.classList.remove('filtered-out');
                     } else {
-                        const categories = card.getAttribute('data-category').split(' ');
-                        if (categories.includes(filter)) {
-                            card.style.display = 'block';
-                            setTimeout(() => {
-                                card.style.opacity = '1';
-                                card.style.transform = 'scale(1)';
-                            }, 100);
-                        } else {
-                            card.style.opacity = '0';
-                            card.style.transform = 'scale(0.8)';
-                            setTimeout(() => {
+                        card.classList.add('filtered-out');
+                        setTimeout(() => {
+                            if (card.classList.contains('filtered-out')) {
                                 card.style.display = 'none';
-                            }, 300);
-                        }
+                            }
+                        }, 500); // matches the 0.5s CSS transition duration
                     }
                 });
             });
@@ -263,20 +257,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Animate elements on scroll using a high-performance IntersectionObserver
     const elementsToAnimate = document.querySelectorAll('.project-card, .skill-card, .education-card');
     
-    // Set initial styles for entry animation with premium cubic-bezier easing curves
-    elementsToAnimate.forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(30px)';
-        element.style.transition = 'opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
-    });
-
     const scrollObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const element = entry.target;
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0)';
+                element.classList.add('reveal-visible');
                 observer.unobserve(element); // Stop observing once animated
+                
+                // Clean up animation classes once transition completes to prevent hover/style interference
+                setTimeout(() => {
+                    element.classList.remove('scroll-reveal', 'reveal-visible');
+                }, 850);
             }
         });
     }, {
@@ -285,6 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     elementsToAnimate.forEach(element => {
+        element.classList.add('scroll-reveal');
         scrollObserver.observe(element);
     });
 
