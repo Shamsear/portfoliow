@@ -872,6 +872,7 @@ section::after {
     pointer-events: none;
     transform: scale(0.25);
     transform-origin: top left;
+    background-color: #ffffff;
 }
 
 .project-overlay {
