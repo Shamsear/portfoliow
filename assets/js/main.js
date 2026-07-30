@@ -260,35 +260,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 3000);
     }
 
-    // Animate sections on scroll
-    const animateOnScroll = () => {
-        const elements = document.querySelectorAll('.project-card, .skill-card, .education-card');
-        
-        elements.forEach(element => {
-            const elementPosition = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            
-            if (elementPosition < windowHeight - 50) {
+    // Animate elements on scroll using a high-performance IntersectionObserver
+    const elementsToAnimate = document.querySelectorAll('.project-card, .skill-card, .education-card');
+    
+    // Set initial styles for entry animation with premium cubic-bezier easing curves
+    elementsToAnimate.forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(30px)';
+        element.style.transition = 'opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+    });
+
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const element = entry.target;
                 element.style.opacity = '1';
                 element.style.transform = 'translateY(0)';
+                observer.unobserve(element); // Stop observing once animated
             }
         });
-    };
-
-    // Set initial styles for animation
-    const elements = document.querySelectorAll('.project-card, .skill-card, .education-card');
-    
-    elements.forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px' // animate slightly before entering viewport
     });
-    
-    // Trigger first animation
-    animateOnScroll();
 
-    // Listen for scroll to trigger animations
-    window.addEventListener('scroll', animateOnScroll);
+    elementsToAnimate.forEach(element => {
+        scrollObserver.observe(element);
+    });
 
     // Typing effect for hero section
     const heroTitle = document.querySelector('.hero h1');
