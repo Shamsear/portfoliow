@@ -28,13 +28,10 @@
 ### 5. **Project Updates** ✓
 - ✅ Added 3 new projects:
   - SS League - Football Auction Platform (Next.js)
-  - Joker's Whistle - Tournament Platform (Next.js)
 - ✅ Added GitHub links to ALL projects consistently:
   - Oasis Horizon ✓
   - Sahara Mart ✓
   - SS League ✓
-  - Joker's Whistle ✓
-  - Eskimos R2G ✓
   - BrainQuest ✓
 
 ### 6. **Analytics Setup** ✓
@@ -85,8 +82,8 @@ Currently all projects point to `https://github.com/Shamsear`
 **Total Projects**: 9
 - **Featured Projects**: 3 (Oasis Horizon, SS League, BrainQuest)
 - **Full-Stack Projects**: 0
-- **Next.js Projects**: 2 (SS League, Joker's Whistle)
-- **React Projects**: 2 (Oasis Horizon, Eskimos R2G)
+- **Next.js Projects**: 1 (SS League)
+- **React Projects**: 1 (Oasis Horizon)
 
 **Skills Highlighted**:
 - Frontend Development: Next.js, React, HTML, CSS
@@ -160,8 +157,7 @@ Before deploying:
 1. **Oasis Horizon**: https://oasisbah.vercel.app/
 2. **Sahara Mart**: https://saharamart.vercel.app/
 3. **SS League**: https://ssleague.vercel.app/
-4. **Eskimos R2G**: https://eskr2g.vercel.app/
-5. **BrainQuest**: http://brainquests.vercel.app/
+4. **BrainQuest**: http://brainquests.vercel.app/
 
 ---
 
