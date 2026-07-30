@@ -29,16 +29,13 @@
 - ✅ Added 3 new projects:
   - SS League - Football Auction Platform (Next.js)
   - Joker's Whistle - Tournament Platform (Next.js)
-  - Eskimos Gaming Clan - Tournament System (Next.js + Python Flask)
 - ✅ Added GitHub links to ALL projects consistently:
   - Oasis Horizon ✓
   - Sahara Mart ✓
   - SS League ✓
   - Joker's Whistle ✓
-  - Eskimos Gaming ✓
   - Eskimos R2G ✓
   - BrainQuest ✓
-  - TypeVelocity ✓
 
 ### 6. **Analytics Setup** ✓
 - ✅ Added Google Analytics tracking code (placeholder ready)
@@ -86,9 +83,9 @@ Currently all projects point to `https://github.com/Shamsear`
 ## 🎯 Portfolio Statistics
 
 **Total Projects**: 9
-- **Featured Projects**: 4 (Oasis Horizon, SS League, Joker's Whistle, BrainQuest, Eskimos Gaming)
-- **Full-Stack Projects**: 1 (Eskimos Gaming Clan)
-- **Next.js Projects**: 3 (SS League, Joker's Whistle, Eskimos Gaming)
+- **Featured Projects**: 3 (Oasis Horizon, SS League, BrainQuest)
+- **Full-Stack Projects**: 0
+- **Next.js Projects**: 2 (SS League, Joker's Whistle)
 - **React Projects**: 2 (Oasis Horizon, Eskimos R2G)
 
 **Skills Highlighted**:
@@ -163,11 +160,8 @@ Before deploying:
 1. **Oasis Horizon**: https://oasisbah.vercel.app/
 2. **Sahara Mart**: https://saharamart.vercel.app/
 3. **SS League**: https://ssleague.vercel.app/
-4. **Joker's Whistle**: https://jokerswhistles16.vercel.app/
-5. **Eskimos Gaming**: https://eskplayer.onrender.com/
-6. **Eskimos R2G**: https://eskr2g.vercel.app/
-7. **BrainQuest**: http://brainquests.vercel.app/
-8. **TypeVelocity**: https://typevelocity-demo.vercel.app/
+4. **Eskimos R2G**: https://eskr2g.vercel.app/
+5. **BrainQuest**: http://brainquests.vercel.app/
 
 ---
 
