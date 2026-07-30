@@ -859,13 +859,19 @@ section::after {
     position: relative;
 }
 
-.project-image img,
-.project-image iframe {
+.project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.project-image iframe {
+    width: 400%;
+    height: 400%;
     border: none;
     pointer-events: none;
+    transform: scale(0.25);
+    transform-origin: top left;
 }
 
 .project-overlay {
