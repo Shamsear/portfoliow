@@ -635,6 +635,8 @@
                     <span class="text-primary text-sm font-medium" id="hero-role-badge">Full-Stack Developer</span>
                     <span class="text-primary/40 text-sm">|</span>
                     <span class="text-cyan-400 text-sm font-medium">IT Support Specialist</span>
+                    <span class="text-primary/40 text-sm">|</span>
+                    <span class="text-amber-300 text-sm font-medium">Data Analyst</span>
                 </div>
                 
                 <h1 class="animate-fade-in-down text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-light leading-tight mb-4">
@@ -642,7 +644,7 @@
                 </h1>
                 
                 <h2 class="animate-fade-in-down animation-delay-300 text-xl md:text-2xl font-medium text-light/80 mb-6 max-w-2xl">
-                    I <span class="text-primary" id="hero-tagline">build beautiful &amp; responsive</span> web experiences &amp; provide expert IT support
+                    I <span class="text-primary" id="hero-tagline">build responsive web experiences</span>, provide expert IT support &amp; analyze complex data
                 </h2>
                 
                 <div class="cta-buttons animate-fade-in-up animation-delay-700 flex flex-col sm:flex-row gap-4 mb-8">
@@ -1204,6 +1206,13 @@
         <div class="container">
             <h2 class="section-title text-light">My Projects</h2>
         
+            <!-- Project Filters -->
+            <div class="project-filters flex flex-wrap justify-center gap-3 mb-10">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ui/ux">Web Development</button>
+                <button class="filter-btn" data-filter="it-support">IT Support</button>
+                <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+            </div>
             
             <div class="projects-grid">
                 <!-- Project 1: Oasis Horizon -->
@@ -1528,6 +1537,111 @@
                             <div class="project-stat text-gray-400">
                                 <i class="fas fa-network-wired text-cyan-400"></i>
                                 <span>IT Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Project 1: AI Job Trends -->
+                <div class="project-card group bg-dark-card border border-gray-700" data-category="data-analytics">
+                    <div class="project-image overflow-hidden">
+                        <img src="assets/images/ai_job_trends.svg" alt="AI Job Trends Dashboard Preview" loading="lazy" decoding="async">
+                        <div class="project-overlay">
+                            <div class="project-category">Data Visualization</div>
+                            <div class="project-actions">
+                                <a href="assets/extras/AI Job Trends.pbix" target="_blank" class="project-action-btn" title="Download Power BI Report">
+                                    <i class="fas fa-file-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 text-white text-xs py-1 px-3 rounded-full bg-gradient-to-r from-primary to-orange-500">Data Analytics</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">AI Job Trends Dashboard</h3>
+                        <p class="text-gray-400">A comprehensive Power BI analysis of artificial intelligence job market trends, demand details, and salary insights across multiple industries.</p>
+                        <div class="project-tags">
+                            <span class="bg-amber-900/30 text-primary">Power BI</span>
+                            <span class="bg-amber-900/30 text-primary">Data Analysis</span>
+                            <span class="bg-amber-900/30 text-primary">Market Trends</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-stat text-gray-400">
+                                <i class="fas fa-calendar-alt text-primary"></i>
+                                <span>2025</span>
+                            </div>
+                            <div class="project-stat text-gray-400">
+                                <i class="fas fa-chart-line text-primary"></i>
+                                <span>4+ Dashboards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Project 2: Sales Insights Dashboard -->
+                <div class="project-card group bg-dark-card border border-gray-700" data-category="data-analytics">
+                    <div class="project-image overflow-hidden">
+                        <img src="assets/images/sales.svg" alt="Sales Insights Dashboard Preview" loading="lazy" decoding="async">
+                        <div class="project-overlay">
+                            <div class="project-category">Data Visualization</div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Shamsear/sales" target="_blank" class="project-action-btn" title="View Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 text-white text-xs py-1 px-3 rounded-full bg-gradient-to-r from-primary to-orange-500">Data Analytics</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Sales Insights Dashboard</h3>
+                        <p class="text-gray-400">An interactive Power BI dashboard providing comprehensive sales analytics, revenue tracking, and business intelligence metrics.</p>
+                        <div class="project-tags">
+                            <span class="bg-amber-900/30 text-primary">Power BI</span>
+                            <span class="bg-amber-900/30 text-primary">Sales Analytics</span>
+                            <span class="bg-amber-900/30 text-primary">Business Intelligence</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-stat text-gray-400">
+                                <i class="fas fa-calendar-alt text-primary"></i>
+                                <span>2025</span>
+                            </div>
+                            <div class="project-stat text-gray-400">
+                                <i class="fas fa-chart-bar text-primary"></i>
+                                <span>10+ Reports</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Project 3: Hanao Data Analysis -->
+                <div class="project-card group bg-dark-card border border-gray-700" data-category="data-analytics">
+                    <div class="project-image overflow-hidden">
+                        <img src="assets/images/hanao.svg" alt="Hanao Data Analysis Preview" loading="lazy" decoding="async">
+                        <div class="project-overlay">
+                            <div class="project-category">Data Analysis</div>
+                            <div class="project-actions">
+                                <a href="https://github.com/Shamsear" target="_blank" class="project-action-btn" title="View Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 text-white text-xs py-1 px-3 rounded-full bg-gradient-to-r from-primary to-orange-500">Data Analytics</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Hanao Data Analysis</h3>
+                        <p class="text-gray-400">Excel-based data analysis project featuring advanced formulas, pivot tables, and visualizations for retail business operations.</p>
+                        <div class="project-tags">
+                            <span class="bg-amber-900/30 text-primary">Excel</span>
+                            <span class="bg-amber-900/30 text-primary">Data Analysis</span>
+                            <span class="bg-amber-900/30 text-primary">Retail Insights</span>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-stat text-gray-400">
+                                <i class="fas fa-calendar-alt text-primary"></i>
+                                <span>2025</span>
+                            </div>
+                            <div class="project-stat text-gray-400">
+                                <i class="fas fa-database text-primary"></i>
+                                <span>500+ Records</span>
                             </div>
                         </div>
                     </div>
