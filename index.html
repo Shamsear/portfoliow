@@ -546,15 +546,28 @@
         
         <div class="container">
             <nav class="flex items-center justify-between py-4">
-                <div class="logo-container flex items-center group">
-                    <div class="logo-icon bg-primary text-white w-8 h-8 rounded flex items-center justify-center mr-2 shadow-lg shadow-primary/20">
-                        <span class="font-bold text-lg">SE</span>
+                <div class="logo-container flex items-center group cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <div class="logo-icon relative w-10 h-10 flex items-center justify-center mr-3 transform group-hover:scale-105 transition-transform duration-300">
+                        <!-- Glowing background -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-cyan-500 rounded-xl blur-md opacity-25 group-hover:opacity-50 transition-opacity duration-300"></div>
+                        <!-- Outer glass container -->
+                        <div class="relative w-9 h-9 rounded-xl bg-dark-card border border-gray-800/80 flex items-center justify-center group-hover:border-primary/30 transition-colors duration-300">
+                            <!-- Logo content -->
+                            <span class="font-extrabold text-sm tracking-tight flex items-center select-none">
+                                <span class="text-primary font-light">{</span>
+                                <span class="text-primary">S</span>
+                                <span class="text-cyan-400">E</span>
+                                <span class="text-cyan-400 font-light">}</span>
+                            </span>
+                        </div>
                     </div>
-                    <div class="logo relative text-light">
-                        <span class="font-semibold tracking-wide">Shamsear</span>
-                        <span class="absolute -bottom-1 left-0 w-full scale-x-0 h-0.5 bg-gradient-to-r from-primary to-amber-300 rounded-full transform-gpu origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+                    <div class="logo relative text-light font-bold flex items-baseline gap-1.5">
+                        <span class="text-light group-hover:text-primary transition-colors duration-300">Shamsear</span>
+                        <span class="text-cyan-400 text-[10px] font-semibold tracking-wider uppercase bg-cyan-950/40 px-1.5 py-0.5 rounded border border-cyan-800/30">IT &amp; DEV</span>
+                        <span class="absolute -bottom-1 left-0 w-full scale-x-0 h-0.5 bg-gradient-to-r from-primary to-cyan-400 rounded-full transform-gpu origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
                     </div>
                 </div>
+
                 
                 <div class="flex-1 flex justify-center">
                     <ul class="nav-links flex items-center space-x-6">

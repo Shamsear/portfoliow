@@ -1,17 +1,48 @@
-<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="32" height="32" rx="6" fill="#4a6bff"/>
-  
-  <!-- Letter S with modern styling -->
-  <path d="M20.5 10c0-1.5-1.5-3-4-3s-4 1.5-4 3c0 1.5 1 2.5 4 3 3 0.5 4 1.5 4 3s-1.5 3-4 3-4-1.5-4-3" 
-        stroke="#ffffff" 
-        stroke-width="3" 
-        stroke-linecap="round" 
-        fill="none"/>
-        
-  <!-- Decorative dot -->
-  <circle cx="24" cy="8" r="2" fill="#ffffff" opacity="0.7"/>
-  
-  <!-- Bottom decorative line -->
-  <line x1="9" y1="24" x2="23" y2="24" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-</svg> 
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient (Dark Charcoal to Pitch Black) -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1c1a" />
+      <stop offset="100%" stop-color="#0a0a09" />
+    </linearGradient>
+    <!-- Accent Gradient (Amber Gold to Cyan) -->
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Base Circle with round corners -->
+  <rect width="32" height="32" rx="8" fill="url(#bgGrad)" stroke="#27272a" stroke-width="1"/>
+
+  <!-- Glowing outer hexagon -->
+  <path d="M16 4 L26 9.8 L26 21.2 L16 27 L6 21.2 L6 9.8 Z" 
+        fill="none" 
+        stroke="url(#glowGrad)" 
+        stroke-width="2"
+        stroke-linejoin="round"
+        filter="url(#glow)"/>
+
+  <!-- Monogram Dev Braces { } -->
+  <!-- Gold left brace '{' -->
+  <path d="M13 11 C11 11 11 13 11 16 C11 19 11 21 13 21" 
+        fill="none" 
+        stroke="#f59e0b" 
+        stroke-width="2" 
+        stroke-linecap="round"/>
+
+  <!-- Cyan right brace '}' -->
+  <path d="M19 11 C21 11 21 13 21 16 C21 19 21 21 19 21" 
+        fill="none" 
+        stroke="#06b6d4" 
+        stroke-width="2" 
+        stroke-linecap="round"/>
+
+  <!-- Central gold core dot -->
+  <circle cx="16" cy="16" r="2.2" fill="#f59e0b"/>
+</svg>
