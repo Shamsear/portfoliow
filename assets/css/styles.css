@@ -22,6 +22,16 @@
     box-sizing: border-box;
 }
 
+/* Remove click-focus outline on mouse clicks, keep for keyboard nav */
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
