@@ -396,9 +396,9 @@ header.scrolled .contact-btn {
 }
 
 .primary-btn:hover {
-    background-color: #3a5bef;
+    background-color: #d97706;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
+    box-shadow: 0 5px 15px rgba(245, 158, 11, 0.4);
 }
 
 .secondary-btn {
