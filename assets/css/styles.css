@@ -995,60 +995,60 @@ section::after {
 
 /* Contact Section */
 .contact {
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: var(--dark-color);
     position: relative;
 }
 
 .contact-container {
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .contact-info {
     flex: 1;
     background-color: var(--dark-card);
-    padding: 2rem;
-    border-radius: 15px;
+    padding: 1.25rem;
+    border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     border: 1px solid var(--gray-700);
 }
 
 .info-header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     position: relative;
 }
 
 .info-icon {
-    width: 50px;
-    height: 50px;
+    width: 38px;
+    height: 38px;
     background-color: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
     box-shadow: 0 5px 15px rgba(74, 107, 255, 0.3);
 }
 
 .info-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     color: var(--light-color);
 }
 
 .info-details {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .info-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--gray-700);
 }
 
@@ -1058,16 +1058,17 @@ section::after {
 }
 
 .info-item-icon {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background-color: var(--dark-surface);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
-    margin-right: 1rem;
+    margin-right: 0.75rem;
     flex-shrink: 0;
+    font-size: 0.85rem;
 }
 
 .info-item-content {
@@ -1097,14 +1098,14 @@ section::after {
 }
 
 .social-links-container {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .contact-form {
     flex: 1.5;
     background-color: var(--dark-card);
-    padding: 2.5rem;
-    border-radius: 15px;
+    padding: 1.5rem;
+    border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     border: 1px solid var(--gray-700);
 }
