@@ -507,9 +507,135 @@ nav.minimal-nav {
     visibility: hidden;
 }
 
-/* Mobile Adjustments */
+/* ==========================================================================
+   MOBILE & TABLET RESPONSIVE SYSTEM
+   ========================================================================== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+
+.hamburger span {
+    width: 22px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: var(--transition);
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 92%;
+        padding: 0 0.5rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    .hero-title {
+        font-size: clamp(1.9rem, 6vw, 2.6rem);
+    }
+}
+
 @media (max-width: 768px) {
+    nav.minimal-nav {
+        width: 94%;
+        padding: 0.5rem 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
     .nav-links {
+        position: fixed;
+        top: 4.5rem;
+        left: 1rem;
+        right: 1rem;
+        background: rgba(18, 18, 22, 0.96);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-lg);
+        padding: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
         display: none;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.95);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+        width: 100%;
+        padding: 0.4rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .hero {
+        padding-top: 7rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .cube-motion-stage {
+        height: 220px;
+        transform: scale(0.85);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .minimal-card {
+        padding: 1.25rem;
+    }
+
+    .modal-card {
+        width: 94%;
+        padding: 1.25rem;
+        max-height: 88vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-badge span {
+        font-size: 0.68rem;
+    }
+
+    .hero-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    input, textarea {
+        font-size: 16px !important; /* Prevents Safari iOS auto-zoom */
     }
 }
