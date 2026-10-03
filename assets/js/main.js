@@ -4,6 +4,21 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Hide page loader overlay smoothly
+    const hideLoader = () => {
+        const loader = document.querySelector('.page-loader');
+        if (loader && !loader.classList.contains('fade-out')) {
+            loader.classList.add('fade-out');
+            setTimeout(() => {
+                if (loader.parentNode) loader.parentNode.removeChild(loader);
+            }, 500);
+        }
+    };
+
+    // Trigger loader removal
+    setTimeout(hideLoader, 300);
+    window.addEventListener('load', hideLoader);
+
     // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
