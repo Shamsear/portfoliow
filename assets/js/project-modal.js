@@ -1,6 +1,6 @@
 /**
  * ProjectModal.js - Comprehensive Project Database & Detail Drawer
- * Holds exact URLs and technical specs for all 10 live projects.
+ * Holds exact URLs and technical specs for all live projects.
  */
 
 const PROJECT_DATABASE = {
@@ -15,6 +15,32 @@ const PROJECT_DATABASE = {
             'Offline-first architecture with instant IndexedDB persistence.',
             'Visual Safe-to-Spend runway calculation derived from upcoming bills.',
             'Responsive multi-device PWA layout.'
+        ]
+    },
+    'ssleague': {
+        title: 'SS League — Live Football Auction & Team Manager',
+        category: 'Full-Stack Next.js Application',
+        description: 'An interactive fantasy football auction platform enabling strategic player bidding, budget tracking, real-time stats, and season archives.',
+        liveUrl: 'https://ssleague.vercel.app/',
+        githubUrl: 'https://github.com/Shamsear',
+        tags: ['Next.js', 'Tailwind CSS', 'Real-Time State', 'TypeScript'],
+        highlights: [
+            'Live bidding engine with real-time budget depletion and squad constraints.',
+            'Detailed player stats cards and historical performance archives.',
+            'Team manager dashboard for strategic squad customization.'
+        ]
+    },
+    'nodebilling': {
+        title: 'Enterprise Billing & Invoicing Engine (Node.js)',
+        category: 'Node.js Backend & API Systems',
+        description: 'Automated recurring billing, invoice generation, and subscription management system built with Node.js, Express, and PostgreSQL.',
+        liveUrl: '#',
+        githubUrl: 'https://github.com/Shamsear',
+        tags: ['Node.js', 'Express', 'PostgreSQL', 'PDFKit', 'REST API', 'Docker'],
+        highlights: [
+            'Automated PDF invoice generation and transaction logging.',
+            'Subscription tier calculations and recurring billing schedules.',
+            'Secure webhook handlers for payment gateway status updates.'
         ]
     },
     'devai': {
