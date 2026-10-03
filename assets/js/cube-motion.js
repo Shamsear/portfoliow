@@ -27,28 +27,28 @@ class TechCubeMotion {
             <div class="cube-motion-viewport">
                 <div class="cube-motion-box" id="techCubeBox">
                     <div class="cube-face front">
-                        <i class="fab fa-react text-cyan-400 text-4xl"></i>
-                        <span>Next.js & React</span>
+                        <i class="fab fa-react" style="color: #38bdf8;"></i>
+                        <span>React / Next.js</span>
                     </div>
                     <div class="cube-face back">
-                        <i class="fab fa-python text-amber-400 text-4xl"></i>
-                        <span>Python Flask</span>
+                        <i class="fab fa-js-square" style="color: #f59e0b;"></i>
+                        <span>TypeScript</span>
                     </div>
                     <div class="cube-face right">
-                        <i class="fas fa-chart-bar text-amber-500 text-4xl"></i>
-                        <span>Power BI</span>
+                        <i class="fab fa-node-js" style="color: #10b981;"></i>
+                        <span>Node.js</span>
                     </div>
                     <div class="cube-face left">
-                        <i class="fas fa-database text-cyan-300 text-4xl"></i>
-                        <span>SQL & Data</span>
+                        <i class="fab fa-python" style="color: #38bdf8;"></i>
+                        <span>Python</span>
                     </div>
                     <div class="cube-face top">
-                        <i class="fas fa-terminal text-emerald-400 text-4xl"></i>
-                        <span>Full-Stack</span>
+                        <i class="fas fa-database" style="color: #f59e0b;"></i>
+                        <span>PostgreSQL</span>
                     </div>
                     <div class="cube-face bottom">
-                        <i class="fas fa-network-wired text-cyan-400 text-4xl"></i>
-                        <span>IT Support</span>
+                        <i class="fas fa-brain" style="color: #a855f7;"></i>
+                        <span>AI Workflows</span>
                     </div>
                 </div>
             </div>
