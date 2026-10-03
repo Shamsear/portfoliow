@@ -451,9 +451,10 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     
     <!-- EmailJS for contact form -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -629,62 +630,101 @@
             <div class="particle"></div>
         </div>
         
-        <div class="container relative z-10">
-            <div class="hero-content max-w-4xl mx-auto text-center md:text-left md:flex md:flex-col md:items-start">
-                <div class="inline-flex mb-4 items-center gap-2 px-4 py-1 rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20">
-                    <span class="text-primary text-sm font-medium" id="hero-role-badge">Full-Stack Developer</span>
-                    <span class="text-primary/40 text-sm">|</span>
-                    <span class="text-cyan-400 text-sm font-medium">IT Support Specialist</span>
-                    <span class="text-primary/40 text-sm">|</span>
-                    <span class="text-amber-300 text-sm font-medium">Data Analyst</span>
-                </div>
-                
-                <h1 class="animate-fade-in-down text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-light leading-tight mb-4">
-                    Hi, I'm <span class="highlight text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-300">Shamsear Ebrahim</span>
-                </h1>
-                
-                <h2 class="animate-fade-in-down animation-delay-300 text-xl md:text-2xl font-medium text-light/80 mb-6 max-w-2xl">
-                    I <span class="text-primary" id="hero-tagline">build responsive web experiences</span>, provide expert IT support &amp; analyze complex data
-                </h2>
-                
-                <div class="cta-buttons animate-fade-in-up animation-delay-700 flex flex-col sm:flex-row gap-4 mb-8">
-                    <a href="#contact" class="btn primary-btn group">
-                        <span class="flex items-center gap-2">
-                            Contact Me
-                            <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                        </span>
-                    </a>
-                    <a href="#projects" class="btn secondary-btn bg-dark-surface text-light border border-gray-700 hover:bg-dark-card group">
-                        <span class="flex items-center gap-2">
-                            View My Work
-                            <i class="fas fa-eye transition-transform group-hover:translate-x-1"></i>
-                        </span>
-                    </a>
-                </div>
-                
-                <div class="social-links animate-fade-in-up animation-delay-1000 flex gap-4"
->
-                    <a href="https://github.com/Shamsear" target="_blank" class="text-light hover:text-primary transition-all duration-300 hover:-translate-y-1 flex items-center justify-center w-10 h-10 rounded-full bg-dark-surface border border-gray-700/50 hover:border-primary/50 hover:bg-primary/10">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/shamsear/" target="_blank" class="text-light hover:text-primary transition-all duration-300 hover:-translate-y-1 flex items-center justify-center w-10 h-10 rounded-full bg-dark-surface border border-gray-700/50 hover:border-primary/50 hover:bg-primary/10">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+        <div class="container relative z-10 py-12 md:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 hero-content text-center md:text-left">
+                    <div class="inline-flex mb-4 items-center gap-2 px-4 py-1 rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20">
+                        <span class="text-primary text-sm font-medium" id="hero-role-badge">Full-Stack Developer</span>
+                        <span class="text-primary/40 text-sm">|</span>
+                        <span class="text-cyan-400 text-sm font-medium">IT Support Specialist</span>
+                        <span class="text-primary/40 text-sm">|</span>
+                        <span class="text-amber-300 text-sm font-medium">Data Analyst</span>
+                    </div>
+                    
+                    <h1 class="animate-fade-in-down text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-light leading-tight mb-4">
+                        Hi, I'm <span class="highlight text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-300">Shamsear Ebrahim</span>
+                    </h1>
+                    
+                    <h2 class="animate-fade-in-down animation-delay-300 text-xl md:text-2xl font-medium text-light/80 mb-6 max-w-2xl">
+                        I <span class="text-primary" id="hero-tagline">build responsive web experiences</span>, provide expert IT support &amp; analyze complex data
+                    </h2>
+                    
+                    <div class="cta-buttons animate-fade-in-up animation-delay-700 flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="#contact" class="btn primary-btn group">
+                            <span class="flex items-center gap-2">
+                                Contact Me
+                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                            </span>
+                        </a>
+                        <a href="#projects" class="btn secondary-btn bg-dark-surface text-light border border-gray-700 hover:bg-dark-card group">
+                            <span class="flex items-center gap-2">
+                                View My Work
+                                <i class="fas fa-eye transition-transform group-hover:translate-x-1"></i>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links animate-fade-in-up animation-delay-1000 flex gap-4">
+                        <a href="https://github.com/Shamsear" target="_blank" class="text-light hover:text-primary transition-all duration-300 hover:-translate-y-1 flex items-center justify-center w-10 h-10 rounded-full bg-dark-surface border border-gray-700/50 hover:border-primary/50 hover:bg-primary/10">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/shamsear/" target="_blank" class="text-light hover:text-primary transition-all duration-300 hover:-translate-y-1 flex items-center justify-center w-10 h-10 rounded-full bg-dark-surface border border-gray-700/50 hover:border-primary/50 hover:bg-primary/10">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <button onclick="copyContactDetail('shamsear@gmail.com', 'Email')" class="text-light hover:text-primary transition-all duration-300 hover:-translate-y-1 flex items-center justify-center px-3 h-10 rounded-full bg-dark-surface border border-gray-700/50 hover:border-primary/50 text-xs font-mono gap-1.5" title="Copy Email">
+                            <i class="fas fa-copy"></i>
+                            <span>shamsear@gmail.com</span>
+                        </button>
+                    </div>
+
+                    <!-- Availability badge -->
+                    <div class="animate-fade-in-up animation-delay-1000 flex flex-wrap items-center gap-3 mt-6">
+                        <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/10 backdrop-blur-sm">
+                            <span class="relative flex h-2.5 w-2.5">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                            </span>
+                            <span class="text-green-400 text-sm font-medium">Available Immediately for Work</span>
+                        </div>
+                        <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600/40 bg-dark-surface/60 backdrop-blur-sm">
+                            <i class="fas fa-map-marker-alt text-primary text-xs"></i>
+                            <span class="text-gray-300 text-sm">Based in Qatar</span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Availability badge -->
-                <div class="animate-fade-in-up animation-delay-1000 flex flex-wrap items-center gap-3 mt-6">
-                    <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/10 backdrop-blur-sm">
-                        <span class="relative flex h-2.5 w-2.5">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
-                        </span>
-                        <span class="text-green-400 text-sm font-medium">Available Immediately for Work</span>
+                <!-- Right Column: 3D Interactive Tech Cube -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center">
+                    <div class="relative w-full max-w-sm p-6 rounded-2xl bg-stone-900/60 border border-amber-500/20 backdrop-blur-md shadow-2xl text-center">
+                        <div class="text-xs uppercase tracking-widest text-stone-400 font-semibold mb-4 flex items-center justify-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                            <span>Interactive 3D Tech Stack</span>
+                        </div>
+                        
+                        <div id="heroTechCubeContainer" class="my-4"></div>
+                        
+                        <p class="text-xs text-stone-400 mt-2 italic">Drag cube to rotate 3D view</p>
                     </div>
-                    <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600/40 bg-dark-surface/60 backdrop-blur-sm">
-                        <i class="fas fa-map-marker-alt text-primary text-xs"></i>
-                        <span class="text-gray-300 text-sm">Based in Qatar</span>
-                    </div>
+                </div>
+            </div>
+
+            <!-- Swiss International Style Continuous NumberFlow Metrics Bar -->
+            <div class="mt-16 pt-12 border-t border-stone-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
+                    <div class="text-3xl md:text-4xl font-extrabold text-amber-500 tabular-nums" data-numberflow data-value="5" data-suffix="+">5+</div>
+                    <div class="text-xs uppercase tracking-wider text-stone-400 font-medium mt-2">Years Tech Experience</div>
+                </div>
+                <div class="p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
+                    <div class="text-3xl md:text-4xl font-extrabold text-amber-500 tabular-nums" data-numberflow data-value="25" data-suffix="+">25+</div>
+                    <div class="text-xs uppercase tracking-wider text-stone-400 font-medium mt-2">Completed Projects</div>
+                </div>
+                <div class="p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
+                    <div class="text-3xl md:text-4xl font-extrabold text-amber-500 tabular-nums" data-numberflow data-value="18" data-suffix="+">18+</div>
+                    <div class="text-xs uppercase tracking-wider text-stone-400 font-medium mt-2">Core Technologies</div>
+                </div>
+                <div class="p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
+                    <div class="text-3xl md:text-4xl font-extrabold text-amber-500 tabular-nums" data-numberflow data-value="99.9" data-suffix="%">99.9%</div>
+                    <div class="text-xs uppercase tracking-wider text-stone-400 font-medium mt-2">Uptime &amp; SLA Compliance</div>
                 </div>
             </div>
         </div>
@@ -1954,6 +1994,9 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/numberflow.js"></script>
+    <script src="assets/js/cube-motion.js"></script>
+    <script src="assets/js/project-modal.js"></script>
     <script src="assets/js/tailwind-components.js"></script>
     <script>
         // ── Skills Tab Filter ──────────────────────────────────────────

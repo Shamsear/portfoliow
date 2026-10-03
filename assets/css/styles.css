@@ -1536,4 +1536,269 @@ textarea:focus {
 ::selection {
     background-color: var(--primary-color);
     color: white;
-} 
+}
+
+/* ==========================================================================
+   SWISS DESIGN SYSTEM & TYPOGRAPHY ENHANCEMENTS
+   ========================================================================== */
+html {
+    color-scheme: dark;
+}
+
+body {
+    font-family: 'IBM Plex Sans', 'Space Grotesk', 'Poppins', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+}
+
+p, li, span {
+    text-wrap: pretty;
+}
+
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+   NUMBERFLOW CONTINUOUS ROLLING DIGITS STYLING
+   ========================================================================== */
+.number-flow-host {
+    font-family: 'Space Grotesk', monospace;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.nf-digit-wrapper {
+    position: relative;
+    display: inline-block;
+    height: 1.1em;
+    vertical-align: bottom;
+}
+
+.nf-digit {
+    display: inline-block;
+    color: #f59e0b;
+}
+
+.nf-symbol {
+    display: inline-block;
+    color: #f59e0b;
+}
+
+/* ==========================================================================
+   CUBE MOTION 3D INTERACTIVE STAGE & PERSPECTIVE
+   ========================================================================== */
+.cube-motion-stage {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    perspective: 1200px;
+    cursor: grab;
+    user-select: none;
+}
+
+.cube-motion-viewport {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube-motion-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.05s ease-out;
+}
+
+.cube-face {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 20px;
+    top: 20px;
+    background: rgba(28, 28, 26, 0.85);
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.15), inset 0 0 15px rgba(245, 158, 11, 0.1);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    color: #f0ede6;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cube-face.front  { transform: rotateY(0deg) translateZ(90px); }
+.cube-face.back   { transform: rotateY(180deg) translateZ(90px); }
+.cube-face.right  { transform: rotateY(90deg) translateZ(90px); }
+.cube-face.left   { transform: rotateY(-90deg) translateZ(90px); }
+.cube-face.top    { transform: rotateX(90deg) translateZ(90px); }
+.cube-face.bottom { transform: rotateX(-90deg) translateZ(90px); }
+
+.cube-motion-shadow {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotateX(90deg);
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.3) 0%, transparent 70%);
+    filter: blur(15px);
+    pointer-events: none;
+}
+
+.cube-glare {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+/* ==========================================================================
+   PROJECT DETAIL MODAL DRAWER
+   ========================================================================== */
+.project-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 9, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.project-modal-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-modal-content {
+    background: #1c1c1a;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 12px;
+    max-width: 850px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+    transform: scale(0.95);
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project-modal-backdrop.active .project-modal-content {
+    transform: scale(1);
+}
+
+.project-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgba(36, 36, 32, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f0ede6;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.2s ease;
+}
+
+.project-modal-close:hover {
+    background: #f59e0b;
+    color: #0a0a09;
+}
+
+.project-modal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .project-modal-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.project-modal-media {
+    position: relative;
+    background: #0a0a09;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-modal-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-modal-badge {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(10, 10, 9, 0.85);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    color: #f59e0b;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.project-modal-details {
+    padding: 2rem;
+}
+
+.quick-copy-toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #1c1c1a;
+    border: 1px solid #f59e0b;
+    color: #f0ede6;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    animation: toastIn 0.3s ease-out forwards;
+}
+
+@keyframes toastIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
