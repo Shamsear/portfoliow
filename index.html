@@ -3,2110 +3,501 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shamsear Ebrahim - Developer, IT Specialist &amp; Data Analyst</title>
-    <meta name="description" content="Full-Stack Developer, IT Support Specialist &amp; Data Analyst with expertise in Next.js, React, Power BI, SQL, Python, hardware troubleshooting, and networking. Based in Doha, Qatar.">
-    <meta name="keywords" content="Full-Stack Developer, IT Support Specialist, Data Analyst, Next.js Developer, Power BI, SQL, Python, React Developer, Web Developer, IT Technician, Help Desk, Network Support, Shamsear Ebrahim">
+    <title>Shamsear Ebrahim — AI-Native Software Engineer &amp; Full-Stack Developer</title>
+    <meta name="description" content="Software Developer based in Doha, Qatar specializing in Next.js, React, TypeScript, Node.js, Python, and AI-native coding workflows with strict code validation.">
+    <meta name="keywords" content="Software Engineer, AI-Native Developer, Next.js, React, TypeScript, Node.js, Python, Full-Stack Developer, Doha Qatar, Shamsear Ebrahim">
     <meta name="author" content="Shamsear Ebrahim">
     
     <!-- Open Graph / Social Media Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Shamsear Ebrahim - Developer, IT Specialist &amp; Data Analyst">
-    <meta property="og:description" content="Full-Stack Developer, IT Support Specialist &amp; Data Analyst with expertise in Next.js, React, Power BI, SQL, Python, hardware troubleshooting, and networking.">
-    <meta property="og:image" content="assets/images/portfolio-preview.png">
+    <meta property="og:title" content="Shamsear Ebrahim — AI-Native Software Engineer">
+    <meta property="og:description" content="Software Developer based in Doha, Qatar. Next.js, React, TypeScript, Node.js, and AI-native coding workflows.">
     <meta property="og:url" content="https://shamsear.dev">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Shamsear Ebrahim - Developer, IT Specialist &amp; Data Analyst">
-    <meta name="twitter:description" content="Full-Stack Developer, IT Support Specialist &amp; Data Analyst with expertise in Next.js, React, Power BI, SQL, Python, hardware troubleshooting, and networking.">
-    <meta name="twitter:image" content="assets/images/portfolio-preview.png">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="alternate icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <meta name="theme-color" content="#f59e0b">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#f59e0b',
-                        'primary-dark': '#d97706',
-                        secondary: '#6c757d',
-                        dark: '#121212',
-                        darker: '#0a0a0a',
-                        'dark-card': '#1e1e1e',
-                        'dark-surface': '#252525',
-                        light: '#e2e2e2'
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    },
-                    animation: {
-                        'fade-in-down': 'fadeInDown 1s ease-out forwards',
-                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
-                        'pulse-slow': 'pulse 3s infinite',
-                        'bounce-slow': 'bounce 2s infinite',
-                        'slide-in-right': 'slideInRight 0.5s ease-out forwards',
-                        'slide-in-left': 'slideInLeft 0.5s ease-out forwards',
-                        'float': 'float 10s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        fadeInDown: {
-                            '0%': { opacity: '0', transform: 'translateY(-20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' }
-                        },
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' }
-                        },
-                        slideInRight: {
-                            '0%': { transform: 'translateX(100%)', opacity: '0' },
-                            '100%': { transform: 'translateX(0)', opacity: '1' }
-                        },
-                        slideInLeft: {
-                            '0%': { transform: 'translateX(-100%)', opacity: '0' },
-                            '100%': { transform: 'translateX(0)', opacity: '1' }
-                        },
-                        float: {
-                            '0%': { transform: 'translateY(0px) rotate(0deg)' },
-                            '25%': { transform: 'translateY(-10px) rotate(1deg)' },
-                            '50%': { transform: 'translateY(0px) rotate(0deg)' },
-                            '75%': { transform: 'translateY(10px) rotate(-1deg)' },
-                            '100%': { transform: 'translateY(0px) rotate(0deg)' }
-                        }
-                    }
-                }
-            },
-            darkMode: 'class'
-        }
-    </script>
-    <style>
-        /* Custom animation delay classes */
-        .animation-delay-300 {
-            animation-delay: 300ms;
-        }
-        .animation-delay-500 {
-            animation-delay: 500ms;
-        }
-        .animation-delay-700 {
-            animation-delay: 700ms;
-        }
-        .animation-delay-1000 {
-            animation-delay: 1000ms;
-        }
-        
-        /* Grid pattern background */
-        .bg-grid-pattern {
-            background-image: 
-                linear-gradient(to right, rgba(74, 107, 255, 0.05) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(74, 107, 255, 0.05) 1px, transparent 1px);
-            background-size: 30px 30px;
-        }
-        
-        /* Scroll down animation */
-        @keyframes scroll-down {
-            0% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-            75% {
-                opacity: 0.5;
-                transform: translateY(6px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .animate-scroll-down {
-            animation: scroll-down 1.5s ease-in-out infinite;
-        }
-        
-        /* Particle animation */
-        .particles-container {
-            pointer-events: none;
-        }
-        
-        .particle {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background-color: rgba(74, 107, 255, 0.2);
-            border-radius: 50%;
-        }
-        
-        .particle:nth-child(1) {
-            top: 20%;
-            left: 10%;
-            animation: particle-animation 15s infinite linear;
-        }
-        
-        .particle:nth-child(2) {
-            top: 40%;
-            left: 30%;
-            animation: particle-animation 20s infinite linear;
-            animation-delay: 1s;
-        }
-        
-        .particle:nth-child(3) {
-            top: 60%;
-            left: 50%;
-            animation: particle-animation 18s infinite linear;
-            animation-delay: 2s;
-        }
-        
-        .particle:nth-child(4) {
-            top: 80%;
-            left: 70%;
-            animation: particle-animation 22s infinite linear;
-            animation-delay: 3s;
-        }
-        
-        .particle:nth-child(5) {
-            top: 30%;
-            left: 80%;
-            animation: particle-animation 25s infinite linear;
-            animation-delay: 4s;
-        }
-        
-        .particle:nth-child(6) {
-            top: 70%;
-            left: 20%;
-            animation: particle-animation 17s infinite linear;
-            animation-delay: 5s;
-        }
-        
-        .particle:nth-child(7) {
-            top: 50%;
-            left: 90%;
-            animation: particle-animation 21s infinite linear;
-            animation-delay: 6s;
-        }
-        
-        .particle:nth-child(8) {
-            top: 10%;
-            left: 60%;
-            animation: particle-animation 19s infinite linear;
-            animation-delay: 7s;
-        }
-        
-        .particle:nth-child(9) {
-            top: 90%;
-            left: 40%;
-            animation: particle-animation 23s infinite linear;
-            animation-delay: 8s;
-        }
-        
-        .particle:nth-child(10) {
-            top: 25%;
-            left: 75%;
-            animation: particle-animation 16s infinite linear;
-            animation-delay: 9s;
-        }
-        
-        .particle:nth-child(11) {
-            top: 85%;
-            left: 15%;
-            animation: particle-animation 24s infinite linear;
-            animation-delay: 10s;
-        }
-        
-        .particle:nth-child(12) {
-            top: 15%;
-            left: 85%;
-            animation: particle-animation 18s infinite linear;
-            animation-delay: 11s;
-        }
-        
-        .particle:nth-child(13) {
-            top: 45%;
-            left: 25%;
-            animation: particle-animation 20s infinite linear;
-            animation-delay: 12s;
-        }
-        
-        .particle:nth-child(14) {
-            top: 65%;
-            left: 55%;
-            animation: particle-animation 22s infinite linear;
-            animation-delay: 13s;
-        }
-        
-        .particle:nth-child(15) {
-            top: 35%;
-            left: 65%;
-            animation: particle-animation 19s infinite linear;
-            animation-delay: 14s;
-        }
-        
-        @keyframes particle-animation {
-            0% {
-                transform: translate(0, 0) scale(1);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 0;
-            }
-            100% {
-                transform: translate(100px, -100px) scale(0);
-                opacity: 0;
-            }
-        }
-        
-        /* Page Loader */
-        .page-loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #0a0a0a;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
-        }
-        
-        .loader-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-            animation: fadeInUp 0.8s ease-out forwards;
-            padding: 0 1rem;
-            width: 100%;
-            max-width: 300px;
-        }
-        
-        .loader-brand {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        
-        .loader-logo {
-            width: 3rem;
-            height: 3rem;
-            background-color: #f59e0b;
-            color: white;
-            border-radius: 0.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            font-weight: 700;
-            box-shadow: 0 0 20px rgba(74, 107, 255, 0.5);
-            animation: pulse 2s infinite;
-        }
-        
-        .loader-text {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: white;
-            letter-spacing: 0.5px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .loader-text::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #f59e0b, transparent);
-            animation: shimmer 2s infinite;
-        }
-        
-        .loader-progress-wrapper {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        
-        .loader-progress-container {
-            width: 100%;
-            height: 4px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 2px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .loader-progress-bar {
-            height: 100%;
-            width: 0%;
-            background-color: #f59e0b;
-            border-radius: 2px;
-            transition: width 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .loader-progress-bar::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transform: translateX(-100%);
-            animation: shimmer 1.5s infinite;
-        }
-        
-        .loader-percentage {
-            align-self: flex-end;
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.8);
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-        
-        .loader-status {
-            font-size: 0.875rem;
-            color: rgba(255, 255, 255, 0.6);
-            min-height: 1.2em;
-            text-align: center;
-            transition: opacity 0.3s ease;
-        }
-        
-        @keyframes progress {
-            0% { width: 0%; }
-            50% { width: 70%; }
-            100% { width: 100%; }
-        }
-        
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(74, 107, 255, 0.5); }
-            70% { box-shadow: 0 0 0 10px rgba(74, 107, 255, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(74, 107, 255, 0); }
-        }
-        
-        @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .fade-out {
-            opacity: 0;
-            visibility: hidden;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 576px) {
-            .loader-content {
-                gap: 1rem;
-            }
-            
-            .loader-logo {
-                width: 2.5rem;
-                height: 2.5rem;
-                font-size: 1.5rem;
-            }
-            
-            .loader-text {
-                font-size: 1.25rem;
-            }
-        }
-        
-        @media (max-width: 360px) {
-            .loader-content {
-                gap: 0.8rem;
-            }
-            
-            .loader-logo {
-                width: 2.25rem;
-                height: 2.25rem;
-                font-size: 1.25rem;
-            }
-            
-            .loader-text {
-                font-size: 1.1rem;
-            }
-            
-            .loader-status {
-                font-size: 0.75rem;
-            }
-        }
-    </style>
+    
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
     <!-- EmailJS for contact form -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            // Initialize EmailJS with your User ID
-            // Visit https://dashboard.emailjs.com/sign-up to sign up and get your user ID
             emailjs.init("Nb8ThHEgrWHlteSAX");
         })();
     </script>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1P9RX1ZWS8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-1P9RX1ZWS8');
-    </script>
-    
-    <!-- Structured Data (JSON-LD) for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Shamsear Ebrahim",
-        "jobTitle": ["Full-Stack Developer", "IT Support Specialist"],
-        "url": "https://shamsear.dev",
-        "sameAs": [
-            "https://github.com/Shamsear",
-            "https://linkedin.com/in/shamsear/",
-            "https://www.instagram.com/shamsear_ebrahim/"
-        ],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Dubai",
-            "addressCountry": "United Arab Emirates"
-        },
-        "email": "shamsear@gmail.com",
-        "telephone": "+97470485214",
-        "knowsAbout": [
-            "Next.js",
-            "React",
-            "Python Flask",
-            "JavaScript",
-            "TailwindCSS",
-            "Full-Stack Development",
-            "Web Development",
-            "IT Support",
-            "Hardware Troubleshooting",
-            "Network Administration",
-            "Help Desk Support",
-            "Windows & Linux Administration",
-            "Remote Desktop Support"
-        ],
-        "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "P.A. College of Engineering"
-        }
-    }
-    </script>
 </head>
-<body class="bg-dark text-light">
+<body>
     <!-- Page Loader -->
     <div class="page-loader">
-        <div class="loader-content">
-            <div class="loader-brand">
-                <span class="loader-logo">SE</span>
-                <span class="loader-text">Shamsear</span>
-            </div>
-            <div class="loader-progress-wrapper">
-                <div class="loader-progress-container">
-                    <div class="loader-progress-bar"></div>
-                </div>
-                <div class="loader-percentage">0%</div>
-            </div>
-            <div class="loader-status">Loading assets...</div>
+        <div style="text-align: center;">
+            <div style="font-family: var(--font-mono); font-size: 1.5rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem;">SE.</div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); font-family: var(--font-mono);">Loading environment…</div>
         </div>
     </div>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay"></div>
-
     <!-- Header Section -->
-    <header class="bg-gradient-to-b from-darker to-dark/95 backdrop-blur-md border-b border-gray-800/30 shadow-lg">
-        <!-- Scroll Progress Indicator -->
-        <div class="scroll-progress-container w-full h-0.5 bg-gray-800 absolute bottom-0 left-0">
-            <div class="scroll-progress-bar h-full bg-gradient-to-r from-primary to-amber-300 w-0"></div>
-        </div>
-        
+    <header>
         <div class="container">
-            <nav class="flex items-center justify-between py-4">
-                <div class="logo-container flex items-center group cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-                    <div class="logo-icon relative w-10 h-10 flex items-center justify-center mr-3 transform group-hover:scale-105 transition-transform duration-300">
-                        <!-- Glowing background -->
-                        <div class="absolute inset-0 bg-gradient-to-r from-primary to-cyan-500 rounded-xl blur-md opacity-25 group-hover:opacity-50 transition-opacity duration-300"></div>
-                        <!-- Outer glass container -->
-                        <div class="relative w-9 h-9 rounded-xl bg-dark-card border border-gray-800/80 flex items-center justify-center group-hover:border-primary/30 transition-colors duration-300">
-                            <!-- Logo content -->
-                            <span class="font-extrabold text-sm tracking-tight flex items-center select-none">
-                                <span class="text-primary font-light">{</span>
-                                <span class="text-primary">S</span>
-                                <span class="text-cyan-400">E</span>
-                                <span class="text-cyan-400 font-light">}</span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="logo relative text-light font-bold flex items-baseline gap-1.5">
-                        <span class="text-light group-hover:text-primary transition-colors duration-300">Shamsear</span>
-                        <span class="text-cyan-400 text-[10px] font-semibold tracking-wider uppercase bg-cyan-950/40 px-1.5 py-0.5 rounded border border-cyan-800/30">IT &amp; DEV</span>
-                        <span class="absolute -bottom-1 left-0 w-full scale-x-0 h-0.5 bg-gradient-to-r from-primary to-cyan-400 rounded-full transform-gpu origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
-                    </div>
-                </div>
-
+            <nav>
+                <a href="#home" class="logo-container">
+                    <div class="logo-mark">SE</div>
+                    <span class="logo-text">Shamsear Ebrahim</span>
+                </a>
                 
-                <div class="flex-1 flex justify-center">
-                    <ul class="nav-links flex items-center space-x-6">
-                        <li><a href="#home" class="nav-link active px-1 py-2 text-light hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-primary after:to-amber-300 after:transition-all after:duration-300 hover:after:w-full active:after:w-full">Home</a></li>
-                        <li><a href="#about" class="nav-link px-1 py-2 text-light hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-primary after:to-amber-300 after:transition-all after:duration-300 hover:after:w-full">About</a></li>
-                        <li><a href="#education" class="nav-link px-1 py-2 text-light hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-primary after:to-amber-300 after:transition-all after:duration-300 hover:after:w-full">Education</a></li>
-                        <li><a href="#experience" class="nav-link px-1 py-2 text-light hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-primary after:to-amber-300 after:transition-all after:duration-300 hover:after:w-full">Experience</a></li>
-                        <li><a href="#skills" class="nav-link px-1 py-2 text-light hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-primary after:to-amber-300 after:transition-all after:duration-300 hover:after:w-full">Skills</a></li>
-                        <li><a href="#projects" class="nav-link px-1 py-2 text-light hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-primary after:to-amber-300 after:transition-all after:duration-300 hover:after:w-full">Projects</a></li>
-                        <li><a href="#contact" class="nav-link px-1 py-2 text-light hover:text-primary transition-all duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-primary after:to-amber-300 after:transition-all after:duration-300 hover:after:w-full">Contact</a></li>
-                    </ul>
-                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#validation" class="nav-link">AI Workflow</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
                 
-                <div class="hidden md:flex items-center gap-4">
-                    <a href="#contact" class="contact-btn bg-gradient-to-r from-primary to-amber-400 text-white px-4 py-2 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-0.5">
-                        <span class="flex items-center gap-2">
-                            <i class="fas fa-paper-plane text-xs"></i>
-                            <span>Let's Talk</span>
-                        </span>
+                <div style="display: flex; items-center; gap: 1rem;">
+                    <a href="assets/images/shamsear_resume.pdf" target="_blank" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                        <i class="fas fa-file-download"></i> CV / Resume
                     </a>
-                </div>
-                
-                <div class="hamburger flex md:hidden flex-col items-center justify-center w-10 h-10 rounded-full hover:bg-gray-800/50 transition-colors duration-300 cursor-pointer">
-                    <span class="bg-light w-5 h-0.5 rounded-full mb-1 transition-all duration-300"></span>
-                    <span class="bg-light w-4 h-0.5 rounded-full mb-1 transition-all duration-300"></span>
-                    <span class="bg-light w-5 h-0.5 rounded-full transition-all duration-300"></span>
+                    <button class="hamburger" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero bg-dark relative overflow-hidden">
-        <!-- Animated background gradient -->
-        <div class="absolute inset-0 bg-gradient-to-br from-darker to-dark z-0">
-            <div class="absolute inset-0 opacity-10">
-                <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern"></div>
-            </div>
-            <div class="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-primary/10 rounded-full filter blur-3xl animate-pulse-slow"></div>
-            <div class="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-cyan-500/10 rounded-full filter blur-3xl animate-pulse-slow" style="animation-delay: 1s;"></div>
-        </div>
-        
-        <!-- Particle effect -->
-        <div class="particles-container absolute inset-0 z-0">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-        
-        <div class="container relative z-10 py-12 md:py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-7 hero-content text-center md:text-left">
-                    <div class="inline-flex mb-4 items-center gap-2 px-4 py-1 rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20">
-                        <span class="text-primary text-sm font-medium" id="hero-role-badge">AI-Native Software Engineer</span>
-                        <span class="text-primary/40 text-sm">|</span>
-                        <span class="text-cyan-400 text-sm font-medium">Full-Stack Developer</span>
-                        <span class="text-primary/40 text-sm">|</span>
-                        <span class="text-amber-300 text-sm font-medium">TypeScript &amp; React</span>
+    <section id="home" class="hero">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+                <div>
+                    <div class="hero-pill">
+                        <span style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e;"></span>
+                        <span>Doha, Qatar · Available Immediately (Transferable NOC)</span>
                     </div>
-                    
-                    <h1 class="animate-fade-in-down text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-light leading-tight mb-4">
-                        Hi, I'm <span class="highlight text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-300">Shamsear Ebrahim</span>
+
+                    <h1 class="hero-title">
+                        AI-Native Software Engineer &amp; Full-Stack Developer
                     </h1>
-                    
-                    <h2 class="animate-fade-in-down animation-delay-300 text-xl md:text-2xl font-medium text-light/80 mb-6 max-w-2xl">
-                        I <span class="text-primary" id="hero-tagline">build responsive web experiences</span>, provide expert IT support &amp; analyze complex data
-                    </h2>
-                    
-                    <div class="cta-buttons animate-fade-in-up animation-delay-700 flex flex-col sm:flex-row gap-4 mb-8">
-                        <a href="#contact" class="btn primary-btn group">
-                            <span class="flex items-center gap-2">
-                                Contact Me
-                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                            </span>
+
+                    <p class="hero-subtitle">
+                        Computer Science graduate with paid software-development experience building Next.js, React, Node.js, and TypeScript applications. Harnessing AI coding tools (<span style="color: var(--accent);">Cursor, Claude Code, Codex</span>) with rigorous code review, static analysis, and test validation.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#projects" class="btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="#projects" class="btn secondary-btn bg-dark-surface text-light border border-gray-700 hover:bg-dark-card group">
-                            <span class="flex items-center gap-2">
-                                View My Work
-                                <i class="fas fa-eye transition-transform group-hover:translate-x-1"></i>
-                            </span>
+                        <a href="assets/images/shamsear_resume.pdf" target="_blank" class="btn-secondary">
+                            <i class="fas fa-file-pdf"></i> Download CV
                         </a>
-                    </div>
-                    
-                    <div class="social-links animate-fade-in-up animation-delay-1000 flex gap-4">
-                        <a href="https://github.com/Shamsear" target="_blank" class="text-light hover:text-primary transition-all duration-300 hover:-translate-y-1 flex items-center justify-center w-10 h-10 rounded-full bg-dark-surface border border-gray-700/50 hover:border-primary/50 hover:bg-primary/10">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/shamsear/" target="_blank" class="text-light hover:text-primary transition-all duration-300 hover:-translate-y-1 flex items-center justify-center w-10 h-10 rounded-full bg-dark-surface border border-gray-700/50 hover:border-primary/50 hover:bg-primary/10">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <button onclick="copyContactDetail('shamsear@gmail.com', 'Email')" class="text-light hover:text-primary transition-all duration-300 hover:-translate-y-1 flex items-center justify-center px-3 h-10 rounded-full bg-dark-surface border border-gray-700/50 hover:border-primary/50 text-xs font-mono gap-1.5" title="Copy Email">
-                            <i class="fas fa-copy"></i>
-                            <span>shamsear@gmail.com</span>
+                        <button onclick="copyContactDetail('shamsear@gmail.com', 'Email')" class="btn-secondary" title="Copy Email">
+                            <i class="fas fa-copy"></i> Copy Email
                         </button>
                     </div>
 
-                    <!-- Availability badge -->
-                    <div class="animate-fade-in-up animation-delay-1000 flex flex-wrap items-center gap-3 mt-6">
-                        <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/10 backdrop-blur-sm">
-                            <span class="relative flex h-2.5 w-2.5">
-                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
-                            </span>
-                            <span class="text-green-400 text-sm font-medium">Available Immediately for Work</span>
-                        </div>
-                        <div class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-600/40 bg-dark-surface/60 backdrop-blur-sm">
-                            <i class="fas fa-map-marker-alt text-primary text-xs"></i>
-                            <span class="text-gray-300 text-sm">Based in Qatar</span>
-                        </div>
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="https://github.com/Shamsear" target="_blank" class="btn-secondary" style="padding: 0.5rem 0.75rem;">
+                            <i class="fab fa-github" style="font-size: 1.2rem;"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/shamsear/" target="_blank" class="btn-secondary" style="padding: 0.5rem 0.75rem;">
+                            <i class="fab fa-linkedin" style="font-size: 1.2rem;"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Right Column: 3D Interactive Tech Cube -->
-                <div class="lg:col-span-5 flex flex-col items-center justify-center">
-                    <div class="relative w-full max-w-sm p-6 rounded-2xl bg-stone-900/60 border border-amber-500/20 backdrop-blur-md shadow-2xl text-center">
-                        <div class="text-xs uppercase tracking-widest text-stone-400 font-semibold mb-4 flex items-center justify-center gap-2">
-                            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                            <span>Interactive 3D Tech Stack</span>
+                <!-- 3D Interactive Tech Cube Container -->
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div style="width: 100%; max-width: 320px; padding: 1.5rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); text-align: center;">
+                        <div style="font-size: 0.75rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); margin-bottom: 1rem;">
+                            Interactive 3D Tech Cube
                         </div>
-                        
                         <div id="heroTechCubeContainer" class="my-4"></div>
-                        
-                        <p class="text-xs text-stone-400 mt-2 italic">Drag cube to rotate 3D view</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Swiss International Style Continuous NumberFlow Metrics Bar -->
-            <div class="mt-16 pt-12 border-t border-stone-800/80 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
-                    <div class="text-3xl md:text-4xl font-extrabold text-amber-500 tabular-nums" data-numberflow data-value="5" data-suffix="+">5+</div>
-                    <div class="text-xs uppercase tracking-wider text-stone-400 font-medium mt-2">Years Tech Experience</div>
-                </div>
-                <div class="p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
-                    <div class="text-3xl md:text-4xl font-extrabold text-amber-500 tabular-nums" data-numberflow data-value="25" data-suffix="+">25+</div>
-                    <div class="text-xs uppercase tracking-wider text-stone-400 font-medium mt-2">Completed Projects</div>
-                </div>
-                <div class="p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
-                    <div class="text-3xl md:text-4xl font-extrabold text-amber-500 tabular-nums" data-numberflow data-value="18" data-suffix="+">18+</div>
-                    <div class="text-xs uppercase tracking-wider text-stone-400 font-medium mt-2">Core Technologies</div>
-                </div>
-                <div class="p-4 rounded-xl bg-stone-900/40 border border-stone-800/60">
-                    <div class="text-3xl md:text-4xl font-extrabold text-amber-500 tabular-nums" data-numberflow data-value="99.9" data-suffix="%">99.9%</div>
-                    <div class="text-xs uppercase tracking-wider text-stone-400 font-medium mt-2">Uptime &amp; SLA Compliance</div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <!-- Floating background elements -->
-        <div class="floating-elements absolute inset-0 z-0 overflow-hidden">
-            <!-- Modern geometric shapes -->
-            <div class="floating-element absolute top-1/4 left-[10%] w-64 h-64 rounded-full border border-primary/10 opacity-20 animate-float"></div>
-            <div class="floating-element absolute top-[15%] left-[5%] w-32 h-32 rounded-full border border-primary/10 opacity-20 animate-float" style="animation-delay: 1.5s;"></div>
-            
-            <div class="floating-element absolute bottom-1/4 right-[10%] w-80 h-80 rounded-full border border-cyan-400/10 opacity-20 animate-float" style="animation-delay: 0.5s;"></div>
-            <div class="floating-element absolute bottom-[15%] right-[5%] w-40 h-40 rounded-full border border-cyan-400/10 opacity-20 animate-float" style="animation-delay: 2s;"></div>
-            
-            <!-- Dev skill icons -->
-            <div class="floating-element absolute top-[20%] left-[10%] animate-float" style="animation-duration: 8s;">
-                <i class="fab fa-html5 text-4xl text-primary/20"></i>
-            </div>
-            <div class="floating-element absolute top-[70%] left-[15%] animate-float" style="animation-duration: 7s; animation-delay: 1s;">
-                <i class="fab fa-css3-alt text-3xl text-primary/15"></i>
-            </div>
-            <div class="floating-element absolute top-[30%] right-[15%] animate-float" style="animation-duration: 9s; animation-delay: 0.5s;">
-                <i class="fab fa-js text-4xl text-primary/20"></i>
-            </div>
-            <div class="floating-element absolute top-[60%] right-[10%] animate-float" style="animation-duration: 6s; animation-delay: 1.5s;">
-                <i class="fab fa-react text-3xl text-primary/15"></i>
-            </div>
-            <div class="floating-element absolute top-[45%] left-[30%] animate-float" style="animation-duration: 8.5s; animation-delay: 0.7s;">
-                <svg class="w-8 h-8 text-primary/20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 10.2a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 9.8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-                    <path d="M20 15.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-                    <path d="M4 15.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-                    <path d="M5.78 13.5H18.2M14.12 8.03l-4.04 2.33M14.12 18.97l-4.04-2.33"/>
-                </svg>
-            </div>
-            <div class="floating-element absolute bottom-[30%] right-[30%] animate-float" style="animation-duration: 7.5s; animation-delay: 1.2s;">
-                <i class="fas fa-mobile-alt text-3xl text-primary/20"></i>
-            </div>
-
-            <!-- IT Support skill icons (cyan tint) -->
-            <div class="floating-element absolute top-[15%] right-[35%] animate-float" style="animation-duration: 9.5s; animation-delay: 0.3s;">
-                <i class="fas fa-network-wired text-3xl" style="color: rgba(6,182,212,0.18);"></i>
-            </div>
-            <div class="floating-element absolute top-[55%] left-[5%] animate-float" style="animation-duration: 8s; animation-delay: 2s;">
-                <i class="fas fa-server text-3xl" style="color: rgba(6,182,212,0.15);"></i>
-            </div>
-            <div class="floating-element absolute bottom-[15%] left-[35%] animate-float" style="animation-duration: 7s; animation-delay: 0.8s;">
-                <i class="fas fa-headset text-4xl" style="color: rgba(6,182,212,0.18);"></i>
-            </div>
-            <div class="floating-element absolute top-[80%] right-[25%] animate-float" style="animation-duration: 10s; animation-delay: 1.8s;">
-                <i class="fas fa-shield-alt text-3xl" style="color: rgba(6,182,212,0.15);"></i>
-            </div>
-            <div class="floating-element absolute top-[10%] left-[40%] animate-float" style="animation-duration: 8.5s; animation-delay: 1.1s;">
-                <i class="fas fa-hdd text-3xl" style="color: rgba(6,182,212,0.15);"></i>
-            </div>
-            <div class="floating-element absolute bottom-[45%] right-[5%] animate-float" style="animation-duration: 7.5s; animation-delay: 0.4s;">
-                <i class="fas fa-desktop text-4xl" style="color: rgba(6,182,212,0.18);"></i>
-            </div>
-            
-            <!-- Blurred gradient orbs -->
-            <div class="absolute top-[40%] left-[20%] w-32 h-32 rounded-full bg-primary/5 filter blur-xl"></div>
-            <div class="absolute bottom-[30%] right-[25%] w-48 h-48 rounded-full bg-cyan-400/5 filter blur-xl"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about relative bg-dark">
-        <!-- Background elements -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-10"></div>
-            <div class="absolute top-20 right-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl"></div>
-            <div class="absolute bottom-20 left-10 w-80 h-80 rounded-full bg-cyan-500/5 blur-3xl"></div>
-        </div>
-        
-        <div class="container relative z-10">
-            <h2 class="section-title text-light">About Me</h2>
-            <div class="about-content">
-                <div class="about-image animate-slide-in-left">
-                    <div class="image-container border-primary">
-                        <img src="assets/images/shamsear.jpg" alt="Profile Picture">
-                    </div>
-                    
-                    <!-- Floating badges -->
-                    <div class="absolute -bottom-4 -right-4 flex items-center justify-center w-16 h-16 bg-dark rounded-full shadow-lg border border-gray-700/50 animate-float" style="animation-duration: 6s;">
-                        <i class="fab fa-html5 text-4xl text-primary/20"></i>
-                    </div>
-                    <div class="absolute -top-4 -left-4 flex items-center justify-center w-12 h-12 bg-dark rounded-full shadow-lg border border-gray-700/50 animate-float" style="animation-duration: 8s; animation-delay: 1s;">
-                        <i class="fab fa-css3-alt text-3xl text-primary/15"></i>
-                    </div>
-                </div>
-                <div class="about-text animate-slide-in-right text-light/90">
-                    <div class="inline-block mb-4 px-3 py-1 rounded-full bg-primary/10 backdrop-blur-sm border border-primary/20">
-                        <span class="text-primary text-sm font-medium">Who am I?</span>
-                    </div>
-                    
-                    <h3 class="text-light text-2xl md:text-3xl font-bold mb-6">A <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-300">Full-Stack Developer</span>, <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-cyan-400">IT Specialist</span> &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-primary">Data Analyst</span></h3>
-                    
-                    <div class="profile-content">
-                        <p class="text-gray-300 leading-relaxed mb-6">
-                            Detail-oriented Full-Stack Developer, IT Support Specialist &amp; Data Analyst with a strong computer science background. Experienced in building responsive web applications using Next.js and Flask, managing LAN/WAN infrastructure, and transforming complex datasets into actionable business intelligence using Power BI, SQL, and Python.
-                        </p>
-                        <p class="text-gray-300 leading-relaxed mb-6">
-                            I bridge the gap between software development, network systems, and data analytics. Eager to leverage this versatile skill set to build clean solutions, secure hardware/software endpoints, and deliver analytical reports that drive smart decision-making.
+                        <p style="font-size: 0.75rem; color: var(--text-tertiary); margin-top: 0.5rem; font-style: italic;">
+                            Drag cube to rotate 3D view
                         </p>
                     </div>
-                    
-                    <div class="flex flex-wrap gap-4 mb-6">
-                        <div class="flex items-center gap-2 bg-dark-surface px-3 py-2 rounded-lg border border-gray-700/50">
-                            <i class="fab fa-react text-primary"></i>
-                            <span>Next.js</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-dark-surface px-3 py-2 rounded-lg border border-gray-700/50">
-                            <i class="fab fa-python text-primary"></i>
-                            <span>Python Flask</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-dark-surface px-3 py-2 rounded-lg border border-gray-700/50">
-                            <i class="fab fa-js text-primary"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-dark-surface px-3 py-2 rounded-lg border border-gray-700/50">
-                            <i class="fas fa-chart-bar text-primary"></i>
-                            <span>Power BI</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-dark-surface px-3 py-2 rounded-lg border border-gray-700/50">
-                            <i class="fas fa-database text-primary"></i>
-                            <span>SQL</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-dark-surface px-3 py-2 rounded-lg border border-gray-700/50">
-                            <i class="fas fa-network-wired text-cyan-400"></i>
-                            <span>Networking</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-dark-surface px-3 py-2 rounded-lg border border-gray-700/50">
-                            <i class="fas fa-tools text-cyan-400"></i>
-                            <span>IT Troubleshooting</span>
-                        </div>
-                        <div class="flex items-center gap-2 bg-dark-surface px-3 py-2 rounded-lg border border-gray-700/50">
-                            <i class="fab fa-windows text-cyan-400"></i>
-                            <span>Windows / Linux</span>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-8 flex items-center gap-4">
-                        <a href="assets/images/shamsear_resume.pdf" class="btn primary-btn group flex items-center gap-2">
-                            <span>Download CV</span>
-                            <i class="fas fa-file-download transition-transform group-hover:translate-y-1"></i>
-                        </a>
-                        <a href="#contact" class="btn secondary-btn bg-dark-surface text-light border border-gray-700 hover:bg-dark-card group">
-                            <span class="flex items-center gap-2">
-                                Contact Me
-                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                        </span>
-                        </a>
-                    </div>
                 </div>
             </div>
-        </div>
-        
-    </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education bg-darker relative">
-        <!-- Background elements -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5"></div>
-            <div class="absolute top-20 right-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl"></div>
-            <div class="absolute bottom-20 left-10 w-80 h-80 rounded-full bg-cyan-500/5 blur-3xl"></div>
-            
-            <!-- Floating education icons -->
-            <div class="absolute top-1/4 right-[10%] opacity-10 hidden lg:block">
-                <i class="fas fa-graduation-cap text-6xl text-primary/30"></i>
-            </div>
-            <div class="absolute bottom-1/4 left-[10%] opacity-10 hidden lg:block">
-                <i class="fas fa-book text-5xl text-cyan-400/30"></i>
-            </div>
-        </div>
-        
-        <div class="container relative z-10">
-            <h2 class="section-title text-light">Education & Certifications</h2>
-            <p class="section-subtitle text-center text-gray-400 max-w-3xl mx-auto mb-12">My academic journey and professional certifications that have shaped my expertise in data analytics and technology.</p>
-            <div class="education-timeline relative pb-12">
-                <!-- Removing the timeline line -->
-                
-                <div class="education-container relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="education-card bg-dark-card border-gray-700 shadow-lg group hover:border-primary/30 transition-all duration-300 hover:-translate-y-2 relative">
-                        <!-- Removing the timeline dot -->
-                        <div class="education-header relative overflow-hidden">
-                            <div class="absolute -right-12 -top-12 w-24 h-24 bg-primary/20 rounded-full blur-xl group-hover:bg-primary/30 transition-all duration-300"></div>
-                            <h3 class="text-light group-hover:text-primary transition-colors duration-300">B.E. Computer Science & Engineering</h3>
-                            <div class="flex items-center justify-between mt-2">
-                                <span class="education-year text-gray-400 flex items-center gap-2">
-                                    <i class="fas fa-calendar-alt text-primary/70"></i>
-                                    2020 - 2024
-                                </span>
-                                <span class="bg-primary/10 text-primary text-xs py-1 px-3 rounded-full">Degree</span>
-                            </div>
-                        </div>
-                        <div class="education-body">
-                            <div class="flex items-center gap-3 mb-3">
-                                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
-                                    <i class="fas fa-university"></i>
-                                </div>
-                                <p class="education-institution text-primary font-semibold">P.A. COLLEGE OF ENGINEERING</p>
-                            </div>
-                            <p class="education-grade text-gray-400 flex items-center gap-2 mt-3">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                CGPA: 7.4/10
-                            </p>
-                            <div class="mt-4 pt-4 border-t border-gray-700/50">
-                                <p class="text-gray-400 text-sm">Specialized in web development, user interface design, and software engineering principles.</p>
-                                
-                                <div class="mt-4">
-                                    <h4 class="text-sm font-medium text-light mb-2">Skills Gained:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span class="bg-dark-surface text-xs py-1 px-2 rounded text-gray-300 border border-gray-700/50 hover:bg-primary/10 hover:border-primary/30 hover:text-primary transition-all duration-300 cursor-default">JavaScript</span>
-                                        <span class="bg-dark-surface text-xs py-1 px-2 rounded text-gray-300 border border-gray-700/50 hover:bg-primary/10 hover:border-primary/30 hover:text-primary transition-all duration-300 cursor-default">Web Development</span>
-                                        <span class="bg-dark-surface text-xs py-1 px-2 rounded text-gray-300 border border-gray-700/50 hover:bg-primary/10 hover:border-primary/30 hover:text-primary transition-all duration-300 cursor-default">Data Structures</span>
-                                        <span class="bg-dark-surface text-xs py-1 px-2 rounded text-gray-300 border border-gray-700/50 hover:bg-primary/10 hover:border-primary/30 hover:text-primary transition-all duration-300 cursor-default">Algorithms</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="education-card bg-dark-card border-gray-700 shadow-lg group hover:border-primary/30 transition-all duration-300 hover:-translate-y-2 relative">
-                        <!-- Removing the timeline dot and mt-12 md:mt-16 classes -->
-                        <div class="education-header relative overflow-hidden">
-                            <div class="absolute -right-12 -top-12 w-24 h-24 bg-cyan-500/10 rounded-full blur-xl group-hover:bg-cyan-500/20 transition-all duration-300"></div>
-                            <h3 class="text-light group-hover:text-primary transition-colors duration-300">Data Science Certification</h3>
-                            <div class="flex items-center justify-between mt-2">
-                                <span class="education-year text-gray-400 flex items-center gap-2">
-                                    <i class="fas fa-calendar-alt text-primary/70"></i>
-                                    Jan - Jun 2025
-                                </span>
-                                <span class="bg-cyan-950/40 text-cyan-400 text-xs py-1 px-3 rounded-full">Certificate</span>
-                            </div>
-                        </div>
-                        <div class="education-body">
-                            <div class="flex items-center gap-3 mb-3">
-                                <div class="w-10 h-10 bg-cyan-950/40 rounded-full flex items-center justify-center text-cyan-400">
-                                    <i class="fas fa-certificate"></i>
-                                </div>
-                                <p class="education-institution text-primary font-semibold">TECHMINDZ</p>
-                            </div>
-                            <div class="mt-4 pt-4 border-t border-gray-700/50">
-                                <p class="text-gray-400 text-sm">Comprehensive training in data science methodologies, statistical analysis, and web visualization techniques.</p>
-                                
-                                <div class="mt-4">
-                                    <h4 class="text-sm font-medium text-light mb-2">Skills Gained:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span class="bg-dark-surface text-xs py-1 px-2 rounded text-gray-300 border border-gray-700/50 hover:bg-cyan-500/10 hover:border-cyan-500/30 hover:text-cyan-400 transition-all duration-300 cursor-default">Data Visualization</span>
-                                        <span class="bg-dark-surface text-xs py-1 px-2 rounded text-gray-300 border border-gray-700/50 hover:bg-cyan-500/10 hover:border-cyan-500/30 hover:text-cyan-400 transition-all duration-300 cursor-default">JavaScript Libraries</span>
-                                        <span class="bg-dark-surface text-xs py-1 px-2 rounded text-gray-300 border border-gray-700/50 hover:bg-cyan-500/10 hover:border-cyan-500/30 hover:text-cyan-400 transition-all duration-300 cursor-default">Python</span>
-                                        <span class="bg-dark-surface text-xs py-1 px-2 rounded text-gray-300 border border-gray-700/50 hover:bg-cyan-500/10 hover:border-cyan-500/30 hover:text-cyan-400 transition-all duration-300 cursor-default">D3.js</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- NumberFlow Continuous Stats Bar -->
+            <div class="hero-stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number" data-numberflow data-value="2" data-suffix="+">2+</div>
+                    <div class="stat-label">Years Software Dev</div>
                 </div>
-                
-                <!-- Future Education Card - Moved below both cards -->
-                <div class="education-card bg-dark-surface/50 border-dashed border-gray-700 shadow-lg group hover:border-primary/30 transition-all duration-300 hover:-translate-y-2 relative mt-12 flex flex-col items-center justify-center py-12 px-8 max-w-3xl mx-auto">
-                    <div class="absolute -z-10 inset-0 bg-gradient-to-br from-primary/5 to-cyan-500/5 opacity-30 rounded-lg"></div>
-                    <div class="w-20 h-20 rounded-full bg-dark-card flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-all duration-300 shadow-lg">
-                        <i class="fas fa-plus text-gray-400 group-hover:text-primary transition-colors duration-300 text-2xl"></i>
-                    </div>
-                    <h3 class="text-gray-300 group-hover:text-primary transition-colors duration-300 text-center font-medium text-xl mb-2">Continuing Education</h3>
-                    <p class="text-gray-500 text-center max-w-md">Always learning and growing with new certifications and courses to stay at the forefront of frontend development and web technologies.</p>
+                <div class="stat-box">
+                    <div class="stat-number" data-numberflow data-value="25" data-suffix="+">25+</div>
+                    <div class="stat-label">Shipped Applications</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" data-numberflow data-value="18" data-suffix="+">18+</div>
+                    <div class="stat-label">Core Tech Stack</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number" data-numberflow data-value="99.9" data-suffix="%">99.9%</div>
+                    <div class="stat-label">Uptime &amp; SLA Compliance</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work Experience Section -->
-    <section id="experience" class="relative bg-dark" style="padding: 80px 0;">
-        <!-- Background elements -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-5"></div>
-            <div class="absolute top-20 left-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl"></div>
-            <div class="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-cyan-500/5 blur-3xl"></div>
-        </div>
-
-        <div class="container relative z-10">
-            <h2 class="section-title text-light">Work Experience</h2>
-            <p class="section-subtitle text-center text-gray-400 max-w-2xl mx-auto mb-12">Hands-on freelance experience delivering web development, IT support, and data analytics remotely.</p>            <div class="max-w-5xl mx-auto">
-
-                <!-- Combined Experience Card -->
-                <div class="bg-dark-card border border-gray-700 rounded-xl p-7 hover:-translate-y-1 hover:border-primary/30 transition-all duration-300 group shadow-xl relative overflow-hidden">
-
-                    <!-- Dual glow -->
-                    <div class="absolute -left-10 -top-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/15 transition-all duration-300"></div>
-                    <div class="absolute -right-10 -bottom-10 w-40 h-40 rounded-full blur-3xl transition-all duration-300" style="background:rgba(6,182,212,0.08);"></div>
-
-                    <!-- Header -->
-                    <div class="flex items-start justify-between mb-5 relative">
-                        <div class="flex items-center gap-4">
-                            <!-- Triple overlapping icons -->
-                            <div class="flex -space-x-2">
-                                <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary text-base z-20 border-2 border-dark-card">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <div class="w-10 h-10 rounded-lg flex items-center justify-center text-base z-10 border-2 border-dark-card" style="background:rgba(6,182,212,0.1); color:#06b6d4;">
-                                    <i class="fas fa-headset"></i>
-                                </div>
-                                <div class="w-10 h-10 rounded-lg flex items-center justify-center text-base border-2 border-dark-card" style="background:rgba(234,179,8,0.1); color:#eab308;">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 class="text-light font-bold text-lg md:text-xl leading-tight">Software Developer — AI-Assisted Development</h3>
-                                <p class="text-sm font-medium mt-0.5" style="background: linear-gradient(90deg,#f59e0b,#06b6d4,#eab308); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Paid Client Projects &amp; Software Production</p>
-                            </div>
-                        </div>
-                        <span class="bg-green-500/10 text-green-400 text-xs py-1 px-3 rounded-full border border-green-500/20 whitespace-nowrap flex items-center gap-1.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse inline-block"></span>
-                            Current
-                        </span>
-                    </div>
-
-                    <!-- Meta row -->
-                    <div class="flex flex-wrap gap-4 mb-6 text-sm text-gray-400">
-                        <span class="flex items-center gap-1.5">
-                            <i class="fas fa-map-marker-alt text-primary/70 text-xs"></i>
-                            Doha, Qatar &nbsp;<span class="text-gray-600">·</span>&nbsp; Remote / In-Person
-                        </span>
-                        <span class="flex items-center gap-1.5">
-                            <i class="fas fa-calendar-alt text-primary/70 text-xs"></i>
-                            Jul 2024 – Present (2026)
-                        </span>
-                        <span class="flex items-center gap-1.5">
-                            <i class="fas fa-briefcase text-primary/70 text-xs"></i>
-                            Full-Stack / Software Engineer
-                        </span>
-                    </div>
-
-                    <!-- Three-column responsibilities -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                        <!-- Dev column -->
-                        <div class="bg-dark-surface/30 p-4 rounded-lg border border-gray-800 hover:border-primary/20 transition-all duration-300">
-                            <p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
-                                <i class="fas fa-code text-xs"></i> Production Software
-                            </p>
-                            <ul class="space-y-2 text-gray-400 text-xs">
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle text-primary mt-0.5 text-[10px] flex-shrink-0"></i>Engineered Warehouse &amp; Inventory Management platform in Next.js, TypeScript &amp; React.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle text-primary mt-0.5 text-[10px] flex-shrink-0"></i>Developed Node.js billing software with REST API integrations &amp; database validation.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle text-primary mt-0.5 text-[10px] flex-shrink-0"></i>Built custom e-commerce applications using JavaScript, HTML/CSS &amp; Liquid.</li>
-                            </ul>
-                        </div>
-                        <!-- IT column -->
-                        <div class="bg-dark-surface/30 p-4 rounded-lg border border-gray-800 hover:border-cyan-500/20 transition-all duration-300">
-                            <p class="text-xs font-semibold uppercase tracking-wider mb-2.5 flex items-center gap-1.5" style="color:#06b6d4;">
-                                <i class="fas fa-headset text-xs"></i> IT Support
-                            </p>
-                            <ul class="space-y-2 text-gray-400 text-xs">
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#06b6d4;"></i>Troubleshoots hardware, software &amp; LAN/WAN issues remotely.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#06b6d4;"></i>Configures Windows/Linux systems, routers, and peripheral devices.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#06b6d4;"></i>Handles ticketing, Active Directory, &amp; data backups.</li>
-                            </ul>
-                        </div>
-                        <!-- Data column -->
-                        <div class="bg-dark-surface/30 p-4 rounded-lg border border-gray-800 hover:border-yellow-500/20 transition-all duration-300">
-                            <p class="text-xs font-semibold uppercase tracking-wider mb-2.5 flex items-center gap-1.5" style="color:#eab308;">
-                                <i class="fas fa-chart-line text-xs"></i> Data Analytics
-                            </p>
-                            <ul class="space-y-2 text-gray-400 text-xs">
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#eab308;"></i>Creates dynamic Power BI and Tableau dashboards for analytics.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#eab308;"></i>Formulates complex SQL queries and cleans raw data using Python.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#eab308;"></i>Conducts statistical analysis to generate actionable insights.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Tags -->
-                    <div class="flex flex-wrap gap-2 pt-5 border-t border-gray-700/50">
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Next.js</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">React</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Python Flask</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Power BI</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">SQL</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Excel Analytics</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Networking</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Windows/Linux</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Help Desk</span>
-                    </div>
-                </div>
-
-                <!-- Technical Solutions Engineer Card -->
-                <div class="bg-dark-card border border-gray-700 rounded-xl p-7 hover:-translate-y-1 hover:border-cyan-500/30 transition-all duration-300 group shadow-xl relative overflow-hidden mt-6">
-
-                    <!-- Custom glow matching Technical color (Cyan/Teal) -->
-                    <div class="absolute -left-10 -top-10 w-40 h-40 bg-cyan-950/20 rounded-full blur-3xl group-hover:bg-cyan-900/30 transition-all duration-300"></div>
-
-                    <!-- Header -->
-                    <div class="flex items-start justify-between mb-5 relative">
-                        <div class="flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg border-2 border-dark-card" style="background:rgba(6,182,212,0.1); color:#06b6d4;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-light font-bold text-lg md:text-xl leading-tight">Technical Solutions Engineer</h3>
-                                <p class="text-sm text-cyan-400 font-medium mt-0.5">Private Technology Company</p>
-                            </div>
-                        </div>
-                        <span class="bg-cyan-500/10 text-cyan-400 text-xs py-1 px-3 rounded-full border border-cyan-500/20 whitespace-nowrap">
-                            Past Role
-                        </span>
-                    </div>
-
-                    <!-- Meta row -->
-                    <div class="flex flex-wrap gap-4 mb-6 text-sm text-gray-400">
-                        <span class="flex items-center gap-1.5">
-                            <i class="fas fa-map-marker-alt text-cyan-400/70 text-xs"></i>
-                            Bahrain &nbsp;<span class="text-gray-600">·</span>&nbsp; Remote
-                        </span>
-                        <span class="flex items-center gap-1.5">
-                            <i class="fas fa-calendar-alt text-cyan-400/70 text-xs"></i>
-                            Jul 2024 – Jul 2026
-                        </span>
-                        <span class="flex items-center gap-1.5">
-                            <i class="fas fa-briefcase text-cyan-400/70 text-xs"></i>
-                            Full-time
-                        </span>
-                    </div>
-
-                    <!-- Two-column responsibilities -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div class="bg-dark-surface/30 p-4 rounded-lg border border-gray-800 hover:border-cyan-500/20 transition-all duration-300">
-                            <p class="text-xs font-semibold uppercase tracking-wider mb-2.5 flex items-center gap-1.5" style="color:#06b6d4;">
-                                <i class="fas fa-tools text-xs"></i> Systems Support &amp; Integration
-                            </p>
-                            <ul class="space-y-2 text-gray-400 text-xs">
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#06b6d4;"></i>Diagnosed and resolved complex software integration, OS, and client-side database issues.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#06b6d4;"></i>Developed scripting utilities using Python and Bash to automate server and systems workflows.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#06b6d4;"></i>Configured routing protocols, firewalls, and active directory endpoints for business users.</li>
-                            </ul>
-                        </div>
-                        <div class="bg-dark-surface/30 p-4 rounded-lg border border-gray-800 hover:border-cyan-500/20 transition-all duration-300">
-                            <p class="text-xs font-semibold uppercase tracking-wider mb-2.5 flex items-center gap-1.5" style="color:#06b6d4;">
-                                <i class="fas fa-project-diagram text-xs"></i> Engineering &amp; Client Solutions
-                            </p>
-                            <ul class="space-y-2 text-gray-400 text-xs">
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#06b6d4;"></i>Collaborated with development teams to trace API anomalies and deploy product hotfixes.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#06b6d4;"></i>Authored deep technical runbooks, customer-facing tutorials, and integration docs.</li>
-                                <li class="flex items-start gap-1.5"><i class="fas fa-check-circle mt-0.5 text-[10px] flex-shrink-0" style="color:#06b6d4;"></i>Led client technical onboarding, ensuring smooth system rollouts and API connectivity.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Tags -->
-                    <div class="flex flex-wrap gap-2 pt-5 border-t border-gray-700/50">
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Technical Support</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Systems Integration</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Troubleshooting</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Linux/Windows Server</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">API Debugging</span>
-                        <span class="bg-dark-surface text-[10px] py-0.5 px-2 rounded text-gray-300 border border-gray-700/50">Shell Scripting</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills relative bg-dark">
+    <!-- Featured Projects Section -->
+    <section id="projects">
         <div class="container">
-            <h2 class="section-title text-light">My Skills</h2>
+            <h2 class="section-title">Featured Software Projects</h2>
+            <p class="section-subtitle">A collection of paid client systems, production PWAs, and full-stack web applications. Click any card for detailed architectural inspection.</p>
 
-            <!-- Skills Tab Filter -->
-            <div class="flex flex-wrap justify-center gap-3 mb-10">
-                <button id="skills-tab-all" onclick="filterSkills('all')" class="skills-tab-btn active-tab px-5 py-2 rounded-full text-sm font-medium border border-primary bg-primary/10 text-primary transition-all duration-300">All Skills</button>
-                <button id="skills-tab-dev" onclick="filterSkills('dev')" class="skills-tab-btn px-5 py-2 rounded-full text-sm font-medium border border-gray-600 text-gray-400 hover:border-primary hover:text-primary transition-all duration-300">Development</button>
-                <button id="skills-tab-it" onclick="filterSkills('it')" class="skills-tab-btn px-5 py-2 rounded-full text-sm font-medium border border-gray-600 text-gray-400 hover:border-primary hover:text-primary transition-all duration-300">IT Support</button>
-                <button id="skills-tab-data" onclick="filterSkills('data')" class="skills-tab-btn px-5 py-2 rounded-full text-sm font-medium border border-gray-600 text-gray-400 hover:border-primary hover:text-primary transition-all duration-300">Data Analytics</button>
-            </div>
-
-            <div class="skills-container">
-                <!-- Development Skills -->
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="dev">
-                    <div class="skill-icon text-primary group-hover:text-white group-hover:bg-primary rounded-full p-4 transition-all duration-300"><i class="fab fa-react"></i></div>
-                    <h3 class="text-light">Frontend Development</h3>
-                    <p class="text-gray-400">Next.js, React, HTML, CSS</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-primary" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="dev data">
-                    <div class="skill-icon text-primary group-hover:text-white group-hover:bg-primary rounded-full p-4 transition-all duration-300"><i class="fab fa-python"></i></div>
-                    <h3 class="text-light">Backend Development</h3>
-                    <p class="text-gray-400">Python Flask, Node.js, SQL</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-primary" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="dev">
-                    <div class="skill-icon text-primary group-hover:text-white group-hover:bg-primary rounded-full p-4 transition-all duration-300"><i class="fab fa-css3-alt"></i></div>
-                    <h3 class="text-light">CSS &amp; Styling</h3>
-                    <p class="text-gray-400">Tailwind, SASS, CSS-in-JS</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-primary" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="dev">
-                    <div class="skill-icon text-primary group-hover:text-white group-hover:bg-primary rounded-full p-4 transition-all duration-300"><i class="fas fa-mobile-alt"></i></div>
-                    <h3 class="text-light">Responsive Design</h3>
-                    <p class="text-gray-400">Mobile-first, Adaptive UI</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-primary" style="width: 85%"></div>
-                    </div>
-                </div>
-                
-                <!-- Data Analytics Skills -->
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="data">
-                    <div class="skill-icon text-primary group-hover:text-white group-hover:bg-primary rounded-full p-4 transition-all duration-300"><i class="fas fa-chart-bar"></i></div>
-                    <h3 class="text-light">Data Visualization</h3>
-                    <p class="text-gray-400">Power BI, Tableau, Excel</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-primary" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="data">
-                    <div class="skill-icon text-primary group-hover:text-white group-hover:bg-primary rounded-full p-4 transition-all duration-300"><i class="fas fa-brain"></i></div>
-                    <h3 class="text-light">Machine Learning</h3>
-                    <p class="text-gray-400">scikit-learn, Statistical Analysis</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-primary" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="data">
-                    <div class="skill-icon text-primary group-hover:text-white group-hover:bg-primary rounded-full p-4 transition-all duration-300"><i class="fas fa-filter"></i></div>
-                    <h3 class="text-light">Data Cleaning</h3>
-                    <p class="text-gray-400">Preprocessing, Wrangling &amp; Analysis</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-primary" style="width: 85%"></div>
-                    </div>
-                </div>
-
-                <!-- Shared Skills -->
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="dev it data">
-                    <div class="skill-icon text-primary group-hover:text-white group-hover:bg-primary rounded-full p-4 transition-all duration-300"><i class="fas fa-comments"></i></div>
-                    <h3 class="text-light">Communication</h3>
-                    <p class="text-gray-400">Team Collaboration, Client Support</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-primary" style="width: 90%"></div>
-                    </div>
-                </div>
-                <!-- IT Support Skills -->
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="it">
-                    <div class="skill-icon text-cyan-400 group-hover:text-white group-hover:bg-cyan-500 rounded-full p-4 transition-all duration-300"><i class="fas fa-tools"></i></div>
-                    <h3 class="text-light">Hardware Troubleshooting</h3>
-                    <p class="text-gray-400">PC Assembly, Diagnostics, Repair</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-cyan-500" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="it">
-                    <div class="skill-icon text-cyan-400 group-hover:text-white group-hover:bg-cyan-500 rounded-full p-4 transition-all duration-300"><i class="fas fa-network-wired"></i></div>
-                    <h3 class="text-light">Networking &amp; Infrastructure</h3>
-                    <p class="text-gray-400">LAN/WAN, TCP/IP, DNS, DHCP, VPN</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-cyan-500" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="it">
-                    <div class="skill-icon text-cyan-400 group-hover:text-white group-hover:bg-cyan-500 rounded-full p-4 transition-all duration-300"><i class="fab fa-windows"></i></div>
-                    <h3 class="text-light">OS Administration</h3>
-                    <p class="text-gray-400">Windows 10/11, Linux, Active Directory</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-cyan-500" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="it">
-                    <div class="skill-icon text-cyan-400 group-hover:text-white group-hover:bg-cyan-500 rounded-full p-4 transition-all duration-300"><i class="fas fa-headset"></i></div>
-                    <h3 class="text-light">Help Desk Support</h3>
-                    <p class="text-gray-400">Ticketing Systems, Remote Desktop, SLA</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-cyan-500" style="width: 88%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="it">
-                    <div class="skill-icon text-cyan-400 group-hover:text-white group-hover:bg-cyan-500 rounded-full p-4 transition-all duration-300"><i class="fas fa-shield-alt"></i></div>
-                    <h3 class="text-light">IT Security Basics</h3>
-                    <p class="text-gray-400">Antivirus, Firewall, Data Backup</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-cyan-500" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card bg-dark-card hover:scale-105 transition-transform duration-300 group shadow-lg border border-gray-700" data-skill-category="it">
-                    <div class="skill-icon text-cyan-400 group-hover:text-white group-hover:bg-cyan-500 rounded-full p-4 transition-all duration-300"><i class="fas fa-print"></i></div>
-                    <h3 class="text-light">Peripheral &amp; Device Setup</h3>
-                    <p class="text-gray-400">Printers, Scanners, CCTV, Projectors</p>
-                    <div class="skill-level bg-gray-700">
-                        <div class="skill-bar bg-cyan-500" style="width: 90%"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="languages-section backdrop-blur-sm bg-dark-surface/70 mt-12 border border-gray-700">
-                <h3 class="relative inline-block text-light">
-                    Languages
-                    <span class="absolute -bottom-1 left-0 w-full h-1 bg-primary rounded-full"></span>
-                </h3>
-                <div class="language-items">
-                    <div class="language-item hover:bg-dark-card transition-colors duration-300 border-gray-700">
-                        <span class="language-name flex items-center text-light">
-                             <span class="inline-block w-6 h-6 mr-2 rounded-full bg-primary/20 flex items-center justify-center text-primary text-xs">EN</span>
-                            English
-                        </span>
-                        <span class="language-level text-primary">Fluent</span>
-                    </div>
-                    <div class="language-item hover:bg-dark-card transition-colors duration-300 border-gray-700">
-                        <span class="language-name flex items-center text-light">
-                             <span class="inline-block w-6 h-6 mr-2 rounded-full bg-primary/20 flex items-center justify-center text-primary text-xs">ML</span>
-                            Malayalam
-                        </span>
-                        <span class="language-level text-primary">Native</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Decorative elements -->
-        <div class="absolute top-10 left-10 w-20 h-20 border-4 border-primary opacity-10 rounded-full -z-10"></div>
-        <div class="absolute bottom-10 right-10 w-32 h-32 border-8 border-cyan-900 opacity-10 rounded-full -z-10"></div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects relative bg-darker">
-        <div class="container">
-            <h2 class="section-title text-light">My Projects</h2>
-        
-            <!-- Project Filters -->
-            <div class="project-filters flex flex-wrap justify-center gap-3 mb-10">
+            <div class="filter-container">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="ui/ux">Web Development</button>
-                <button class="filter-btn" data-filter="it-support">IT Support</button>
+                <button class="filter-btn" data-filter="ui/ux">Web &amp; Full-Stack</button>
+                <button class="filter-btn" data-filter="it-support">IT Systems</button>
                 <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
             </div>
-            
+
             <div class="projects-grid">
-                <!-- Project: Mizan (Runway) -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="ui/ux">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/mizan.jpg" alt="Mizan Personal Finance Tracker Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Mizan (Runway)</div>
-                            <div class="project-actions">
-                                <a href="https://mizan-qa.vercel.app/" target="_blank" class="project-action-btn" title="View Live App">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-primary text-white text-xs py-1 px-3 rounded-full">PWA / Offline-First</div>
+                <!-- Project: Mizan -->
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-image">
+                        <img src="assets/images/mizan.jpg" alt="Mizan Expense Tracker PWA" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Mizan (Runway) — Expense Tracker</h3>
-                        <p class="text-gray-400">A smart, offline-first personal finance app acting as a "departures board for your money" with dynamic Safe-to-Spend allowances, visual budget pacing, and Clerk authentication.</p>
+                        <h3 class="project-title">Mizan (Runway) — Expense Tracker &amp; PWA</h3>
+                        <p class="project-desc">A smart offline-first financial application acting as a departures board for personal budgets. Built with Next.js 16, IndexedDB, and Serwist PWA.</p>
                         <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">Next.js 16</span>
-                            <span class="bg-amber-900/30 text-primary">Dexie (IndexedDB)</span>
-                            <span class="bg-amber-900/30 text-primary">Serwist PWA</span>
-                            <span class="bg-amber-900/30 text-primary">TypeScript</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2026</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-database text-primary"></i>
-                                <span>Local-First DB</span>
-                            </div>
+                            <span class="project-tag">Next.js 16</span>
+                            <span class="project-tag">IndexedDB</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">PWA</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 1: Oasis Horizon -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="ui/ux">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/oasishorizon.png" alt="Oasis Horizon Real Estate Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Oasis Horizon</div>
-                            <div class="project-actions">
-                                <a href="https://oasisbah.vercel.app/" target="_blank" class="project-action-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Shamsear" target="_blank" class="project-action-btn">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-primary text-white text-xs py-1 px-3 rounded-full">Featured</div>
+                <!-- Project: Warehouse Management -->
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio-preview.png" alt="Warehouse Management System" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Oasis Horizon - Real Estate</h3>
-                        <p class="text-gray-400">Luxury real estate website for Bahrain featuring elegant design, property listings, and interactive features using modern web technologies.</p>
+                        <h3 class="project-title">Warehouse &amp; Inventory Management Platform</h3>
+                        <p class="project-desc">Full-stack platform tracking real-time inventory, inbound shipments, and stock movements. Engineered with Next.js, TypeScript, React, and REST APIs.</p>
                         <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">React.js</span>
-                            <span class="bg-amber-900/30 text-primary">TailwindCSS</span>
-                            <span class="bg-amber-900/30 text-primary">Responsive Design</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-desktop text-primary"></i>
-                                <span>Frontend</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2: Sahara Mart -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="ui/ux">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/saharamart.png" alt="Sahara Mart Hypermarket Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Sahara Mart</div>
-                            <div class="project-actions">
-                                <a href="https://saharamart.vercel.app/" target="_blank" class="project-action-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Shamsear" target="_blank" class="project-action-btn">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Sahara Mart - Hypermarket</h3>
-                        <p class="text-gray-400">Modern e-commerce website for a hypermarket chain with product showcases, newsletter subscription, and customer testimonials.</p>
-                        <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">HTML/CSS</span>
-                            <span class="bg-amber-900/30 text-primary">JavaScript</span>
-                            <span class="bg-amber-900/30 text-primary">E-commerce</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-desktop text-primary"></i>
-                                <span>Frontend</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3: SS League -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="ui/ux">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/ssleague.png" alt="SS League Football Auction Platform Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">SS League</div>
-                            <div class="project-actions">
-                                <a href="https://ssleague.vercel.app/" target="_blank" class="project-action-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Shamsear" target="_blank" class="project-action-btn">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-primary text-white text-xs py-1 px-3 rounded-full">Featured</div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">SS League - Football Auction Platform</h3>
-                        <p class="text-gray-400">Interactive football auction platform for building dream teams through strategic bidding. Features player stats, team management, season archives, and real-time auction functionality.</p>
-                        <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">Next.js</span>
-                            <span class="bg-amber-900/30 text-primary">TailwindCSS</span>
-                            <span class="bg-amber-900/30 text-primary">Real-time Features</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-desktop text-primary"></i>
-                                <span>Frontend</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <!-- Project 5: BrainQuest -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="ui/ux">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/brainquest.png" alt="BrainQuest Futuristic Quiz Game Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">BrainQuest</div>
-                            <div class="project-actions">
-                                <a href="http://brainquests.vercel.app/" target="_blank" class="project-action-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Shamsear/brainquest" target="_blank" class="project-action-btn">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-primary text-white text-xs py-1 px-3 rounded-full">Featured</div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">BrainQuest - Futuristic Quiz Game</h3>
-                        <p class="text-gray-400">Designed a one-of-a-kind, immersive quiz experience with sci-fi-inspired UI using TailwindCSS and Framer Motion for smooth transitions and micro-interactions.</p>
-                        <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">TailwindCSS</span>
-                            <span class="bg-amber-900/30 text-primary">Framer Motion</span>
-                            <span class="bg-amber-900/30 text-primary">JavaScript</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-desktop text-primary"></i>
-                                <span>Frontend</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <!-- Project 7: Distortion Studio -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="ui/ux">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/distortion.png" alt="Distortion Studio Creative Agency Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Distortion Studio</div>
-                            <div class="project-actions">
-                                <a href="https://distortionstudio.vercel.app/" target="_blank" class="project-action-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Shamsear" target="_blank" class="project-action-btn">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-primary text-white text-xs py-1 px-3 rounded-full">Featured</div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Distortion Studio - Creative Agency</h3>
-                        <p class="text-gray-400">Anti-pattern design system for creative disruption. Features brutalist aesthetics, kinetic elements, and experimental web design showcasing e-commerce, fintech, and cultural editorial projects.</p>
-                        <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">Next.js</span>
-                            <span class="bg-amber-900/30 text-primary">Brutalism</span>
-                            <span class="bg-amber-900/30 text-primary">WebGL</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-desktop text-primary"></i>
-                                <span>Frontend</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 8: Atelier Noir -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="ui/ux">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/atelier.png" alt="Atelier Noir Fashion Boutique Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Atelier Noir</div>
-                            <div class="project-actions">
-                                <a href="https://ateliernoir.vercel.app/" target="_blank" class="project-action-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Shamsear" target="_blank" class="project-action-btn">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-primary text-white text-xs py-1 px-3 rounded-full">Featured</div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Atelier Noir - Fashion Boutique</h3>
-                        <p class="text-gray-400">Avant-garde fashion website for luxury modest wear. Features elegant design with collections showcase, sustainable fashion focus, and sophisticated Dubai-based boutique experience.</p>
-                        <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">React.js</span>
-                            <span class="bg-amber-900/30 text-primary">TailwindCSS</span>
-                            <span class="bg-amber-900/30 text-primary">Luxury Design</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-desktop text-primary"></i>
-                                <span>Frontend</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 9: DevAI -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="ui/ux">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/devai.png" alt="DevAI AI Development Platform Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">DevAI</div>
-                            <div class="project-actions">
-                                <a href="https://devais.vercel.app/" target="_blank" class="project-action-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/Shamsear" target="_blank" class="project-action-btn">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-primary text-white text-xs py-1 px-3 rounded-full">Featured</div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">DevAI - AI Development Platform</h3>
-                        <p class="text-gray-400">AI-powered development platform landing page featuring context-aware code generation, real-time collaboration, and waitlist functionality. Showcases modern SaaS design patterns and user engagement strategies.</p>
-                        <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">Next.js</span>
-                            <span class="bg-amber-900/30 text-primary">React</span>
-                            <span class="bg-amber-900/30 text-primary">SaaS Design</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-desktop text-primary"></i>
-                                <span>Frontend</span>
-                            </div>
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">PostgreSQL</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- IT Project 1: Help Desk Ticketing System -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="it-support">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/helpdesk_dashboard.jpg" alt="Help Desk Ticketing System Dashboard Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Help Desk System</div>
-                        </div>
-                        <div class="absolute top-4 right-4 text-white text-xs py-1 px-3 rounded-full" style="background: linear-gradient(135deg, #0ea5e9, #06b6d4);">IT Support</div>
+                <!-- Project: Node Billing Software -->
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-image">
+                        <img src="assets/images/saharamart.png" alt="Billing Software Application" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Help Desk Ticketing System</h3>
-                        <p class="text-gray-400">A full-featured IT support ticketing dashboard for managing end-user requests. Supports ticket creation, priority assignment (Critical / High / Medium / Low), status tracking (Open / In Progress / Resolved), SLA timers, and technician assignment — built with a clean dark UI.</p>
+                        <h3 class="project-title">Node.js Enterprise Billing Software</h3>
+                        <p class="project-desc">Practical billing and invoice management application handling automated calculations, data validation, customer checkout, and API database integration.</p>
                         <div class="project-tags">
-                            <span class="bg-cyan-900/40 text-cyan-400">HTML/CSS/JS</span>
-                            <span class="bg-cyan-900/40 text-cyan-400">Help Desk</span>
-                            <span class="bg-cyan-900/40 text-cyan-400">SLA Management</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-cyan-400"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-headset text-cyan-400"></i>
-                                <span>IT Support</span>
-                            </div>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">REST APIs</span>
+                            <span class="project-tag">SQL</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- IT Project 2: Network & IT Asset Monitor -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="it-support">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/network_monitor.jpg" alt="Network and IT Asset Monitor Dashboard Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Network Monitor</div>
-                        </div>
-                        <div class="absolute top-4 right-4 text-white text-xs py-1 px-3 rounded-full" style="background: linear-gradient(135deg, #0ea5e9, #06b6d4);">IT Support</div>
+                <!-- Project: SS League -->
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-image">
+                        <img src="assets/images/ssleague.png" alt="SS League Football Auction" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Network &amp; IT Asset Monitor</h3>
-                        <p class="text-gray-400">An IT asset and network monitoring dashboard that tracks all devices on a LAN — displaying hostname, IP address, OS, online/offline status, and last-seen timestamps. Includes a live bandwidth chart, alert notifications for offline nodes, and an exportable device inventory report.</p>
+                        <h3 class="project-title">SS League — Football Auction Platform</h3>
+                        <p class="project-desc">Real-time football fantasy auction platform with live bidding engines, squad budget constraints, and historical performance tracking.</p>
                         <div class="project-tags">
-                            <span class="bg-cyan-900/40 text-cyan-400">Networking</span>
-                            <span class="bg-cyan-900/40 text-cyan-400">Asset Management</span>
-                            <span class="bg-cyan-900/40 text-cyan-400">LAN/WAN</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-cyan-400"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-network-wired text-cyan-400"></i>
-                                <span>IT Support</span>
-                            </div>
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">TailwindCSS</span>
+                            <span class="project-tag">Real-time State</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Data Project 1: AI Job Trends -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="data-analytics">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/ai_job_trends.svg" alt="AI Job Trends Dashboard Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Data Visualization</div>
-                            <div class="project-actions">
-                                <a href="assets/extras/AI Job Trends.pbix" target="_blank" class="project-action-btn" title="Download Power BI Report">
-                                    <i class="fas fa-file-download"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 text-white text-xs py-1 px-3 rounded-full bg-gradient-to-r from-primary to-orange-500">Data Analytics</div>
+                <!-- Project: Oasis Horizon -->
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-image">
+                        <img src="assets/images/oasishorizon.png" alt="Oasis Horizon Real Estate" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">AI Job Trends Dashboard</h3>
-                        <p class="text-gray-400">A comprehensive Power BI analysis of artificial intelligence job market trends, demand details, and salary insights across multiple industries.</p>
+                        <h3 class="project-title">Oasis Horizon — Luxury Real Estate</h3>
+                        <p class="project-desc">High-end real estate web portal featuring luxury property galleries, client-side dynamic search, and responsive layout architecture.</p>
                         <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">Power BI</span>
-                            <span class="bg-amber-900/30 text-primary">Data Analysis</span>
-                            <span class="bg-amber-900/30 text-primary">Market Trends</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-chart-line text-primary"></i>
-                                <span>4+ Dashboards</span>
-                            </div>
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">TailwindCSS</span>
+                            <span class="project-tag">Framer Motion</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Data Project 2: Sales Insights Dashboard -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="data-analytics">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/sales.svg" alt="Sales Insights Dashboard Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Data Visualization</div>
-                            <div class="project-actions">
-                                <a href="https://github.com/Shamsear/sales" target="_blank" class="project-action-btn" title="View Repository">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 text-white text-xs py-1 px-3 rounded-full bg-gradient-to-r from-primary to-orange-500">Data Analytics</div>
+                <!-- Project: BrainQuest -->
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-image">
+                        <img src="assets/images/brainquest.png" alt="BrainQuest Sci-Fi Quiz Game" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Sales Insights Dashboard</h3>
-                        <p class="text-gray-400">An interactive Power BI dashboard providing comprehensive sales analytics, revenue tracking, and business intelligence metrics.</p>
+                        <h3 class="project-title">BrainQuest — Sci-Fi Interactive Quiz</h3>
+                        <p class="project-desc">Immersive futuristic quiz game with micro-interactions, sound feedback, timer challenges, and score analytics.</p>
                         <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">Power BI</span>
-                            <span class="bg-amber-900/30 text-primary">Sales Analytics</span>
-                            <span class="bg-amber-900/30 text-primary">Business Intelligence</span>
-                        </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-chart-bar text-primary"></i>
-                                <span>10+ Reports</span>
-                            </div>
+                            <span class="project-tag">TailwindCSS</span>
+                            <span class="project-tag">Framer Motion</span>
+                            <span class="project-tag">JavaScript</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Data Project 3: Hanao Data Analysis -->
-                <div class="project-card group bg-dark-card border border-gray-700" data-category="data-analytics">
-                    <div class="project-image overflow-hidden">
-                        <img src="assets/images/hanao.svg" alt="Hanao Data Analysis Preview" loading="lazy" decoding="async">
-                        <div class="project-overlay">
-                            <div class="project-category">Data Analysis</div>
-                            <div class="project-actions">
-                                <a href="https://github.com/Shamsear" target="_blank" class="project-action-btn" title="View Repository">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 right-4 text-white text-xs py-1 px-3 rounded-full bg-gradient-to-r from-primary to-orange-500">Data Analytics</div>
+                <!-- Project: Help Desk -->
+                <div class="project-card" data-category="it-support">
+                    <div class="project-image">
+                        <img src="assets/images/helpdesk_dashboard.jpg" alt="Help Desk Ticketing Dashboard" loading="lazy">
                     </div>
                     <div class="project-info">
-                        <h3 class="group-hover:text-primary transition-colors duration-300 text-light">Hanao Data Analysis</h3>
-                        <p class="text-gray-400">Excel-based data analysis project featuring advanced formulas, pivot tables, and visualizations for retail business operations.</p>
+                        <h3 class="project-title">Enterprise Help Desk &amp; SLA Ticketing</h3>
+                        <p class="project-desc">Full-featured IT support dashboard managing end-user tickets, priority escalation, technician assignments, and SLA compliance timers.</p>
                         <div class="project-tags">
-                            <span class="bg-amber-900/30 text-primary">Excel</span>
-                            <span class="bg-amber-900/30 text-primary">Data Analysis</span>
-                            <span class="bg-amber-900/30 text-primary">Retail Insights</span>
+                            <span class="project-tag">IT Support</span>
+                            <span class="project-tag">SLA Management</span>
+                            <span class="project-tag">Help Desk</span>
                         </div>
-                        <div class="project-details">
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-calendar-alt text-primary"></i>
-                                <span>2025</span>
-                            </div>
-                            <div class="project-stat text-gray-400">
-                                <i class="fas fa-database text-primary"></i>
-                                <span>500+ Records</span>
-                            </div>
+                    </div>
+                </div>
+
+                <!-- Project: Network Monitor -->
+                <div class="project-card" data-category="it-support">
+                    <div class="project-image">
+                        <img src="assets/images/network_monitor.jpg" alt="Network Monitor" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Network &amp; IT Asset Monitor</h3>
+                        <p class="project-desc">IT infrastructure dashboard tracking connected LAN devices, IP allocations, node latency, and exportable inventory logs.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Networking</span>
+                            <span class="project-tag">LAN/WAN</span>
+                            <span class="project-tag">Asset Tracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: AI Job Trends -->
+                <div class="project-card" data-category="data-analytics">
+                    <div class="project-image">
+                        <img src="assets/images/ai_job_trends.svg" alt="AI Job Trends Analytics" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI Job Market Trends Power BI Analytics</h3>
+                        <p class="project-desc">Comprehensive Power BI analysis examining global AI hiring patterns, salary metrics, and industry demand distributions.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">DAX</span>
+                            <span class="project-tag">Data Modeling</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Decorative elements -->
-        <div class="hidden lg:block absolute top-40 right-10 w-24 h-24 bg-cyan-950 opacity-20 rounded-full -z-10"></div>
-        <div class="hidden lg:block absolute bottom-40 left-10 w-32 h-32 bg-primary opacity-10 rounded-full -z-10"></div>
-        <div class="hidden lg:block absolute top-1/4 left-1/4 w-16 h-16 bg-yellow-700 opacity-10 rounded-full -z-10"></div>
+    </section>
+
+    <!-- AI Code Validation Workflow Section -->
+    <section id="validation" style="background: var(--bg-surface);">
+        <div class="container">
+            <h2 class="section-title">AI-Native Workflow &amp; Code Validation</h2>
+            <p class="section-subtitle">How I leverage modern AI coding assistants (Cursor, Claude Code, Codex, Copilot) as force multipliers while enforcing strict engineering standards.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <div style="padding: 1.5rem; background: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+                    <div style="color: var(--accent); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-check-double"></i></div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">1. Static Analysis &amp; Type Safety</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                        Enforcing strict TypeScript compilation (<code style="color: var(--accent);">tsc --noEmit</code>) and ESLint rules to prevent silent type coercions, missing parameters, or improper API return schemas.
+                    </p>
+                </div>
+
+                <div style="padding: 1.5rem; background: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+                    <div style="color: var(--accent); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-vial"></i></div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">2. Unit &amp; Integration Testing</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                        Executing automated unit tests (Jest/Vitest) and verifying API contracts. Manually testing edge cases (network timeouts, empty arrays, null values) instead of assuming AI output works.
+                    </p>
+                </div>
+
+                <div style="padding: 1.5rem; background: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+                    <div style="color: var(--accent); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-search-code"></i></div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">3. Line-by-Line Code Review</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                        Inspecting generated code for memory leaks, unhandled async promise rejections, security vulnerabilities, or unnecessary bloat before committing changes to Git.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-subtitle">Core frameworks, languages, databases, and development tooling.</p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; max-width: 800px; margin: 0 auto 3rem auto; justify-content: center;">
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface); border-color: var(--border-strong); color: var(--accent);">JavaScript / TypeScript</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface);">React &amp; Next.js</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface);">Node.js &amp; Express</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface);">Python &amp; Flask / FastAPI</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface);">PostgreSQL / SQL</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface);">Tailwind CSS</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface); border-color: var(--border-strong); color: var(--accent);">Cursor / Claude Code / Codex</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface);">Git &amp; GitHub Workflows</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface);">Power BI &amp; Analytics</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface);">Shopify Liquid</span>
+                <span class="project-tag" style="font-size: 0.9rem; padding: 0.4rem 0.8rem; background: var(--bg-surface);">Linux &amp; Windows Admin</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" style="background: var(--bg-surface);">
+        <div class="container">
+            <h2 class="section-title">Experience &amp; Education</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 2.5rem;">
+                <div style="padding: 1.75rem; background: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.15rem; color: var(--accent);">Software Developer — AI-Assisted</h3>
+                        <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-tertiary);">Jul 2024 – Present</span>
+                    </div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Doha, Qatar · Paid Projects &amp; Software Production</div>
+                    <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li>Built &amp; deployed paid applications including a Next.js/TypeScript Warehouse Management platform and Node.js Billing Software.</li>
+                        <li>Customized Shopify e-commerce platforms using Liquid, JavaScript, and HTML/CSS.</li>
+                        <li>Leveraged AI coding assistants (Cursor, Claude Code, Codex) while reviewing, testing, and validating generated code.</li>
+                    </ul>
+                </div>
+
+                <div style="padding: 1.75rem; background: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.15rem; color: var(--text-primary);">B.E. Computer Science &amp; Engineering</h3>
+                        <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-tertiary);">2020 – 2024</span>
+                    </div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">P.A. College of Engineering · CGPA: 7.4/10</div>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                        Graduated with a solid foundation in computer science, web development, data structures, algorithms, and software design principles.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact relative bg-dark">
+    <section id="contact">
         <div class="container">
-            <h2 class="section-title text-light">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info transform hover:-translate-y-2 transition-transform duration-300 bg-dark-card border border-gray-700 shadow-lg">
-                    <div class="info-header">
-                        <div class="info-icon">
-                            <i class="fas fa-paper-plane animate-pulse-slow"></i>
-                        </div>
-                        <h3 class="text-light">Contact Information</h3>
-                        <p class="text-gray-400 text-sm">Feel free to reach out. I'm always open to discussing new projects, opportunities, and partnerships.</p>
-                    </div>
-                    
-                    <div class="info-details">
-                        <div class="info-item hover:translate-x-2 transition-transform duration-300">
-                            <div class="info-item-icon text-primary">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Based in Doha, Qatar with a valid QID and transferable NOC. Available for immediate joining as a Junior Software Engineer.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+                <div style="padding: 2rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem;">Contact Information</h3>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-glow); color: var(--accent); display: flex; align-items: center; justify-content: center;">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="info-item-content">
-                                <span class="info-label text-gray-400">Email</span>
-                                <p><a href="mailto:shamsear@gmail.com" class="text-light hover:text-primary transition-colors">shamsear@gmail.com</a></p>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-tertiary); text-transform: uppercase;">Email</div>
+                                <a href="mailto:shamsear@gmail.com" style="color: var(--text-primary); text-decoration: none; font-weight: 500;">shamsear@gmail.com</a>
                             </div>
                         </div>
-                        <div class="info-item hover:translate-x-2 transition-transform duration-300">
-                            <div class="info-item-icon text-primary">
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-glow); color: var(--accent); display: flex; align-items: center; justify-content: center;">
                                 <i class="fas fa-phone"></i>
                             </div>
-                            <div class="info-item-content">
-                                <span class="info-label text-gray-400">Phone</span>
-                                <p><a href="tel:+97470485214" class="text-light hover:text-primary transition-colors">+974 70485214</a></p>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-tertiary); text-transform: uppercase;">Phone / WhatsApp</div>
+                                <span style="color: var(--text-primary); font-weight: 500;">+974 70485214</span>
                             </div>
                         </div>
-                        <div class="info-item hover:translate-x-2 transition-transform duration-300">
-                            <div class="info-item-icon" style="color: #25d366;">
-                                <i class="fab fa-whatsapp"></i>
-                            </div>
-                            <div class="info-item-content">
-                                <span class="info-label text-gray-400">WhatsApp</span>
-                                <p><a href="https://wa.me/97470485214" target="_blank" class="text-light hover:text-green-400 transition-colors">+974 70485214</a></p>
-                            </div>
-                        </div>
-                        <div class="info-item hover:translate-x-2 transition-transform duration-300">
-                            <div class="info-item-icon text-primary">
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-glow); color: var(--accent); display: flex; align-items: center; justify-content: center;">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="info-item-content">
-                                <span class="info-label text-gray-400">Location</span>
-                                <p class="text-light">Doha, Qatar &nbsp;<span class="text-xs text-green-400 font-medium">(Available Immediately)</span></p>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-tertiary); text-transform: uppercase;">Location</div>
+                                <span style="color: var(--text-primary); font-weight: 500;">Doha, Qatar (Immediate Joiner)</span>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="social-links-container">
-                        <h4 class="text-sm font-medium mb-3 text-gray-400">Connect with me</h4>
-                        <div class="social-links">
-                            <a href="https://github.com/Shamsear" target="_blank" class="hover:rotate-12 transition-transform duration-300 hover:bg-gray-800 bg-dark-surface text-light">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/shamsear/" target="_blank" class="hover:rotate-12 transition-transform duration-300 hover:bg-amber-500 bg-dark-surface text-light">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.instagram.com/shamsear_ebrahim/" target="_blank" class="hover:rotate-12 transition-transform duration-300 hover:bg-amber-400 bg-dark-surface text-light">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://wa.me/97470485214" target="_blank" class="hover:rotate-12 transition-transform duration-300 bg-dark-surface text-light" onmouseover="this.style.backgroundColor='#25d366'" onmouseout="this.style.backgroundColor=''">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form shadow-lg backdrop-blur-sm bg-dark-card/90 border border-gray-700">
-                    <form id="contactForm" class="space-y-4">
-                        <div class="form-row">
-                            <div class="form-group flex-1">
-                                <div class="relative">
-                                    <input type="text" id="name" name="name" placeholder=" " required class="peer w-full pt-5 pb-2 px-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-dark-surface text-light">
-                                    <label for="name" class="absolute left-3 top-2 text-gray-400 text-xs transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="form-group flex-1">
-                                <div class="relative">
-                                    <input type="email" id="email" name="email" placeholder=" " required class="peer w-full pt-5 pb-2 px-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-dark-surface text-light">
-                                    <label for="email" class="absolute left-3 top-2 text-gray-400 text-xs transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary">Your Email</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="relative">
-                                <input type="text" id="subject" name="subject" placeholder=" " required class="peer w-full pt-5 pb-2 px-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-dark-surface text-light">
-                                <label for="subject" class="absolute left-3 top-2 text-gray-400 text-xs transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary">Subject</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="relative">
-                                <textarea id="message" name="message" placeholder=" " required class="peer w-full pt-5 pb-2 px-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-dark-surface text-light min-h-[150px] resize-none"></textarea>
-                                <label for="message" class="absolute left-3 top-2 text-gray-400 text-xs transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary">Your Message</label>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn primary-btn w-full flex items-center justify-center gap-2 group">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform duration-300"></i>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button onclick="copyContactDetail('shamsear@gmail.com', 'Email')" class="btn-primary" style="flex: 1; justify-content: center;">
+                            <i class="fas fa-copy"></i> Copy Email
                         </button>
-                    </form>
+                    </div>
                 </div>
+
+                <!-- Contact Form -->
+                <form id="contactForm" style="padding: 2rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); display: flex; flex-direction: column; gap: 1rem;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Send a Message</h3>
+                    
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.4rem;">Name</label>
+                        <input type="text" id="name" required style="width: 100%; padding: 0.75rem; background: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary);">
+                    </div>
+
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.4rem;">Email</label>
+                        <input type="email" id="email" required style="width: 100%; padding: 0.75rem; background: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary);">
+                    </div>
+
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.4rem;">Subject</label>
+                        <input type="text" id="subject" required style="width: 100%; padding: 0.75rem; background: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary);">
+                    </div>
+
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.4rem;">Message</label>
+                        <textarea id="message" rows="4" required style="width: 100%; padding: 0.75rem; background: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="justify-content: center; margin-top: 0.5rem;">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
-        </div>
-        
-        <!-- Decorative elements -->
-        <div class="hidden md:block absolute top-20 left-10 w-40 h-40 bg-gray-900 rounded-full opacity-10 -z-10"></div>
-        <div class="hidden md:block absolute bottom-20 right-10 w-60 h-60 bg-primary rounded-full opacity-10 -z-10"></div>
-        <div class="hidden md:block absolute top-1/3 right-1/4 w-12 h-12 bg-yellow-700 rounded-full opacity-10 -z-10"></div>
-        <div class="hidden md:block absolute bottom-1/4 left-1/3 w-24 h-24 bg-gray-800 rounded-full opacity-10 -z-10"></div>
-        
-        <!-- Animated pattern background -->
-        <div class="hidden lg:block absolute inset-0 -z-20 opacity-5">
-            <div class="pattern-dots"></div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-darker relative overflow-hidden">
-        <div class="container py-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
-                <div class="text-white text-2xl font-bold">
-                    Shamsear Ebrahim
-                    <div class="h-1 w-20 bg-primary mt-2 rounded-full"></div>
-                </div>
-                <div class="flex gap-4">
-                    <a href="https://github.com/Shamsear" target="_blank" class="text-white hover:text-primary transition-colors duration-300">
-                        <i class="fab fa-github text-2xl"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/shamsear/" target="_blank" class="text-white hover:text-primary transition-colors duration-300">
-                        <i class="fab fa-linkedin text-2xl"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500">&copy; 2025 Shamsear Ebrahim. All Rights Reserved.</p>
-                <div class="flex gap-4 mt-4 md:mt-0">
-                    <a href="#home" class="text-gray-500 hover:text-primary transition-colors duration-300">Home</a>
-                    <a href="#about" class="text-gray-500 hover:text-primary transition-colors duration-300">About</a>
-                    <a href="#projects" class="text-gray-500 hover:text-primary transition-colors duration-300">Projects</a>
-                    <a href="#contact" class="text-gray-500 hover:text-primary transition-colors duration-300">Contact</a>
-                </div>
-            </div>
+    <footer style="padding: 2rem 0; background: var(--bg-page); text-align: center; border-top: 1px solid var(--border-subtle); font-size: 0.85rem; color: var(--text-tertiary);">
+        <div class="container">
+            <p>© 2026 Shamsear Ebrahim. All Rights Reserved. · Doha, Qatar</p>
         </div>
-        
-        <!-- Decorative elements -->
-        <div class="absolute top-0 left-0 w-40 h-40 bg-primary opacity-10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-        <div class="absolute bottom-0 right-0 w-60 h-60 bg-primary opacity-5 rounded-full translate-x-1/3 translate-y-1/3"></div>
     </footer>
 
+    <!-- Scripts -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/numberflow.js"></script>
     <script src="assets/js/cube-motion.js"></script>
     <script src="assets/js/project-modal.js"></script>
-    <script src="assets/js/tailwind-components.js"></script>
-    <script>
-        // ── Skills Tab Filter ──────────────────────────────────────────
-        function filterSkills(category) {
-            const cards = document.querySelectorAll('[data-skill-category]');
-            const buttons = document.querySelectorAll('.skills-tab-btn');
-
-            // Update button styles
-            buttons.forEach(btn => {
-                btn.classList.remove('active-tab', 'border-primary', 'bg-primary/10', 'text-primary');
-                btn.classList.add('border-gray-600', 'text-gray-400');
-            });
-            const activeBtn = document.getElementById(
-                category === 'all' ? 'skills-tab-all' :
-                category === 'dev' ? 'skills-tab-dev' : 
-                category === 'it' ? 'skills-tab-it' : 'skills-tab-data'
-            );
-            if (activeBtn) {
-                activeBtn.classList.add('active-tab', 'border-primary', 'bg-primary/10', 'text-primary');
-                activeBtn.classList.remove('border-gray-600', 'text-gray-400');
-            }
-
-            // Show / hide cards with fade
-            cards.forEach(card => {
-                const categories = (card.dataset.skillCategory || '').split(' ');
-                const isMatched = (category === 'all' || categories.includes(category));
-                
-                if (isMatched) {
-                    card.style.display = '';
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(10px)';
-                    setTimeout(() => {
-                        card.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    }, 30);
-                } else {
-                    card.style.transition = 'opacity 0.2s ease';
-                    card.style.opacity = '0';
-                    setTimeout(() => { card.style.display = 'none'; }, 220);
-                }
-            });
-        }
-    </script>
-    <script>
-        // Force dark mode
-        document.documentElement.classList.add('dark');
-        
-        // Remove any light mode classes if they exist
-        document.documentElement.classList.remove('light');
-        
-        // Prevent switching back to light mode
-        const forceDarkMode = () => {
-            document.documentElement.classList.add('dark');
-            document.documentElement.classList.remove('light');
-            document.body.classList.add('bg-dark', 'text-light');
-            document.body.classList.remove('bg-white', 'text-dark');
-            
-            // Ensure header stays dark
-            const header = document.querySelector('header');
-            if (header) {
-                header.classList.remove('bg-white/90');
-                header.classList.add('bg-darker/90', 'backdrop-blur-sm');
-            }
-        };
-        
-        // Run initially
-        forceDarkMode();
-        
-        // Also run periodically to ensure dark mode stays
-        setInterval(forceDarkMode, 1000);
-        
-        // Override any scroll event handlers that might change header color
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for any other scripts to load
-            setTimeout(() => {
-                // Get the original scroll event if it exists
-                const originalOnScroll = window.onscroll;
-                
-                // Override the scroll event
-                window.onscroll = function(e) {
-                    // Call the original handler if it exists
-                    if (typeof originalOnScroll === 'function') {
-                        originalOnScroll(e);
-                    }
-                    
-                    // Force the header to stay dark
-                    const header = document.querySelector('header');
-                    if (header) {
-                        header.classList.remove('bg-white/90');
-                        header.classList.add('bg-darker/90', 'backdrop-blur-sm');
-                    }
-                };
-                
-                // Also handle any existing event listeners
-                const scrollHandler = () => {
-                    const header = document.querySelector('header');
-                    if (header) {
-                        header.classList.remove('bg-white/90');
-                        header.classList.add('bg-darker/90', 'backdrop-blur-sm');
-                    }
-                };
-                
-                // Add our scroll handler
-                window.addEventListener('scroll', scrollHandler);
-                
-                // Initial call to ensure header is dark
-                scrollHandler();
-            }, 500);
-        });
-    </script>
 </body>
-</html> 
+</html>
