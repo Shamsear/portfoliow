@@ -307,7 +307,7 @@ nav.minimal-nav {
     height: 96px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 75%;
+    object-position: 60% -15%;
     border: 2px solid var(--accent-gold);
     box-shadow: 0 0 24px rgba(245, 158, 11, 0.25);
     margin-top: 1.25rem;
