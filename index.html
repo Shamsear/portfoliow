@@ -4,40 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shamsear Ebrahim — Full-Stack &amp; AI-Native Software Engineer</title>
-    <meta name="description" content="Full-Stack Engineer based in Doha, Qatar. Specializing in Next.js, React, Node.js, TypeScript, Python, and AI-assisted workflows.">
+    <meta name="description" content="Full-Stack Engineer based in Doha, Qatar. Next.js, React, Node.js, TypeScript, Python, and AI coding workflows.">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     
-    <!-- Typography & Icons -->
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
-    <!-- CSS Stylesheet -->
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
-            emailjs.init("Nb8ThHEgrWHlteSAX");
-        })();
+        (function() { emailjs.init("Nb8ThHEgrWHlteSAX"); })();
     </script>
 </head>
 <body>
-    <!-- Page Loader Overlay -->
+    <!-- Loader -->
     <div class="page-loader">
         <div style="text-align: center;">
-            <div style="font-family: var(--font-mono); font-size: 2rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem; letter-spacing: -0.05em;">{SE}</div>
-            <div style="font-size: 0.85rem; color: var(--text-secondary); font-family: var(--font-mono); letter-spacing: 0.05em;">INITIALIZING WORKSPACE...</div>
+            <div style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 700; color: var(--accent-gold);">{SE}</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 0.3rem;">Loading portfolio…</div>
         </div>
     </div>
 
-    <!-- Floating Island Navigation -->
+    <!-- Navigation -->
     <header>
-        <nav class="island-nav">
+        <nav class="minimal-nav">
             <a href="#home" class="logo-container">
                 <div class="logo-icon">{SE}</div>
                 <span class="logo-text">Shamsear Ebrahim</span>
@@ -45,459 +43,226 @@
             
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#validation" class="nav-link">AI Workflow</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#workflow" class="nav-link">AI Workflow</a></li>
+                <li><a href="#skills" class="nav-link">Skills &amp; Exp</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             
-            <div style="display: flex; align-items: center; gap: 0.75rem;">
-                <a href="#contact" class="btn-primary" style="padding: 0.4rem 0.4rem 0.4rem 1.1rem; font-size: 0.8rem;">
-                    <span>Hire Engineer</span>
-                    <span class="btn-icon-circle"><i class="fas fa-arrow-right"></i></span>
-                </a>
-                <button class="hamburger" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+            <a href="#contact" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8rem;">
+                <span>Hire Engineer</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3.5rem; align-items: center;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
                 <div>
-                    <!-- Updated Location & Availability Badge -->
                     <div class="hero-badge">
                         <span class="status-pulse"></span>
-                        <span>BASED IN DOHA, QATAR · FULL-STACK &amp; AI SYSTEMS · OPEN TO ROLES</span>
+                        <span>BASED IN DOHA, QATAR · OPEN TO ROLES</span>
                     </div>
 
-                    <div class="eyebrow">// 01. FULL-STACK SOFTWARE ENGINEER</div>
                     <h1 class="hero-title">
-                        Building Scalable Web Apps with <span class="highlight">Modern Code &amp; AI Workflows</span>
+                        Full-Stack &amp; <span style="color: var(--accent-gold);">AI-Native</span> Software Engineer
                     </h1>
 
-                    <p class="hero-subtitle">
-                        Software engineer combining <strong>Next.js</strong>, <strong>React</strong>, <strong>TypeScript</strong>, and <strong>Node.js</strong> with modern AI coding tools (<span style="color: var(--accent-gold);">Cursor, Claude Code, Copilot</span>). Dedicated to writing clean, statically-typed, thoroughly tested software.
+                    <p style="margin-bottom: 1.75rem; font-size: 1.05rem;">
+                        Building production web applications using <strong>Next.js</strong>, <strong>React</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, and <strong>Python</strong>. Combining AI tools (<span style="color: var(--accent-gold);">Cursor, Claude Code, Copilot</span>) with strict type safety, manual code audits, and unit testing.
                     </p>
 
-                    <div class="btn-group">
-                        <a href="#projects" class="btn-primary">
-                            <span>Explore Portfolio</span>
-                            <span class="btn-icon-circle"><i class="fas fa-arrow-right"></i></span>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <a href="#work" class="btn-primary">
+                            <span>Explore Work</span>
+                            <i class="fas fa-arrow-right"></i>
                         </a>
                         <a href="shamsear_resume.pdf" target="_blank" class="btn-secondary">
-                            <i class="fas fa-file-pdf"></i>
-                            <span>View Resume PDF</span>
+                            <i class="fas fa-file-pdf"></i> Resume PDF
                         </a>
                     </div>
                 </div>
 
-                <!-- 3D Interactive Tech Cube & Card Shell -->
-                <div class="shell-card">
-                    <div class="inner-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-h-350px; position: relative;">
-                        <div class="eyebrow" style="margin-bottom: 1.5rem;">// INTERACTIVE TECH CUBE (DRAG TO ROTATE)</div>
-                        
-                        <!-- 3D Canvas Container -->
-                        <div id="techCubeContainer" style="width: 220px; height: 220px; perspective: 800px; cursor: grab; user-select: none;">
-                            <div id="techCube" style="width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transform: rotateX(-20deg) rotateY(25deg);">
-                                <div class="cube-face face-front" style="position: absolute; width: 220px; height: 220px; background: rgba(19, 19, 26, 0.95); border: 1px solid var(--accent-gold); display: flex; flex-direction: column; align-items: center; justify-content: center; transform: translateZ(110px); border-radius: 12px; box-shadow: inset 0 0 15px rgba(234, 179, 8, 0.15);">
-                                    <i class="fab fa-react" style="font-size: 3rem; color: #38bdf8; margin-bottom: 0.5rem;"></i>
-                                    <span style="font-family: var(--font-mono); font-weight: 700;">React / Next.js</span>
-                                </div>
-                                <div class="cube-face face-back" style="position: absolute; width: 220px; height: 220px; background: rgba(19, 19, 26, 0.95); border: 1px solid var(--border-shell); display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotateY(180deg) translateZ(110px); border-radius: 12px;">
-                                    <i class="fab fa-js-square" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 0.5rem;"></i>
-                                    <span style="font-family: var(--font-mono); font-weight: 700;">TypeScript</span>
-                                </div>
-                                <div class="cube-face face-right" style="position: absolute; width: 220px; height: 220px; background: rgba(19, 19, 26, 0.95); border: 1px solid var(--border-shell); display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotateY(90deg) translateZ(110px); border-radius: 12px;">
-                                    <i class="fab fa-node-js" style="font-size: 3rem; color: #10b981; margin-bottom: 0.5rem;"></i>
-                                    <span style="font-family: var(--font-mono); font-weight: 700;">Node.js / Express</span>
-                                </div>
-                                <div class="cube-face face-left" style="position: absolute; width: 220px; height: 220px; background: rgba(19, 19, 26, 0.95); border: 1px solid var(--border-shell); display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotateY(-90deg) translateZ(110px); border-radius: 12px;">
-                                    <i class="fab fa-python" style="font-size: 3rem; color: #38bdf8; margin-bottom: 0.5rem;"></i>
-                                    <span style="font-family: var(--font-mono); font-weight: 700;">Python / FastAPI</span>
-                                </div>
-                                <div class="cube-face face-top" style="position: absolute; width: 220px; height: 220px; background: rgba(19, 19, 26, 0.95); border: 1px solid var(--border-shell); display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotateX(90deg) translateZ(110px); border-radius: 12px;">
-                                    <i class="fas fa-database" style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 0.5rem;"></i>
-                                    <span style="font-family: var(--font-mono); font-weight: 700;">PostgreSQL / SQL</span>
-                                </div>
-                                <div class="cube-face face-bottom" style="position: absolute; width: 220px; height: 220px; background: rgba(19, 19, 26, 0.95); border: 1px solid var(--border-shell); display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotateX(-90deg) translateZ(110px); border-radius: 12px;">
-                                    <i class="fas fa-brain" style="font-size: 3rem; color: #a855f7; margin-bottom: 0.5rem;"></i>
-                                    <span style="font-family: var(--font-mono); font-weight: 700;">AI Tooling</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 1.5rem;">
-                            <i class="fas fa-hand-pointer"></i> Drag to spin stack architecture
-                        </div>
+                <!-- 3D Interactive Tech Cube Container -->
+                <div class="minimal-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                    <div class="eyebrow" style="margin-bottom: 1rem;">// 3D TECH CUBE (DRAG TO ROTATE)</div>
+                    <div id="heroTechCubeContainer" class="cube-motion-stage"></div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 1rem;">
+                        <i class="fas fa-hand-pointer"></i> Drag to spin stack physics
                     </div>
-                </div>
-            </div>
-
-            <!-- Rolling Number Counters -->
-            <div class="hero-stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number number-flow-host" data-value="15" data-suffix="+">15+</div>
-                    <div class="stat-label">Production &amp; Project Builds</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number number-flow-host" data-value="100" data-suffix="%">100%</div>
-                    <div class="stat-label">TypeScript &amp; Type Safety</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number number-flow-host" data-value="4" data-suffix="x">4x</div>
-                    <div class="stat-label">AI Workflow Speedup</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number number-flow-host" data-value="0" data-suffix=" Days">0 Days</div>
-                    <div class="stat-label">Notice Period (Doha, Qatar)</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- AI Code Validation & Engineering Protocol Section -->
-    <section id="validation">
+    <!-- Selected Work Section -->
+    <section id="work">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 3.5rem;">
-                <div class="eyebrow">// 02. AI-NATIVE ENGINEERING PROTOCOL</div>
-                <h2 class="section-title">How I Validate AI-Generated Code</h2>
+            <div style="margin-bottom: 2.5rem;">
+                <span class="eyebrow">// SELECTED PROJECTS</span>
+                <h2 class="section-title">Engineered Products</h2>
                 <p class="section-subtitle">
-                    AI acceleration without verification leads to hidden debt. I use Cursor, Claude Code, and Copilot to draft logic, followed by rigorous manual code audits and automated test coverage.
+                    Clean, responsive web applications and backend service architectures built with modern engineering standards.
                 </p>
             </div>
 
-            <div class="validation-container">
-                <!-- Card 1: AI Output vs Production Fix -->
-                <div class="shell-card">
-                    <div class="inner-card">
-                        <div class="code-card-header">
-                            <span style="color: #f43f5e;"><i class="fas fa-robot"></i> Raw AI Assistant Draft</span>
-                            <span style="color: var(--text-muted);">Unchecked Code</span>
-                        </div>
-                        <div class="code-block">
-<span class="cm">// Unsafe async call without error boundaries or type check</span>
-<span class="kw">async function</span> <span class="fn">fetchUserData</span>(id) {
-    <span class="kw">const</span> res = <span class="kw">await</span> fetch(<span class="str">`/api/user/${id}`</span>);
-    <span class="kw">const</span> data = <span class="kw">await</span> res.json();
-    <span class="kw">return</span> data.user.profile.name; <span class="cm">// Potential NullPointer crash!</span>
-}
-                        </div>
-                        <ul style="margin-top: 1rem; font-size: 0.82rem; color: #f43f5e; list-style: none; display: flex; flex-direction: column; gap: 0.4rem;">
-                            <li><i class="fas fa-times-circle"></i> Missing TypeScript interface definitions</li>
-                            <li><i class="fas fa-times-circle"></i> Unhandled HTTP non-200 responses &amp; unhandled null properties</li>
-                        </ul>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="minimal-card project-card" onclick="openProjectModal('mizan')">
+                    <div>
+                        <span class="tech-tag">Next.js 16</span>
+                        <span class="tech-tag">IndexedDB</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <h3 style="font-size: 1.3rem; margin: 0.75rem 0 0.5rem 0;">Mizan — Financial PWA</h3>
+                        <p>Offline-first expense tracker and financial runway dashboard calculating Safe-to-Spend metrics with IndexedDB sync.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <a href="https://mizan-qa.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live Demo <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="font-size: 0.8rem; color: var(--accent-gold); cursor: pointer;"><i class="fas fa-code"></i> Specs</span>
                     </div>
                 </div>
 
-                <!-- Card 2: Validated Production Code -->
-                <div class="shell-card">
-                    <div class="inner-card">
-                        <div class="code-card-header">
-                            <span style="color: var(--accent-emerald);"><i class="fas fa-check-double"></i> Audited &amp; Validated Production Code</span>
-                            <span class="badge-pass">TEST PASSED</span>
-                        </div>
-                        <div class="code-block">
-<span class="kw">interface</span> UserProfile { name: <span class="kw">string</span>; email: <span class="kw">string</span>; }
+                <!-- Project 2 -->
+                <div class="minimal-card project-card" onclick="openProjectModal('oasis')">
+                    <div>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Framer Motion</span>
+                        <h3 style="font-size: 1.3rem; margin: 0.75rem 0 0.5rem 0;">Oasis Horizon — Luxury Portal</h3>
+                        <p>Luxury real estate platform presenting high-end property galleries with client-side filtering and contact flows.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <a href="https://oasisbah.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live Demo <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="font-size: 0.8rem; color: var(--accent-gold); cursor: pointer;"><i class="fas fa-code"></i> Specs</span>
+                    </div>
+                </div>
 
-<span class="kw">export async function</span> <span class="fn">fetchUserData</span>(id: <span class="kw">string</span>): <span class="kw">Promise</span>&lt;<span class="kw">Result</span>&lt;UserProfile&gt;&gt; {
-    <span class="kw">try</span> {
-        <span class="kw">const</span> res = <span class="kw">await</span> fetch(<span class="str">`/api/user/${encodeURIComponent(id)}`</span>);
-        <span class="kw">if</span> (!res.ok) <span class="kw">return</span> Result.err(<span class="str">`HTTP error ${res.status}`</span>);
-        <span class="kw">const</span> data = <span class="kw">await</span> res.json();
-        <span class="kw">return</span> Result.ok(data?.user?.profile ?? { name: <span class="str">"Anonymous"</span> });
-    } <span class="kw">catch</span> (err) {
-        <span class="kw">return</span> Result.err(err <span class="kw">instanceof</span> Error ? err.message : <span class="str">"Unknown error"</span>);
-    }
-}
-                        </div>
-                        <ul style="margin-top: 1rem; font-size: 0.82rem; color: var(--accent-emerald); list-style: none; display: flex; flex-direction: column; gap: 0.4rem;">
-                            <li><i class="fas fa-check-circle"></i> Strict static typing &amp; null checks</li>
-                            <li><i class="fas fa-check-circle"></i> Safe error handling &amp; URL encoding for injection safety</li>
-                        </ul>
+                <!-- Project 3 -->
+                <div class="minimal-card project-card" onclick="openProjectModal('task-copilot')">
+                    <div>
+                        <span class="tech-tag">Next.js 14</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">AI Workflows</span>
+                        <h3 style="font-size: 1.3rem; margin: 0.75rem 0 0.5rem 0;">AI Knowledge Copilot</h3>
+                        <p>Productivity workspace with dynamic markdown rendering, vector search, and background task queues.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <span class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            View Architecture
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="minimal-card project-card" onclick="openProjectModal('api-gateway')">
+                    <div>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Redis</span>
+                        <h3 style="font-size: 1.3rem; margin: 0.75rem 0 0.5rem 0;">High-Throughput REST Gateway</h3>
+                        <p>Microservice API gateway featuring rate-limiting, JWT authentication, and structured error logging.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <span class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            View Architecture
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Bento Projects Showcase Section -->
-    <section id="projects">
+    <!-- AI Engineering Protocol Section -->
+    <section id="workflow">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <div class="eyebrow">// 03. FEATURED SOFTWARE PROJECTS</div>
-                <h2 class="section-title">Engineered Products &amp; Work</h2>
+            <div style="margin-bottom: 2.5rem;">
+                <span class="eyebrow">// AI-NATIVE PROTOCOL</span>
+                <h2 class="section-title">AI Tooling with Code Validation</h2>
                 <p class="section-subtitle">
-                    Select full-stack web applications, custom developer tools, and API backend architectures.
+                    How I leverage AI coding assistants to move fast without sacrificing software quality or system reliability.
                 </p>
             </div>
 
-            <!-- Filter Buttons -->
-            <div class="project-filters">
-                <button class="filter-btn active" onclick="filterProjects('all', this)">All Projects</button>
-                <button class="filter-btn" onclick="filterProjects('fullstack', this)">Full-Stack Apps</button>
-                <button class="filter-btn" onclick="filterProjects('ai', this)">AI Workflows</button>
-                <button class="filter-btn" onclick="filterProjects('api', this)">APIs &amp; Backend</button>
-            </div>
-
-            <!-- Bento Layout Grid -->
-            <div class="bento-grid">
-                <!-- Project 1: Large Feature (Col 8) -->
-                <div class="bento-col-8 project-item" data-category="fullstack ai">
-                    <div class="shell-card">
-                        <div class="inner-card project-card">
-                            <div>
-                                <span class="project-tag">Full-Stack &amp; AI</span>
-                                <h3 class="project-title">AI-Native Task &amp; Knowledge Copilot</h3>
-                                <p class="project-desc">
-                                    Full-stack workspace productivity system with dynamic markdown rendering, vector embeddings for similarity search, and automated background job queues. Built with Next.js App Router, Tailwind CSS, PostgreSQL, and OpenAI API.
-                                </p>
-                            </div>
-                            <div>
-                                <div class="tech-stack-pills">
-                                    <span class="tech-pill">Next.js 14</span>
-                                    <span class="tech-pill">TypeScript</span>
-                                    <span class="tech-pill">Tailwind CSS</span>
-                                    <span class="tech-pill">PostgreSQL</span>
-                                    <span class="tech-pill">Prisma</span>
-                                </div>
-                                <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-                                    <button class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8rem;" onclick="openProjectModal('task-copilot')">
-                                        <span>Deep Dive Spec</span>
-                                        <span class="btn-icon-circle"><i class="fas fa-code"></i></span>
-                                    </button>
-                                    <a href="https://github.com/Shamsear/portfoliow" target="_blank" class="btn-secondary" style="padding: 0.4rem 1rem; font-size: 0.8rem;">
-                                        <i class="fab fa-github"></i> Source Code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+                <div class="minimal-card">
+                    <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">1. Static Typing &amp; Schemas</h3>
+                    <p style="font-size: 0.88rem;">Enforcing strict TypeScript interfaces, Zod validations, and PostgreSQL schemas to catch type errors before execution.</p>
                 </div>
 
-                <!-- Project 2: Stacked (Col 4) -->
-                <div class="bento-col-4 project-item" data-category="api">
-                    <div class="shell-card">
-                        <div class="inner-card project-card">
-                            <div>
-                                <span class="project-tag">Backend &amp; API</span>
-                                <h3 class="project-title">High-Throughput REST Gateway</h3>
-                                <p class="project-desc">
-                                    Microservice API gateway with rate-limiting, JWT authentication, and structured error logging handling 10,000+ requests/min.
-                                </p>
-                            </div>
-                            <div>
-                                <div class="tech-stack-pills">
-                                    <span class="tech-pill">Node.js</span>
-                                    <span class="tech-pill">Express</span>
-                                    <span class="tech-pill">Redis</span>
-                                    <span class="tech-pill">Docker</span>
-                                </div>
-                                <div style="margin-top: 1.5rem;">
-                                    <button class="btn-secondary" style="width: 100%; justify-content: center; padding: 0.4rem 1rem; font-size: 0.8rem;" onclick="openProjectModal('api-gateway')">
-                                        View Architecture Specs
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                <div class="minimal-card">
+                    <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <i class="fas fa-check-double"></i>
                     </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">2. Unit &amp; Integration Tests</h3>
+                    <p style="font-size: 0.88rem;">Writing automated tests (Jest/Vitest) to cover edge cases, API error responses, and state boundaries.</p>
                 </div>
 
-                <!-- Project 3: Col 6 -->
-                <div class="bento-col-6 project-item" data-category="fullstack">
-                    <div class="shell-card">
-                        <div class="inner-card project-card">
-                            <div>
-                                <span class="project-tag">Web Application</span>
-                                <h3 class="project-title">Real-Time Data Analytics Dashboard</h3>
-                                <p class="project-desc">
-                                    Interactive metrics monitoring application with WebSocket live feeds, tabular digit transitions, and custom SVG charting engines.
-                                </p>
-                            </div>
-                            <div>
-                                <div class="tech-stack-pills">
-                                    <span class="tech-pill">React</span>
-                                    <span class="tech-pill">TypeScript</span>
-                                    <span class="tech-pill">WebSockets</span>
-                                    <span class="tech-pill">Chart.js</span>
-                                </div>
-                                <div style="margin-top: 1.5rem;">
-                                    <button class="btn-secondary" style="padding: 0.4rem 1rem; font-size: 0.8rem;" onclick="openProjectModal('analytics-dashboard')">
-                                        Inspect Features
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                <div class="minimal-card">
+                    <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <i class="fas fa-code-branch"></i>
                     </div>
-                </div>
-
-                <!-- Project 4: Col 6 -->
-                <div class="bento-col-6 project-item" data-category="ai">
-                    <div class="shell-card">
-                        <div class="inner-card project-card">
-                            <div>
-                                <span class="project-tag">AI Workflows</span>
-                                <h3 class="project-title">Automated Code Review Agent</h3>
-                                <p class="project-desc">
-                                    CLI tool that hooks into Git pre-commit, analyzing pull requests for anti-patterns, security risks, and missing unit tests.
-                                </p>
-                            </div>
-                            <div>
-                                <div class="tech-stack-pills">
-                                    <span class="tech-pill">Python</span>
-                                    <span class="tech-pill">FastAPI</span>
-                                    <span class="tech-pill">LLM Prompting</span>
-                                    <span class="tech-pill">Git Hooks</span>
-                                </div>
-                                <div style="margin-top: 1.5rem;">
-                                    <button class="btn-secondary" style="padding: 0.4rem 1rem; font-size: 0.8rem;" onclick="openProjectModal('code-reviewer')">
-                                        Inspect Features
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">3. Line-by-Line Code Audits</h3>
+                    <p style="font-size: 0.88rem;">Reviewing generated logic line-by-line to ensure security compliance, clean architecture, and maintainability.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Matrix Section -->
+    <!-- Skills & Experience Section -->
     <section id="skills">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 3.5rem;">
-                <div class="eyebrow">// 04. TECHNICAL SKILL MATRIX</div>
-                <h2 class="section-title">Core Competencies &amp; Stack</h2>
-                <p class="section-subtitle">
-                    Pragmatic tools and frameworks utilized across production frontend, backend, database, and AI development environments.
-                </p>
+            <div style="margin-bottom: 2.5rem;">
+                <span class="eyebrow">// CAPABILITIES &amp; BACKGROUND</span>
+                <h2 class="section-title">Technical Stack &amp; Experience</h2>
             </div>
 
-            <div class="skills-grid">
-                <!-- Category 1 -->
-                <div class="shell-card">
-                    <div class="inner-card">
-                        <h3 class="skill-category-title"><i class="fas fa-code" style="color: var(--accent-gold);"></i> Frontend Engineering</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fab fa-react"></i> React.js / Next.js</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fab fa-js-square"></i> TypeScript &amp; JavaScript</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fas fa-paint-brush"></i> Tailwind CSS &amp; HTML5</span>
-                                <span class="skill-level">Expert</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fas fa-mobile-alt"></i> React Native</span>
-                                <span class="skill-level">Intermediate</span>
-                            </div>
-                        </div>
+            <div class="grid-two">
+                <!-- Stack Column -->
+                <div class="minimal-card">
+                    <h3 style="font-size: 1.15rem; margin-bottom: 1.25rem; color: var(--accent-gold);">Core Technical Stack</h3>
+                    <div class="skill-row">
+                        <span>Frontend Frameworks</span>
+                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">React, Next.js 14/16</span>
+                    </div>
+                    <div class="skill-row">
+                        <span>Languages</span>
+                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">TypeScript, JavaScript, Python</span>
+                    </div>
+                    <div class="skill-row">
+                        <span>Backend &amp; DB</span>
+                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">Node.js, Express, PostgreSQL, SQL</span>
+                    </div>
+                    <div class="skill-row">
+                        <span>AI Coding Tools</span>
+                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">Cursor, Claude Code, Copilot</span>
+                    </div>
+                    <div class="skill-row">
+                        <span>Styling &amp; UI</span>
+                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">Tailwind CSS, HTML5/CSS3</span>
                     </div>
                 </div>
 
-                <!-- Category 2 -->
-                <div class="shell-card">
-                    <div class="inner-card">
-                        <h3 class="skill-category-title"><i class="fas fa-server" style="color: var(--accent-gold);"></i> Backend &amp; Databases</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fab fa-node-js"></i> Node.js &amp; Express</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fab fa-python"></i> Python (FastAPI / Django)</span>
-                                <span class="skill-level">Proficient</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fas fa-database"></i> PostgreSQL &amp; SQL</span>
-                                <span class="skill-level">Proficient</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fas fa-plug"></i> RESTful APIs &amp; WebSockets</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                        </div>
+                <!-- Experience Column -->
+                <div class="minimal-card">
+                    <h3 style="font-size: 1.15rem; margin-bottom: 1.25rem; color: var(--accent-gold);">Background &amp; Roles</h3>
+                    <div style="margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
+                        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-gold); font-weight: 600;">2023 — PRESENT</div>
+                        <div style="font-size: 1rem; font-weight: 700; color: var(--text-primary);">Full-Stack Software Engineer</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">Independent &amp; Project Engagements · Doha, Qatar</div>
                     </div>
-                </div>
-
-                <!-- Category 3 -->
-                <div class="shell-card">
-                    <div class="inner-card">
-                        <h3 class="skill-category-title"><i class="fas fa-robot" style="color: var(--accent-gold);"></i> AI Workflows &amp; Tooling</h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fas fa-terminal"></i> Cursor &amp; Claude Code</span>
-                                <span class="skill-level">Power User</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fab fa-github"></i> GitHub Copilot / Codex</span>
-                                <span class="skill-level">Power User</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fas fa-vial"></i> Unit &amp; Integration Testing</span>
-                                <span class="skill-level">Strict Audit</span>
-                            </div>
-                            <div class="skill-item">
-                                <span class="skill-name"><i class="fab fa-git-alt"></i> Git, GitHub &amp; CI/CD</span>
-                                <span class="skill-level">Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Timeline Section -->
-    <section id="experience">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 3.5rem;">
-                <div class="eyebrow">// 05. CAREER &amp; EDUCATION</div>
-                <h2 class="section-title">Experience &amp; Background</h2>
-                <p class="section-subtitle">
-                    Practical engineering projects, software development training, and academic background.
-                </p>
-            </div>
-
-            <div class="timeline">
-                <!-- Timeline item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="shell-card">
-                        <div class="inner-card">
-                            <div class="timeline-date">2023 — PRESENT</div>
-                            <h3 class="timeline-role">Full-Stack &amp; AI-Native Software Engineer</h3>
-                            <div class="timeline-company">Independent &amp; Project Engagements · Doha, Qatar</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">
-                                Architecting web applications using Next.js, React, Node.js, and TypeScript. Integrating AI development tools to accelerate feature output while enforcing strict static typing and automated unit testing.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Timeline item 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="shell-card">
-                        <div class="inner-card">
-                            <div class="timeline-date">2019 — 2023</div>
-                            <h3 class="timeline-role">Bachelor of Engineering in Computer Science</h3>
-                            <div class="timeline-company">PA College of Engineering · VTU</div>
-                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.5rem;">
-                                Focused on Data Structures, Algorithms, Software Engineering Principles, Database Management Systems, and Web Application Architecture.
-                            </p>
-                        </div>
+                    <div>
+                        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-gold); font-weight: 600;">2019 — 2023</div>
+                        <div style="font-size: 1rem; font-weight: 700; color: var(--text-primary);">B.E. in Computer Science</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">PA College of Engineering · VTU</div>
                     </div>
                 </div>
             </div>
@@ -507,105 +272,49 @@
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 3.5rem;">
-                <div class="eyebrow">// 06. GET IN TOUCH</div>
-                <h2 class="section-title">Let's Work Together</h2>
-                <p class="section-subtitle">
-                    Currently based in Doha, Qatar. Ready for full-time software engineering roles.
+            <div style="margin-bottom: 2.5rem; text-align: center;">
+                <span class="eyebrow">// GET IN TOUCH</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle" style="margin: 0 auto;">
+                    Based in Doha, Qatar. Available for Software Engineering and AI-Native developer opportunities.
                 </p>
             </div>
 
-            <div class="contact-grid">
-                <!-- Info Side -->
-                <div class="shell-card">
-                    <div class="inner-card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">Contact Details</h3>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem;">
-                                Feel free to reach out directly via email, phone, or WhatsApp.
-                            </p>
-
-                            <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-                                <div style="display: flex; align-items: center; gap: 1rem;">
-                                    <div style="width: 38px; height: 38px; border-radius: 50%; background: rgba(234, 179, 8, 0.1); color: var(--accent-gold); display: flex; align-items: center; justify-content: center;">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <div>
-                                        <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; font-family: var(--font-mono);">Email</div>
-                                        <span style="color: var(--text-primary); font-weight: 500; font-size: 0.95rem;">shamsear@gmail.com</span>
-                                    </div>
-                                </div>
-
-                                <div style="display: flex; align-items: center; gap: 1rem;">
-                                    <div style="width: 38px; height: 38px; border-radius: 50%; background: rgba(234, 179, 8, 0.1); color: var(--accent-gold); display: flex; align-items: center; justify-content: center;">
-                                        <i class="fas fa-phone"></i>
-                                    </div>
-                                    <div>
-                                        <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; font-family: var(--font-mono);">Phone / WhatsApp</div>
-                                        <span style="color: var(--text-primary); font-weight: 500; font-size: 0.95rem;">+974 70485214</span>
-                                    </div>
-                                </div>
-
-                                <div style="display: flex; align-items: center; gap: 1rem;">
-                                    <div style="width: 38px; height: 38px; border-radius: 50%; background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center;">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div>
-                                        <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; font-family: var(--font-mono);">Location &amp; Status</div>
-                                        <span style="color: var(--text-primary); font-weight: 500; font-size: 0.95rem;">Doha, Qatar (Open for Roles)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="margin-top: 2.5rem;">
-                            <button onclick="copyEmail('shamsear@gmail.com')" class="btn-primary" style="width: 100%; justify-content: center;">
-                                <span>Copy Email Address</span>
-                                <span class="btn-icon-circle"><i class="fas fa-copy"></i></span>
-                            </button>
-                        </div>
+            <div class="minimal-card" style="max-width: 640px; margin: 0 auto;">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.75rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border-subtle);">
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); text-transform: uppercase;">Direct Email</div>
+                        <span style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary);">shamsear@gmail.com</span>
                     </div>
+                    <button onclick="copyEmail('shamsear@gmail.com')" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8rem;">
+                        <i class="fas fa-copy"></i> Copy Email
+                    </button>
                 </div>
 
-                <!-- Form Side -->
-                <div class="shell-card">
-                    <div class="inner-card">
-                        <form id="contactForm">
-                            <h3 style="font-size: 1.2rem; margin-bottom: 1.25rem;">Send Direct Message</h3>
-                            
-                            <div class="form-group">
-                                <label class="form-label">Your Name</label>
-                                <input type="text" id="name" required class="form-input" placeholder="e.g. Hiring Manager">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Email Address</label>
-                                <input type="email" id="email" required class="form-input" placeholder="name@company.com">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Subject</label>
-                                <input type="text" id="subject" required class="form-input" placeholder="Software Engineering Opportunity">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Message</label>
-                                <textarea id="message" rows="4" required class="form-textarea" placeholder="Hello Shamsear, we'd like to discuss..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
-                                <span>Send Message</span>
-                                <span class="btn-icon-circle"><i class="fas fa-paper-plane"></i></span>
-                            </button>
-                        </form>
+                <form id="contactForm" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.35rem;">Name</label>
+                        <input type="text" id="name" required style="width: 100%; padding: 0.75rem; background: #060608; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); font-family: var(--font-sans);">
                     </div>
-                </div>
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.35rem;">Email</label>
+                        <input type="email" id="email" required style="width: 100%; padding: 0.75rem; background: #060608; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); font-family: var(--font-sans);">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.35rem;">Message</label>
+                        <textarea id="message" rows="4" required style="width: 100%; padding: 0.75rem; background: #060608; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); font-family: var(--font-sans); resize: vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="justify-content: center; width: 100%; margin-top: 0.5rem;">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer style="padding: 2.5rem 0; background: var(--bg-darker); text-align: center; border-top: 1px solid var(--border-card); font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);">
+    <footer style="padding: 2rem 0; background: var(--bg-darker); text-align: center; font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">
         <div class="container">
             <p>© 2026 Shamsear Ebrahim · Full-Stack &amp; AI Software Engineer · Doha, Qatar</p>
         </div>
@@ -614,19 +323,16 @@
     <!-- Project Detail Modal -->
     <div id="projectModal" class="modal-overlay">
         <div class="modal-card">
-            <div class="modal-header">
-                <h3 id="modalTitle" style="font-size: 1.3rem;">Project Detail</h3>
-                <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                <h3 id="modalTitle" style="font-size: 1.25rem;">Project Architecture</h3>
+                <button onclick="closeProjectModal()" style="background: none; border: none; color: var(--text-secondary); font-size: 1.5rem; cursor: pointer;">&times;</button>
             </div>
-            <div id="modalBody" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
-                <!-- Content injected dynamically -->
-            </div>
+            <div id="modalBody"></div>
         </div>
     </div>
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/numberflow.js"></script>
     <script src="assets/js/cube-motion.js"></script>
     <script src="assets/js/project-modal.js"></script>
 </body>
