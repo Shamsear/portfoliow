@@ -302,10 +302,24 @@ nav.minimal-nav {
     50% { opacity: 0.4; }
 }
 
+.hero-avatar {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 2px solid var(--accent-gold);
+    box-shadow: 0 0 24px rgba(245, 158, 11, 0.25);
+    margin-top: 0.75rem;
+    transform: translateY(14px);
+    transition: var(--transition);
+}
+
 .hero-title {
     font-size: clamp(2.2rem, 4.5vw, 3.5rem);
     line-height: 1.1;
     margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 /* 3D Cube Canvas Styling */
