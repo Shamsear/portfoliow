@@ -107,7 +107,7 @@ p {
 
 /* Section Spacing */
 section {
-    padding: 5.5rem 0;
+    padding: 3.5rem 0;
     border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -269,8 +269,8 @@ nav.minimal-nav {
 
 /* Hero Section */
 .hero {
-    padding-top: 9rem;
-    padding-bottom: 4.5rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
 }
 
 .hero-badge {
@@ -596,8 +596,8 @@ nav.minimal-nav {
     }
 
     .hero {
-        padding-top: 7rem;
-        padding-bottom: 3.5rem;
+        padding-top: 4.5rem;
+        padding-bottom: 2.5rem;
     }
 
     .cube-motion-stage {
