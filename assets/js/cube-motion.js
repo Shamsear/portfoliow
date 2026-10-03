@@ -63,6 +63,7 @@ class TechCubeMotion {
             this.startX = e.clientX || (e.touches && e.touches[0].clientX);
             this.startY = e.clientY || (e.touches && e.touches[0].clientY);
             this.container.style.cursor = 'grabbing';
+            if (e.cancelable) e.preventDefault();
         };
 
         const onMove = (e) => {

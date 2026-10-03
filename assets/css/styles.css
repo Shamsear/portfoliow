@@ -317,12 +317,18 @@ nav.minimal-nav {
     align-items: center;
     justify-content: center;
     cursor: grab;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .cube-motion-viewport {
     perspective: 1000px;
     width: 180px;
     height: 180px;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .cube-motion-box {
@@ -331,6 +337,8 @@ nav.minimal-nav {
     position: relative;
     transform-style: preserve-3d;
     transform: rotateX(-20deg) rotateY(30deg);
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .cube-face {
@@ -351,7 +359,13 @@ nav.minimal-nav {
     color: var(--text-primary);
     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.5);
     backface-visibility: visible;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
+
 
 .cube-face i {
     font-size: 2.4rem;
