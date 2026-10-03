@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shamsear Ebrahim — Software Engineer</title>
-    <meta name="description" content="Software Developer based in Doha, Qatar. Building web applications with Next.js, React, Node.js, and TypeScript.">
+    <title>Shamsear Ebrahim — Full-Stack &amp; AI-Native Software Engineer</title>
+    <meta name="description" content="Full-Stack Developer, IT Specialist &amp; AI-Native Engineer based in Doha, Qatar. Expert in Next.js, React, Node.js, TypeScript, Python, and SQL.">
+    <meta name="keywords" content="Software Engineer, Full-Stack Developer, Next.js, React, TypeScript, Node.js, Python, Doha Qatar, Shamsear Ebrahim">
     <meta name="author" content="Shamsear Ebrahim">
+    
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shamsear Ebrahim — Full-Stack Software Engineer">
+    <meta property="og:description" content="Software Developer based in Doha, Qatar. Next.js, React, TypeScript, Node.js, Python, and AI-native coding workflows.">
+    <meta property="og:url" content="https://shamsear.dev">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
@@ -13,249 +20,577 @@
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- EmailJS for contact form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("Nb8ThHEgrWHlteSAX");
+        })();
+    </script>
 </head>
 <body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div style="text-align: center;">
+            <div style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 700; color: var(--accent-amber); margin-bottom: 0.5rem;">{SE}</div>
+            <div style="font-size: 0.85rem; color: var(--text-secondary); font-family: var(--font-mono);">Loading portfolio environment…</div>
+        </div>
+    </div>
 
-    <div class="container">
-        <!-- Header -->
-        <header>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
             <nav>
-                <a href="#" class="nav-brand">Shamsear Ebrahim</a>
+                <a href="#home" class="logo-container">
+                    <div class="logo-icon">{SE}</div>
+                    <span class="logo-text">Shamsear Ebrahim</span>
+                </a>
+                
                 <ul class="nav-links">
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#validation" class="nav-link">AI Workflow</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+                
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <a href="#contact" class="btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">
+                        <i class="fas fa-paper-plane"></i> Let's Talk
+                    </a>
+                    <button class="hamburger" aria-label="Toggle Navigation Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <!-- Hero -->
-        <section class="hero-section" id="home">
-            <div class="status-tag">
-                <span class="status-dot"></span>
-                <span>Doha, Qatar · Available Immediately (Transferable NOC)</span>
-            </div>
-
-            <h1 class="hero-title">Software Developer</h1>
-            
-            <p class="hero-bio">
-                Computer Science graduate with practical software development experience building production web applications. Skilled in <strong>Next.js</strong>, <strong>React</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Python</strong>, and <strong>SQL</strong>. Focused on clean application architecture, API design, and robust code verification.
-            </p>
-
-            <div class="hero-links">
-                <a href="assets/images/shamsear_resume.pdf" target="_blank" class="hero-link-btn">
-                    📄 Resume (PDF)
-                </a>
-                <a href="https://github.com/Shamsear" target="_blank" class="hero-link-btn">
-                    🐙 GitHub
-                </a>
-                <a href="https://linkedin.com/in/shamsear/" target="_blank" class="hero-link-btn">
-                    💼 LinkedIn
-                </a>
-                <button onclick="copyEmail('shamsear@gmail.com')" class="hero-link-btn" style="cursor: pointer;">
-                    ✉️ shamsear@gmail.com
-                </button>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section class="section" id="projects">
-            <div class="section-label">Selected Projects</div>
-
-            <div class="project-list">
-                <!-- Project: Mizan -->
-                <div class="project-item">
-                    <div class="project-header">
-                        <div class="project-name">Mizan (Runway) — Expense Tracker &amp; PWA</div>
-                        <div class="project-links">
-                            <a href="https://mizan-qa.vercel.app/" target="_blank">Live App ↗</a>
-                        </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+                <div>
+                    <div class="hero-badge">
+                        <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green);"></span>
+                        <span>Doha, Qatar · Available Immediately (Transferable QID / NOC)</span>
                     </div>
-                    <p class="project-desc">
-                        A smart offline-first personal finance application acting as a departures board for budgets. Built with Next.js 16, IndexedDB, TypeScript, and Serwist PWA.
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span style="background: linear-gradient(135deg, var(--accent-amber), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Shamsear Ebrahim</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Full-Stack &amp; AI-Native Software Engineer. Building high-performance web applications with <strong>Next.js</strong>, <strong>React</strong>, <strong>Node.js</strong>, and <strong>TypeScript</strong> — leveraging AI tools (<span style="color: var(--accent-amber);">Cursor, Claude Code, Codex</span>) with strict code review and test verification.
                     </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Next.js 16</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">IndexedDB</span>
-                        <span class="tech-tag">PWA</span>
+
+                    <div class="btn-group">
+                        <a href="#projects" class="btn-primary">
+                            <span>Explore Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/images/shamsear_resume.pdf" target="_blank" class="btn-secondary">
+                            <i class="fas fa-file-pdf"></i> Download CV
+                        </a>
+                        <button onclick="copyEmail('shamsear@gmail.com')" class="btn-secondary" title="Copy Email">
+                            <i class="fas fa-copy"></i> Copy Email
+                        </button>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <a href="https://github.com/Shamsear" target="_blank" class="btn-secondary" style="padding: 0.5rem 0.75rem;">
+                            <i class="fab fa-github" style="font-size: 1.2rem;"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/shamsear/" target="_blank" class="btn-secondary" style="padding: 0.5rem 0.75rem;">
+                            <i class="fab fa-linkedin" style="font-size: 1.2rem;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3D Interactive Tech Cube Container -->
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div style="width: 100%; max-width: 320px; padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-accent); border-radius: var(--radius-lg); text-align: center; box-shadow: 0 10px 30px var(--accent-amber-glow);">
+                        <div style="font-size: 0.75rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-secondary); margin-bottom: 1rem;">
+                            Interactive 3D Tech Stack
+                        </div>
+                        <div id="heroTechCubeContainer" class="my-4"></div>
+                        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">
+                            Drag cube to rotate 3D view
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NumberFlow Continuous Stats Bar -->
+            <div class="hero-stats-grid">
+                <div class="stat-card">
+                    <div class="stat-val" data-numberflow data-value="2" data-suffix="+">2+</div>
+                    <div class="stat-lbl">Years Software Dev</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-val" data-numberflow data-value="25" data-suffix="+">25+</div>
+                    <div class="stat-lbl">Shipped Applications</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-val" data-numberflow data-value="18" data-suffix="+">18+</div>
+                    <div class="stat-lbl">Core Tech Stack</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-val" data-numberflow data-value="99.9" data-suffix="%">99.9%</div>
+                    <div class="stat-lbl">Uptime &amp; SLA Compliance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Bridging full-stack software development, IT infrastructure, and data analytics.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; align-items: center;">
+                <div style="position: relative; max-width: 380px; margin: 0 auto;">
+                    <img src="assets/images/shamsear.jpg" alt="Shamsear Ebrahim" style="width: 100%; border-radius: var(--radius-lg); border: 1px solid var(--border-accent); box-shadow: 0 15px 35px rgba(0,0,0,0.6);">
+                </div>
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--accent-amber);">Computer Science Graduate &amp; Software Developer</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6;">
+                        Experienced in building production web applications using Next.js, React, Node.js, and Python. I have delivered paid commercial projects including warehouse management systems, enterprise billing software, and Shopify e-commerce platforms.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">
+                        Based in <strong>Doha, Qatar</strong> with a valid QID and transferable NOC, ready to join immediately as a Software Engineer.
+                    </p>
+                    <div style="display: flex; flex-wrap: gap; gap: 0.5rem;">
+                        <span class="project-tag">Next.js 16</span>
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">TypeScript</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">Python Flask</span>
+                        <span class="project-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Featured Projects Showcase -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Software Projects</h2>
+            <p class="section-subtitle">Production applications, paid client systems, and full-stack projects. Click any project card for deep-dive inspection.</p>
+
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ui/ux">Web &amp; Full-Stack</button>
+                <button class="filter-btn" data-filter="it-support">IT Systems</button>
+                <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project: Mizan -->
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/mizan.jpg" alt="Mizan Expense Tracker PWA" loading="lazy">
+                        <span class="project-overlay-badge">PWA / Offline-First</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mizan (Runway) — Expense Tracker &amp; PWA</h3>
+                        <p class="project-desc">A smart offline-first financial application acting as a departures board for personal budgets. Built with Next.js 16, IndexedDB, and Serwist PWA.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js 16</span>
+                            <span class="project-tag">IndexedDB</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">Serwist PWA</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project: Warehouse Management -->
-                <div class="project-item">
-                    <div class="project-header">
-                        <div class="project-name">Warehouse &amp; Inventory Management System</div>
-                        <div class="project-links">
-                            <a href="https://github.com/Shamsear" target="_blank">Source Code ↗</a>
-                        </div>
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/portfolio-preview.png" alt="Warehouse Management System" loading="lazy">
+                        <span class="project-overlay-badge">Paid Production App</span>
                     </div>
-                    <p class="project-desc">
-                        Full-stack inventory system engineering real-time stock tracking, inbound shipments, and asset allocations using Next.js, React, TypeScript, and FastAPI.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Python FastAPI</span>
-                        <span class="tech-tag">PostgreSQL</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Warehouse &amp; Inventory Management Platform</h3>
+                        <p class="project-desc">Full-stack platform tracking real-time stock levels, inbound shipments, and asset allocations using Next.js, TypeScript, React, and FastAPI.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">PostgreSQL</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project: Billing Software -->
-                <div class="project-item">
-                    <div class="project-header">
-                        <div class="project-name">Enterprise Billing Software</div>
-                        <div class="project-links">
-                            <a href="https://github.com/Shamsear" target="_blank">Source Code ↗</a>
-                        </div>
+                <!-- Project: Node Billing Software -->
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/saharamart.png" alt="Billing Software Application" loading="lazy">
+                        <span class="project-overlay-badge">Paid Production App</span>
                     </div>
-                    <p class="project-desc">
-                        Production billing application managing customer checkout workflows, data handling, validation, and database API integrations built with Node.js.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">REST APIs</span>
-                        <span class="tech-tag">SQL</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Node.js Enterprise Billing Software</h3>
+                        <p class="project-desc">Production billing and invoice management application handling automated calculations, data validation, customer checkout, and API database integration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">REST APIs</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project: SS League -->
-                <div class="project-item">
-                    <div class="project-header">
-                        <div class="project-name">SS League — Football Auction Platform</div>
-                        <div class="project-links">
-                            <a href="https://ssleague.vercel.app/" target="_blank">Live App ↗</a>
-                        </div>
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/ssleague.png" alt="SS League Football Auction" loading="lazy">
+                        <span class="project-overlay-badge">Featured Web App</span>
                     </div>
-                    <p class="project-desc">
-                        Interactive football fantasy auction platform with live bidding workflows, squad budget tracking, and real-time player statistics.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Tailwind CSS</span>
+                    <div class="project-content">
+                        <h3 class="project-title">SS League — Football Auction Platform</h3>
+                        <p class="project-desc">Real-time football fantasy auction platform with live bidding engines, squad budget constraints, and historical performance tracking.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project: Oasis Horizon -->
-                <div class="project-item">
-                    <div class="project-header">
-                        <div class="project-name">Oasis Horizon — Real Estate Portal</div>
-                        <div class="project-links">
-                            <a href="https://oasisbah.vercel.app/" target="_blank">Live App ↗</a>
-                        </div>
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/oasishorizon.png" alt="Oasis Horizon Real Estate" loading="lazy">
+                        <span class="project-overlay-badge">Client Portal</span>
                     </div>
-                    <p class="project-desc">
-                        Luxury real estate web application featuring property showcases, dynamic search filtering, and responsive mobile architecture.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Tailwind CSS</span>
+                    <div class="project-content">
+                        <h3 class="project-title">Oasis Horizon — Luxury Real Estate</h3>
+                        <p class="project-desc">High-end real estate web portal featuring luxury property galleries, client-side dynamic search, and responsive layout architecture.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React.js</span>
+                            <span class="project-tag">TailwindCSS</span>
+                            <span class="project-tag">Framer Motion</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project: BrainQuest -->
-                <div class="project-item">
-                    <div class="project-header">
-                        <div class="project-name">BrainQuest — Interactive Quiz Application</div>
-                        <div class="project-links">
-                            <a href="http://brainquests.vercel.app/" target="_blank">Live App ↗</a>
+                <div class="project-card" data-category="ui/ux">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/brainquest.png" alt="BrainQuest Sci-Fi Quiz Game" loading="lazy">
+                        <span class="project-overlay-badge">Interactive UI</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BrainQuest — Sci-Fi Interactive Quiz</h3>
+                        <p class="project-desc">Immersive futuristic quiz game with micro-interactions, sound feedback, timer challenges, and score analytics.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">TailwindCSS</span>
+                            <span class="project-tag">Framer Motion</span>
+                            <span class="project-tag">JavaScript</span>
                         </div>
                     </div>
-                    <p class="project-desc">
-                        Immersive quiz platform with micro-interactions, timed challenges, and category score analytics.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Tailwind CSS</span>
+                </div>
+
+                <!-- Project: Help Desk -->
+                <div class="project-card" data-category="it-support">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/helpdesk_dashboard.jpg" alt="Help Desk Ticketing Dashboard" loading="lazy">
+                        <span class="project-overlay-badge">IT Support System</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Enterprise Help Desk &amp; SLA Ticketing</h3>
+                        <p class="project-desc">Full-featured IT support dashboard managing end-user tickets, priority escalation, technician assignments, and SLA compliance timers.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">IT Support</span>
+                            <span class="project-tag">SLA Management</span>
+                            <span class="project-tag">Help Desk</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Network Monitor -->
+                <div class="project-card" data-category="it-support">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/network_monitor.jpg" alt="Network Monitor" loading="lazy">
+                        <span class="project-overlay-badge">IT Support System</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Network &amp; IT Asset Monitor</h3>
+                        <p class="project-desc">IT infrastructure dashboard tracking connected LAN devices, IP allocations, node latency, and exportable inventory logs.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Networking</span>
+                            <span class="project-tag">LAN/WAN</span>
+                            <span class="project-tag">Asset Tracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: AI Job Trends -->
+                <div class="project-card" data-category="data-analytics">
+                    <div class="project-img-wrapper">
+                        <img src="assets/images/ai_job_trends.svg" alt="AI Job Trends Analytics" loading="lazy">
+                        <span class="project-overlay-badge">Power BI Analytics</span>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Job Market Trends Power BI Analytics</h3>
+                        <p class="project-desc">Comprehensive Power BI analysis examining global AI hiring patterns, salary metrics, and industry demand distributions.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">DAX</span>
+                            <span class="project-tag">Data Modeling</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Experience -->
-        <section class="section" id="experience">
-            <div class="section-label">Experience &amp; Education</div>
+    <!-- AI Code Validation Protocol Section -->
+    <section id="validation" style="background: var(--bg-surface);">
+        <div class="container">
+            <h2 class="section-title">AI-Native Engineering Protocol</h2>
+            <p class="section-subtitle">How I leverage modern AI coding assistants (Cursor, Claude Code, Codex, Copilot) as force multipliers while enforcing strict code quality standards.</p>
 
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div class="exp-role">Software Developer</div>
-                    <div class="exp-date">Jul 2024 – Present</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+                <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+                    <div style="color: var(--accent-amber); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-check-double"></i></div>
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">1. Static Analysis &amp; Type Safety</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                        Enforcing strict TypeScript compilation (<code style="color: var(--accent-amber);">tsc --noEmit</code>) and ESLint rules to prevent silent type coercions, missing props, or improper API return schemas.
+                    </p>
                 </div>
-                <div class="exp-company">Paid Projects &amp; Software Production · Doha, Qatar</div>
-                <ul class="exp-bullets">
-                    <li>Engineered and deployed paid software systems including a Next.js/TypeScript Warehouse Management platform and Node.js Billing Software.</li>
-                    <li>Built custom e-commerce stores and APIs using JavaScript, React, and Shopify Liquid.</li>
-                    <li>Utilized AI coding tools (Cursor, Claude Code, Codex) while performing rigorous static analysis, unit testing, and line-by-line code verification.</li>
-                </ul>
-            </div>
 
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div class="exp-role">B.E. Computer Science &amp; Engineering</div>
-                    <div class="exp-date">2020 – 2024</div>
+                <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+                    <div style="color: var(--accent-amber); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-vial"></i></div>
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">2. Unit &amp; Integration Testing</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                        Executing automated unit tests (Jest/Vitest) and verifying API contracts. Manually testing edge cases (network timeouts, empty arrays, null values) instead of assuming AI output works.
+                    </p>
                 </div>
-                <div class="exp-company">P.A. College of Engineering · CGPA: 7.4/10</div>
-                <p style="color: var(--text-muted); font-size: 0.9rem;">
-                    Completed coursework in Data Structures, Algorithms, Software Engineering, Web Development, and Database Management Systems.
-                </p>
+
+                <div style="padding: 1.75rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+                    <div style="color: var(--accent-amber); font-size: 1.5rem; margin-bottom: 0.75rem;"><i class="fas fa-search-code"></i></div>
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">3. Line-by-Line Code Review</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                        Inspecting generated code for memory leaks, unhandled async promise rejections, security vulnerabilities, or unnecessary bloat before committing changes to Git.
+                    </p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills -->
-        <section class="section" id="skills">
-            <div class="section-label">Skills &amp; Tools</div>
-            <div class="skills-group">
-                <span class="skill-pill">JavaScript</span>
-                <span class="skill-pill">TypeScript</span>
-                <span class="skill-pill">React</span>
-                <span class="skill-pill">Next.js</span>
-                <span class="skill-pill">Node.js</span>
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">SQL / PostgreSQL</span>
-                <span class="skill-pill">REST APIs</span>
-                <span class="skill-pill">Tailwind CSS</span>
-                <span class="skill-pill">Git / GitHub</span>
-                <span class="skill-pill">Cursor</span>
-                <span class="skill-pill">Claude Code</span>
-                <span class="skill-pill">Power BI</span>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-subtitle">Core frameworks, languages, databases, and development tooling.</p>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-js skill-icon"></i>
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.95rem;">TypeScript / JS</div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Primary Stack</div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-react skill-icon"></i>
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.95rem;">Next.js &amp; React</div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Frontend &amp; SSR</div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-node-js skill-icon"></i>
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.95rem;">Node.js &amp; Express</div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Backend APIs</div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon"></i>
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.95rem;">Python Flask / FastAPI</div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Backend Services</div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.95rem;">PostgreSQL &amp; SQL</div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Database Schemas</div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-robot skill-icon"></i>
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.95rem;">Cursor / Claude Code</div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">AI-Native Workflow</div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.95rem;">Git &amp; GitHub</div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Version Control</div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fas fa-chart-bar skill-icon"></i>
+                    <div>
+                        <div style="font-weight: 600; font-size: 0.95rem;">Power BI</div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary);">Data Analytics</div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact -->
-        <section class="section" id="contact" style="border-bottom: none;">
-            <div class="section-label">Get In Touch</div>
-            <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1rem;">
-                Currently based in Doha, Qatar with a valid QID and transferable NOC. Available for immediate joining as a Software Developer.
-            </p>
-            <div class="hero-links">
-                <button onclick="copyEmail('shamsear@gmail.com')" class="hero-link-btn" style="cursor: pointer;">
-                    ✉️ shamsear@gmail.com
-                </button>
-                <a href="tel:+97470485214" class="hero-link-btn">
-                    📞 +974 70485214
-                </a>
-                <a href="https://github.com/Shamsear" target="_blank" class="hero-link-btn">
-                    🐙 GitHub
-                </a>
-                <a href="https://linkedin.com/in/shamsear/" target="_blank" class="hero-link-btn">
-                    💼 LinkedIn
-                </a>
+    <!-- Experience & Education Section -->
+    <section id="experience" style="background: var(--bg-surface);">
+        <div class="container">
+            <h2 class="section-title">Experience &amp; Education</h2>
+            
+            <div style="max-width: 850px; margin: 2.5rem auto 0 auto;">
+                <div class="experience-card">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.2rem; color: var(--accent-amber);">Software Developer — AI-Assisted</h3>
+                        <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">Jul 2024 – Present</span>
+                    </div>
+                    <div style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">Paid Production Projects · Doha, Qatar</div>
+                    <ul style="font-size: 0.875rem; color: var(--text-secondary); padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li>Engineered and deployed paid software applications including a Next.js/TypeScript Warehouse Management platform and Node.js Billing Software.</li>
+                        <li>Built custom e-commerce applications and REST APIs using JavaScript, React, and Shopify Liquid.</li>
+                        <li>Utilized AI coding tools (Cursor, Claude Code, Codex) while performing rigorous static analysis, unit testing, and line-by-line code verification.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+                        <h3 style="font-size: 1.2rem; color: var(--text-primary);">B.E. Computer Science &amp; Engineering</h3>
+                        <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-muted);">2020 – 2024</span>
+                    </div>
+                    <div style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">P.A. College of Engineering · CGPA: 7.4/10</div>
+                    <p style="font-size: 0.875rem; color: var(--text-secondary);">
+                        Graduated with a comprehensive computer science foundation in Data Structures, Algorithms, Software Design, Web Development, and Database Management Systems.
+                    </p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <span>© 2026 Shamsear Ebrahim</span>
-            <span>Doha, Qatar</span>
-        </footer>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Based in Doha, Qatar with a valid QID and transferable NOC. Available for immediate joining as a Junior Software Engineer.</p>
 
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+                <div style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem;">Contact Information</h3>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-amber-glow); color: var(--accent-amber); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Email</div>
+                                <a href="mailto:shamsear@gmail.com" style="color: var(--text-primary); text-decoration: none; font-weight: 500;">shamsear@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-amber-glow); color: var(--accent-amber); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Phone / WhatsApp</div>
+                                <span style="color: var(--text-primary); font-weight: 500;">+974 70485214</span>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-amber-glow); color: var(--accent-amber); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Location</div>
+                                <span style="color: var(--text-primary); font-weight: 500;">Doha, Qatar (Immediate Joiner)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button onclick="copyEmail('shamsear@gmail.com')" class="btn-primary" style="flex: 1; justify-content: center;">
+                            <i class="fas fa-copy"></i> Copy Email
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form id="contactForm" style="padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); display: flex; flex-direction: column; gap: 1rem;">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Send a Message</h3>
+                    
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.4rem;">Name</label>
+                        <input type="text" id="name" required style="width: 100%; padding: 0.75rem; background: var(--bg-darker); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary);">
+                    </div>
+
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.4rem;">Email</label>
+                        <input type="email" id="email" required style="width: 100%; padding: 0.75rem; background: var(--bg-darker); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary);">
+                    </div>
+
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.4rem;">Subject</label>
+                        <input type="text" id="subject" required style="width: 100%; padding: 0.75rem; background: var(--bg-darker); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary);">
+                    </div>
+
+                    <div>
+                        <label style="display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 0.4rem;">Message</label>
+                        <textarea id="message" rows="4" required style="width: 100%; padding: 0.75rem; background: var(--bg-darker); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="justify-content: center; margin-top: 0.5rem;">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 2rem 0; background: var(--bg-darker); text-align: center; border-top: 1px solid var(--border-subtle); font-size: 0.85rem; color: var(--text-muted);">
+        <div class="container">
+            <p>© 2026 Shamsear Ebrahim. All Rights Reserved. · Doha, Qatar</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/numberflow.js"></script>
+    <script src="assets/js/cube-motion.js"></script>
+    <script src="assets/js/project-modal.js"></script>
 </body>
 </html>
