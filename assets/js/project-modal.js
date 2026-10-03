@@ -1,23 +1,63 @@
 /**
- * ProjectModal.js - High-End Minimalist Project Detail Drawer
+ * ProjectModal.js - Comprehensive Project Database & Detail Drawer
+ * Holds exact URLs and technical specs for all 10 live projects.
  */
 
 const PROJECT_DATABASE = {
     'mizan': {
-        title: 'Mizan (Runway) — Expense Tracker PWA',
+        title: 'Mizan (Runway) — Financial PWA',
         category: 'Next.js 16 / Local-First PWA',
-        description: 'Mizan acts as a "departures board for your money", providing real-time Safe-to-Spend calculations, visual budget pacing, and offline IndexedDB synchronization.',
+        description: 'Mizan acts as a departures board for your money, providing real-time Safe-to-Spend calculations, visual budget pacing, and offline IndexedDB synchronization.',
         liveUrl: 'https://mizan-qa.vercel.app/',
         githubUrl: 'https://github.com/Shamsear',
         tags: ['Next.js 16', 'Dexie.js (IndexedDB)', 'TypeScript', 'Clerk Auth', 'Tailwind CSS'],
         highlights: [
             'Offline-first architecture with instant IndexedDB persistence.',
             'Visual Safe-to-Spend runway calculation derived from upcoming bills.',
-            'Responsive multi-device layout built for mobile PWA and desktop.'
+            'Responsive multi-device PWA layout.'
+        ]
+    },
+    'devai': {
+        title: 'DevAI — AI Code Generation SaaS',
+        category: 'SaaS Platform / AI Integration',
+        description: 'Landing page and interactive preview for an AI coding assistant platform, featuring live code generation, terminal previews, and team collaboration.',
+        liveUrl: 'https://devais.vercel.app/',
+        githubUrl: 'https://github.com/Shamsear',
+        tags: ['Next.js', 'React', 'Tailwind CSS', 'AI Prompting', 'TypeScript'],
+        highlights: [
+            'Interactive live code completion preview.',
+            'Waitlist registration modal with instant verification.',
+            'Feature comparison matrix & tier pricing breakdown.'
+        ]
+    },
+    'projectfund': {
+        title: 'ProjectFund Tracker — Grant & Fund Manager',
+        category: 'Full-Stack Application',
+        description: 'Financial management application designed to track project funding pools, allocation milestones, expenditure logs, and grant reporting.',
+        liveUrl: 'https://projectfund-tracker.vercel.app/',
+        githubUrl: 'https://github.com/Shamsear',
+        tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind CSS', 'Chart.js'],
+        highlights: [
+            'Milestone allocation tracking with automated status updates.',
+            'Visual budget breakdown and exportable summary charts.',
+            'Role-based dashboard for grant managers and applicants.'
+        ]
+    },
+    'stockflow': {
+        title: 'StockFlow AI — Smart Inventory Engine',
+        category: 'AI & Inventory Management',
+        description: 'An intelligent inventory tracking platform leveraging predictive analytics to forecast reorder thresholds, track SKUs, and eliminate stockouts.',
+        liveUrl: 'https://stockflow-aim.vercel.app/',
+        githubUrl: 'https://github.com/Shamsear',
+        tags: ['Next.js', 'Node.js', 'Python AI', 'PostgreSQL', 'Tailwind CSS'],
+        highlights: [
+            'Predictive stock depletion forecasting engine.',
+            'Real-time SKU quantity tracking across multiple warehouses.',
+            'Automated reorder notifications and supplier log.'
         ]
     },
     'oasis': {
-        title: 'Oasis Horizon — Luxury Real Estate Platform',
+        title: 'Oasis Horizon — Luxury Real Estate Portal',
         category: 'Frontend Development / React.js',
         description: 'A high-end real estate portal designed for premium properties featuring smooth filtering, dynamic property cards, and responsive contact forms.',
         liveUrl: 'https://oasisbah.vercel.app/',
@@ -29,30 +69,69 @@ const PROJECT_DATABASE = {
             'Mobile-first responsive layout with fast load speeds.'
         ]
     },
-    'task-copilot': {
-        title: 'AI-Native Knowledge Copilot',
-        category: 'Full-Stack Next.js Application',
-        description: 'Full-stack workspace productivity system with dynamic markdown rendering, vector embeddings for similarity search, and automated background job queues.',
-        liveUrl: '#',
-        githubUrl: 'https://github.com/Shamsear/portfoliow',
-        tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Prisma'],
+    'distortion': {
+        title: 'Distortion Studio — Creative Agency Showcase',
+        category: 'Experimental Web Design & WebGL',
+        description: 'An anti-pattern design system built for creative agencies, showcasing brutalist typography, kinetic hover effects, and WebGL image distortions.',
+        liveUrl: 'https://distortionstudio.vercel.app/',
+        githubUrl: 'https://github.com/Shamsear',
+        tags: ['Next.js', 'Brutalism', 'WebGL Shaders', 'CSS Grid'],
         highlights: [
-            'Vector embeddings search over workspace documents.',
-            'Background task queue processing for asynchronous jobs.',
-            'Clean markdown editor with instant preview.'
+            'High-contrast brutalist typography layout.',
+            'Custom image warp shaders and interactive hover effects.',
+            'Case study portfolio for digital fashion and fintech.'
         ]
     },
-    'api-gateway': {
-        title: 'High-Throughput REST Gateway',
-        category: 'Backend Architecture',
-        description: 'Microservice API gateway with rate-limiting, JWT authentication, and structured error logging handling 10,000+ requests/min.',
-        liveUrl: '#',
+    'atelier': {
+        title: 'Atelier Noir — Dubai Fashion Boutique',
+        category: 'Luxury E-Commerce & Branding',
+        description: 'Avant-garde fashion website presenting seasonal luxury collections, editorial lookbooks, and private appointment scheduling.',
+        liveUrl: 'https://ateliernoir.vercel.app/',
         githubUrl: 'https://github.com/Shamsear',
-        tags: ['Node.js', 'Express', 'Redis', 'Docker', 'JWT'],
+        tags: ['React.js', 'Tailwind CSS', 'Luxury UI', 'Ecommerce'],
         highlights: [
-            'Token bucket rate-limiting middleware.',
-            'JWT authentication and payload validation.',
-            'Dockerized microservice deployment config.'
+            'High-fashion lookbook presentation with sticky showcases.',
+            'Minimalist editorial typography and monochrome palette.',
+            'Bespoke consultation booking form.'
+        ]
+    },
+    'sahara': {
+        title: 'Sahara Mart — E-Commerce Hypermarket',
+        category: 'Web Development / E-Commerce',
+        description: 'A feature-complete online hypermarket storefront built for scalable product categories, shopping carts, and promotional deal banners.',
+        liveUrl: 'https://saharamart.vercel.app/',
+        githubUrl: 'https://github.com/Shamsear',
+        tags: ['HTML5', 'CSS3', 'JavaScript', 'E-Commerce UI'],
+        highlights: [
+            'Dynamic shopping cart preview with real-time price totals.',
+            'Category navigation for groceries and electronics.',
+            'Custom promotional modal workflow.'
+        ]
+    },
+    'typevelocity': {
+        title: 'Type Velocity — Speed Typing Engine',
+        category: 'Interactive Web Application',
+        description: 'A fast, sleek typing speed application measuring WPM, accuracy percentages, error highlights, and real-time performance graphs.',
+        liveUrl: 'https://thetypevelocity.vercel.app/',
+        githubUrl: 'https://github.com/Shamsear',
+        tags: ['JavaScript', 'Canvas', 'HTML5', 'CSS3', 'Metrics Engine'],
+        highlights: [
+            'Real-time WPM calculation and raw typing statistics.',
+            'Instant error highlighting and visual feedback.',
+            'Customizable test durations and text passages.'
+        ]
+    },
+    'brainquest': {
+        title: 'BrainQuest — Futuristic Sci-Fi Quiz Game',
+        category: 'Interactive UI & Gamification',
+        description: 'An immersive sci-fi styled quiz game featuring cyberpunk sound effects, micro-interactions, timer challenges, and score tracking.',
+        liveUrl: 'https://brainquests.vercel.app/',
+        githubUrl: 'https://github.com/Shamsear/brainquest',
+        tags: ['Tailwind CSS', 'Framer Motion', 'JavaScript', 'Audio FX'],
+        highlights: [
+            'Cyberpunk visual aesthetic with glowing glass containers.',
+            'Smooth question transitions and instant answer verification.',
+            'Gamified streak multiplier system.'
         ]
     }
 };

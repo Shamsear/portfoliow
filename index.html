@@ -61,22 +61,29 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
                 <div>
-                    <div class="hero-badge">
-                        <span class="status-pulse"></span>
-                        <span>BASED IN DOHA, QATAR · OPEN TO ROLES</span>
+                    <!-- Profile Picture Avatar -->
+                    <div style="display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem;">
+                        <img src="assets/images/shamsear.jpg" alt="Shamsear Ebrahim Profile Photo" style="width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-gold); box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);">
+                        <div>
+                            <div class="hero-badge" style="margin-bottom: 0.4rem;">
+                                <span class="status-pulse"></span>
+                                <span>BASED IN DOHA, QATAR · OPEN TO ROLES</span>
+                            </div>
+                            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary);">Full-Stack &amp; AI-Native Software Engineer</div>
+                        </div>
                     </div>
 
                     <h1 class="hero-title">
-                        Full-Stack &amp; <span style="color: var(--accent-gold);">AI-Native</span> Software Engineer
+                        Engineering Web Apps with <span style="color: var(--accent-gold);">Clean Code &amp; AI Workflows</span>
                     </h1>
 
-                    <p style="margin-bottom: 1.75rem; font-size: 1.05rem;">
-                        Building production web applications using <strong>Next.js</strong>, <strong>React</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, and <strong>Python</strong>. Combining AI tools (<span style="color: var(--accent-gold);">Cursor, Claude Code, Copilot</span>) with strict type safety, manual code audits, and unit testing.
+                    <p style="margin-bottom: 1.75rem; font-size: 1.02rem;">
+                        Building scalable web applications using <strong>Next.js</strong>, <strong>React</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, and <strong>Python</strong>. Combining AI development tools (<span style="color: var(--accent-gold);">Cursor, Claude Code, Copilot</span>) with strict static typing and line-by-line manual code verification.
                     </p>
 
                     <div style="display: flex; gap: 1rem; align-items: center;">
                         <a href="#work" class="btn-primary">
-                            <span>Explore Work</span>
+                            <span>Explore 10 Live Projects</span>
                             <i class="fas fa-arrow-right"></i>
                         </a>
                         <a href="shamsear_resume.pdf" target="_blank" class="btn-secondary">
@@ -97,81 +104,205 @@
         </div>
     </section>
 
-    <!-- Selected Work Section -->
+    <!-- 10 Live Projects Showcase Section -->
     <section id="work">
         <div class="container">
             <div style="margin-bottom: 2.5rem;">
-                <span class="eyebrow">// SELECTED PROJECTS</span>
-                <h2 class="section-title">Engineered Products</h2>
+                <span class="eyebrow">// 10 LIVE PRODUCTION PROJECTS</span>
+                <h2 class="section-title">Featured Software Projects</h2>
                 <p class="section-subtitle">
-                    Clean, responsive web applications and backend service architectures built with modern engineering standards.
+                    Select full-stack web applications, AI SaaS tools, e-commerce storefronts, and backend microservices.
                 </p>
             </div>
 
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="minimal-card project-card" onclick="openProjectModal('mizan')">
+                <!-- 1. Mizan Runway -->
+                <div class="minimal-card project-card">
                     <div>
                         <span class="tech-tag">Next.js 16</span>
-                        <span class="tech-tag">IndexedDB</span>
+                        <span class="tech-tag">IndexedDB PWA</span>
                         <span class="tech-tag">TypeScript</span>
-                        <h3 style="font-size: 1.3rem; margin: 0.75rem 0 0.5rem 0;">Mizan — Financial PWA</h3>
-                        <p>Offline-first expense tracker and financial runway dashboard calculating Safe-to-Spend metrics with IndexedDB sync.</p>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Mizan (Runway) — Financial PWA</h3>
+                        <p>Offline-first expense tracker and financial runway calculator with IndexedDB sync.</p>
                     </div>
                     <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
                         <a href="https://mizan-qa.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live Demo <i class="fas fa-external-link-alt"></i>
+                            Live App <i class="fas fa-external-link-alt"></i>
                         </a>
-                        <span style="font-size: 0.8rem; color: var(--accent-gold); cursor: pointer;"><i class="fas fa-code"></i> Specs</span>
+                        <button onclick="openProjectModal('mizan')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="minimal-card project-card" onclick="openProjectModal('oasis')">
+                <!-- 2. DevAI -->
+                <div class="minimal-card project-card">
                     <div>
-                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">AI Workflows</span>
+                        <span class="tech-tag">SaaS Design</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">DevAI — AI Code Generation SaaS</h3>
+                        <p>Platform for AI code generation featuring dynamic snippet previews and terminal workflows.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <a href="https://devais.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live App <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <button onclick="openProjectModal('devai')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. ProjectFund Tracker -->
+                <div class="minimal-card project-card">
+                    <div>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Finance</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">ProjectFund Tracker — Grant Manager</h3>
+                        <p>Financial management application tracking project funding pools, allocation milestones, and logs.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <a href="https://projectfund-tracker.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live App <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <button onclick="openProjectModal('projectfund')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 4. StockFlow AI -->
+                <div class="minimal-card project-card">
+                    <div>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Python AI</span>
+                        <span class="tech-tag">Analytics</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">StockFlow AI — Inventory Engine</h3>
+                        <p>Intelligent inventory tracking platform using predictive analytics to forecast reorder thresholds.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <a href="https://stockflow-aim.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live App <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <button onclick="openProjectModal('stockflow')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 5. Oasis Horizon -->
+                <div class="minimal-card project-card">
+                    <div>
+                        <span class="tech-tag">React.js</span>
                         <span class="tech-tag">Tailwind CSS</span>
-                        <span class="tech-tag">Framer Motion</span>
-                        <h3 style="font-size: 1.3rem; margin: 0.75rem 0 0.5rem 0;">Oasis Horizon — Luxury Portal</h3>
-                        <p>Luxury real estate platform presenting high-end property galleries with client-side filtering and contact flows.</p>
+                        <span class="tech-tag">Real Estate</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Oasis Horizon — Luxury Portal</h3>
+                        <p>Luxury real estate portal with client-side price filtering, property cards, and responsive contact flows.</p>
                     </div>
                     <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
                         <a href="https://oasisbah.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live Demo <i class="fas fa-external-link-alt"></i>
+                            Live App <i class="fas fa-external-link-alt"></i>
                         </a>
-                        <span style="font-size: 0.8rem; color: var(--accent-gold); cursor: pointer;"><i class="fas fa-code"></i> Specs</span>
+                        <button onclick="openProjectModal('oasis')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="minimal-card project-card" onclick="openProjectModal('task-copilot')">
+                <!-- 6. Distortion Studio -->
+                <div class="minimal-card project-card">
                     <div>
-                        <span class="tech-tag">Next.js 14</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">AI Workflows</span>
-                        <h3 style="font-size: 1.3rem; margin: 0.75rem 0 0.5rem 0;">AI Knowledge Copilot</h3>
-                        <p>Productivity workspace with dynamic markdown rendering, vector search, and background task queues.</p>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">WebGL Shaders</span>
+                        <span class="tech-tag">Brutalism</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Distortion Studio — Agency Showcase</h3>
+                        <p>Anti-pattern design system built for creative agencies, presenting brutalist typography and WebGL image shaders.</p>
                     </div>
                     <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <span class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            View Architecture
-                        </span>
+                        <a href="https://distortionstudio.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live App <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <button onclick="openProjectModal('distortion')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="minimal-card project-card" onclick="openProjectModal('api-gateway')">
+                <!-- 7. Atelier Noir -->
+                <div class="minimal-card project-card">
                     <div>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Express</span>
-                        <span class="tech-tag">Redis</span>
-                        <h3 style="font-size: 1.3rem; margin: 0.75rem 0 0.5rem 0;">High-Throughput REST Gateway</h3>
-                        <p>Microservice API gateway featuring rate-limiting, JWT authentication, and structured error logging.</p>
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Luxury UI</span>
+                        <span class="tech-tag">E-Commerce</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Atelier Noir — Fashion Boutique</h3>
+                        <p>Avant-garde luxury fashion website presenting lookbook collections and private consultation scheduling.</p>
                     </div>
                     <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <span class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            View Architecture
-                        </span>
+                        <a href="https://ateliernoir.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live App <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <button onclick="openProjectModal('atelier')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 8. Sahara Mart -->
+                <div class="minimal-card project-card">
+                    <div>
+                        <span class="tech-tag">HTML5 / CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Hypermarket</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Sahara Mart — Hypermarket Platform</h3>
+                        <p>Online hypermarket storefront with product category navigation, cart previews, and deal banners.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <a href="https://saharamart.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live App <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <button onclick="openProjectModal('sahara')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 9. Type Velocity -->
+                <div class="minimal-card project-card">
+                    <div>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Canvas Engine</span>
+                        <span class="tech-tag">Metrics</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Type Velocity — Speed Typing Engine</h3>
+                        <p>Sleek typing speed test calculating real-time WPM, accuracy percentages, and instant error highlights.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <a href="https://thetypevelocity.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live App <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <button onclick="openProjectModal('typevelocity')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 10. BrainQuest -->
+                <div class="minimal-card project-card">
+                    <div>
+                        <span class="tech-tag">Framer Motion</span>
+                        <span class="tech-tag">Audio FX</span>
+                        <span class="tech-tag">Gamification</span>
+                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">BrainQuest — Sci-Fi Cyberpunk Quiz</h3>
+                        <p>Gamified sci-fi quiz app featuring audio feedback, glass container animations, and score streak tracking.</p>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
+                        <a href="https://brainquests.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Live App <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <button onclick="openProjectModal('brainquest')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                            Specs
+                        </button>
                     </div>
                 </div>
             </div>
