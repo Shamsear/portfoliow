@@ -1,516 +1,545 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shamsear Ebrahim — Full-Stack &amp; AI-Native Software Engineer</title>
-    <meta name="description" content="Full-Stack Engineer based in Doha, Qatar. Next.js, React, Node.js, TypeScript, Python, and AI coding workflows.">
-    
-    <!-- Favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Shamsear Ebrahim · Full-Stack Engineer in Doha, Qatar</title>
+    <meta name="description" content="Full-stack engineer in Doha, Qatar. I build web products with Next.js, TypeScript, Node and Python, using AI tools and checking every line with types, tests and review.">
+    <meta name="author" content="Shamsear Ebrahim">
+    <meta name="theme-color" content="#0b0b0c">
+    <meta name="color-scheme" content="dark">
+    <link rel="canonical" href="https://shamseare.vercel.app/">
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shamsear Ebrahim">
+    <meta property="og:title" content="Shamsear Ebrahim · Full-Stack Engineer">
+    <meta property="og:description" content="I build web products with AI and check every line myself. Next.js, TypeScript, Node and Python. Based in Doha, Qatar.">
+    <meta property="og:url" content="https://shamseare.vercel.app/">
+    <meta property="og:image" content="https://shamseare.vercel.app/assets/images/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Shamsear Ebrahim, full-stack engineer. I build web products with AI and check every line myself.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shamsear Ebrahim · Full-Stack Engineer">
+    <meta name="twitter:description" content="I build web products with AI and check every line myself.">
+    <meta name="twitter:image" content="https://shamseare.vercel.app/assets/images/og.png">
+
+    <!-- Icons -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="assets/images/favicon.svg">
-    
-    <!-- Fonts & Icons -->
+    <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap">
 
-    <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() { emailjs.init("Nb8ThHEgrWHlteSAX"); })();
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="modulepreload" href="assets/js/projects.js">
+    <script type="module" src="assets/js/app.js"></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shamsear Ebrahim",
+        "jobTitle": "Full-Stack Software Engineer",
+        "url": "https://shamseare.vercel.app/",
+        "email": "mailto:shamsear@gmail.com",
+        "image": "https://shamseare.vercel.app/assets/images/work/shamsear.webp",
+        "address": { "@type": "PostalAddress", "addressLocality": "Doha", "addressCountry": "QA" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "P.A. College of Engineering, VTU" },
+        "knowsAbout": ["Next.js", "React", "TypeScript", "Node.js", "Python", "PostgreSQL", "AI-assisted software development"],
+        "sameAs": ["https://github.com/Shamsear", "https://www.linkedin.com/in/shamsear/"]
+    }
     </script>
 </head>
 <body>
-    <!-- Loader -->
-    <div class="page-loader">
-        <div style="text-align: center;">
-            <div style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 700; color: var(--accent-gold);">{SE}</div>
-            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 0.3rem;">Loading portfolio…</div>
-        </div>
-    </div>
+    <!-- Icon sprite -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+        <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+        <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+        <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></symbol>
+        <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10.5V16M8 7.5v.01M12 16v-5.5M12 13a2.5 2.5 0 0 1 5 0v3"/></symbol>
+    </svg>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="minimal-nav">
-            <a href="#home" class="logo-container">
-                <div class="logo-icon">{SE}</div>
-                <span class="logo-text">Shamsear Ebrahim</span>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div id="top-sentinel" aria-hidden="true" style="position:absolute;top:0;height:1px;width:1px"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary">
+            <a href="#top" class="brand" aria-label="Shamsear Ebrahim, back to top">
+                <span class="brand__mark" aria-hidden="true">SE</span>
+                <span>Shamsear Ebrahim</span>
             </a>
-            
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#work" class="nav-link">Work</a></li>
-                <li><a href="#workflow" class="nav-link">AI Workflow</a></li>
-                <li><a href="#skills" class="nav-link">Skills &amp; Exp</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+
+            <ul class="nav__links" id="nav-menu">
+                <li><a class="nav__link" href="#work">Work</a></li>
+                <li><a class="nav__link" href="#method">Method</a></li>
+                <li><a class="nav__link" href="#experience">Experience</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
-            
-            <div style="display: flex; align-items: center; gap: 0.75rem;">
-                <a href="#contact" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8rem;">
-                    <span>Hire Engineer</span>
-                    <i class="fas fa-arrow-right"></i>
+
+            <div class="nav__actions">
+                <a class="btn btn--ghost btn--small nav__resume" href="shamsear_resume.pdf" target="_blank" rel="noopener">
+                    Resume<span class="visually-hidden"> (PDF, opens in a new tab)</span>
                 </a>
-                <button class="hamburger" aria-label="Toggle Navigation Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                    <span class="nav__toggle-bars" aria-hidden="true"></span>
                 </button>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="container hero__grid">
                 <div>
-                    <!-- Status Badge -->
-                    <div class="hero-badge" style="margin-bottom: 1.25rem;">
-                        <span class="status-pulse"></span>
-                        <span>BASED IN DOHA, QATAR · OPEN TO ROLES</span>
-                    </div>
-
-                    <!-- Profile Picture Avatar & Intro -->
-                    <div style="display: flex; align-items: center; gap: 1.25rem; margin-bottom: 2rem;">
-                        <img src="assets/images/shamsear.jpg" alt="Shamsear Ebrahim Profile Photo" class="hero-avatar">
-                        <div style="transform: translateY(24px);">
-                            <div style="font-family: var(--font-mono); font-size: 1.15rem; font-weight: 700; color: var(--text-primary);">Shamsear Ebrahim</div>
-                            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-gold);">Full-Stack &amp; AI-Native Software Engineer</div>
-                        </div>
-                    </div>
-
-                    <h1 class="hero-title">
-                        Engineering Web Apps with <span style="color: var(--accent-gold);">Clean Code &amp; AI Workflows</span>
-                    </h1>
-
-                    <p style="margin-bottom: 1.75rem; font-size: 1.02rem;">
-                        Building scalable web applications using <strong>Next.js</strong>, <strong>React</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>, and <strong>Python</strong>. Combining AI development tools (<span style="color: var(--accent-gold);">Cursor, Claude Code, Copilot</span>) with strict static typing and line-by-line manual code verification.
+                    <p class="status mono">
+                        <span class="status__dot" aria-hidden="true"></span>
+                        Open to roles · Doha, Qatar and remote
                     </p>
 
-                    <div style="display: flex; gap: 1rem; align-items: center;">
-                        <a href="#work" class="btn-primary">
-                            <span>Explore Production Projects</span>
-                            <i class="fas fa-arrow-right"></i>
+                    <h1 class="hero__title" id="hero-title">I build web products with AI and check every line myself.</h1>
+
+                    <p class="hero__lede">
+                        Full-stack engineer in Doha. I ship Next.js, TypeScript, Node and Python products, backed by typed schemas, tests and manual review.
+                    </p>
+
+                    <div class="hero__ctas">
+                        <a class="btn btn--primary" href="#work">
+                            See selected work
+                            <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
                         </a>
-                        <a href="shamsear_resume.pdf" target="_blank" class="btn-secondary">
-                            <i class="fas fa-file-pdf"></i> Resume PDF
+                        <a class="btn btn--ghost" href="shamsear_resume.pdf" download="Shamsear-Ebrahim-Resume.pdf">
+                            <svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>
+                            Download resume
+                            <span class="visually-hidden">(PDF)</span>
                         </a>
+                    </div>
+
+                    <ul class="hero__meta mono" aria-label="Profiles">
+                        <li><a href="https://github.com/Shamsear" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/shamsear/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+                        <li><a href="mailto:shamsear@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>shamsear@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <aside class="checklist mono" aria-labelledby="checklist-title">
+                    <div class="checklist__head">
+                        <span id="checklist-title">release checklist</span>
+                        <span class="faint">my standard</span>
+                    </div>
+                    <ul class="checklist__list">
+                        <li class="checklist__row">
+                            <span class="checklist__cmd">tsc --strict</span>
+                            <span class="checklist__res"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>typed</span>
+                            <span class="checklist__note">No any. Interfaces for every boundary.</span>
+                        </li>
+                        <li class="checklist__row">
+                            <span class="checklist__cmd">zod.parse()</span>
+                            <span class="checklist__res"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>validated</span>
+                            <span class="checklist__note">Inputs and API data checked at runtime.</span>
+                        </li>
+                        <li class="checklist__row">
+                            <span class="checklist__cmd">vitest run</span>
+                            <span class="checklist__res"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>tested</span>
+                            <span class="checklist__note">Edge cases and error paths covered.</span>
+                        </li>
+                        <li class="checklist__row">
+                            <span class="checklist__cmd">git diff</span>
+                            <span class="checklist__res"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>reviewed</span>
+                            <span class="checklist__note">AI output read line by line before merge.</span>
+                        </li>
+                    </ul>
+                    <p class="checklist__foot">AI writes the first draft. Nothing ships unchecked.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Selected work -->
+        <section class="section" id="work" aria-labelledby="work-title">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 class="section-head__title" id="work-title">Selected work</h2>
+                        <p class="section-head__lede">Four projects that show how I work end to end, from product decisions to the code that ships.</p>
+                    </div>
+                    <a class="link" href="#index">All 12 projects <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+                </div>
+
+                <div class="work-grid">
+                    <article class="tile tile--wide" data-reveal>
+                        <button class="tile__open" type="button" data-case="ssleague" aria-label="Read the SS League case study">
+                            <span class="tile__media">
+                                <img src="assets/images/work/ssleague.webp" alt="SS League home page with Login and Register actions and links to players, teams and the season archive." width="1600" height="790" fetchpriority="high" decoding="async">
+                            </span>
+                        </button>
+                        <div class="tile__body">
+                            <h3 class="tile__title">SS League</h3>
+                            <p class="tile__summary">A live auction and team manager for a fantasy football league, with budgets and squad rules enforced as players are sold.</p>
+                            <p class="tile__meta mono">Product app · Next.js · TypeScript · Real-time state</p>
+                            <div class="tile__actions">
+                                <button class="link" type="button" data-case="ssleague">Read case study <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+                                <a class="link" href="https://ssleague.vercel.app/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tile tile--narrow" data-reveal style="--i:1">
+                        <button class="tile__open" type="button" data-case="mizan" aria-label="Read the Mizan case study">
+                            <span class="tile__media">
+                                <img class="is-contain" src="assets/images/work/mizan.webp" alt="Mizan concept screen showing a safe-to-spend amount for today, a budget pacing bar and buttons to add expense or income." width="1600" height="1600" loading="lazy" decoding="async">
+                            </span>
+                        </button>
+                        <div class="tile__body">
+                            <h3 class="tile__title">Mizan</h3>
+                            <p class="tile__summary">An offline-first finance app that tells you how much you can safely spend today.</p>
+                            <p class="tile__meta mono">Product app · Next.js 16 · IndexedDB · PWA</p>
+                            <div class="tile__actions">
+                                <button class="link" type="button" data-case="mizan">Read case study <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+                                <a class="link" href="https://mizan-qa.vercel.app/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tile tile--narrow" data-reveal>
+                        <button class="tile__open" type="button" data-case="devai" aria-label="Read the DevAI case study">
+                            <span class="tile__media">
+                                <img src="assets/images/work/devai.webp" alt="DevAI landing page with the headline Build websites 10x faster with DevAI and floating panels showing an AI code suggestion." width="1600" height="913" loading="lazy" decoding="async">
+                            </span>
+                        </button>
+                        <div class="tile__body">
+                            <h3 class="tile__title">DevAI</h3>
+                            <p class="tile__summary">The launch site for an AI code generation product, with an interactive preview of the generator.</p>
+                            <p class="tile__meta mono">Product app · Next.js · React · TypeScript</p>
+                            <div class="tile__actions">
+                                <button class="link" type="button" data-case="devai">Read case study <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+                                <a class="link" href="https://devais.vercel.app/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tile tile--wide" data-reveal style="--i:1">
+                        <button class="tile__open" type="button" data-case="distortion" aria-label="Read the Distortion Studio case study">
+                            <span class="tile__media">
+                                <img src="assets/images/work/distortion.webp" alt="Distortion Studio home page with oversized brutalist typography on a dark background." width="1600" height="910" loading="lazy" decoding="async">
+                            </span>
+                        </button>
+                        <div class="tile__body">
+                            <h3 class="tile__title">Distortion Studio</h3>
+                            <p class="tile__summary">An agency showcase that breaks the usual rules on purpose, with brutalist type and WebGL image distortion.</p>
+                            <p class="tile__meta mono">Experiment · Next.js · WebGL shaders · CSS Grid</p>
+                            <div class="tile__actions">
+                                <button class="link" type="button" data-case="distortion">Read case study <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+                                <a class="link" href="https://distortionstudio.vercel.app/" target="_blank" rel="noopener">Live site <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method -->
+        <section class="section" id="method" aria-labelledby="method-title">
+            <div class="container method">
+                <div class="method__intro" data-reveal>
+                    <h2 class="section-head__title" id="method-title">How I ship with AI</h2>
+                    <p>AI tools make me fast. Types, tests and review make the result safe to ship. I use the speed and I keep the checks.</p>
+                    <ul class="method__tools mono" aria-label="AI tools I use">
+                        <li class="chip">Cursor</li>
+                        <li class="chip">Claude Code</li>
+                        <li class="chip">GitHub Copilot</li>
+                    </ul>
+                </div>
+
+                <ol class="steps">
+                    <li class="step" data-reveal>
+                        <span class="step__label mono">Types</span>
+                        <div>
+                            <h3 class="step__title">Catch errors before the code runs</h3>
+                            <p class="step__text">Strict TypeScript interfaces, Zod validation and PostgreSQL schemas define what data is allowed. Generated code has to fit those contracts or it does not compile.</p>
+                        </div>
+                    </li>
+                    <li class="step" data-reveal>
+                        <span class="step__label mono">Tests</span>
+                        <div>
+                            <h3 class="step__title">Prove the edge cases</h3>
+                            <p class="step__text">Unit and integration tests with Jest or Vitest cover state boundaries, API error responses and the inputs nobody expects.</p>
+                        </div>
+                    </li>
+                    <li class="step" data-reveal>
+                        <span class="step__label mono">Review</span>
+                        <div>
+                            <h3 class="step__title">Read every line before it merges</h3>
+                            <p class="step__text">I review AI output line by line for security, clear architecture and code a teammate can maintain. If I cannot explain a line, it does not ship.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Index of all projects -->
+        <section class="section" id="index" aria-labelledby="index-title">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <div>
+                        <h2 class="section-head__title" id="index-title">Every project</h2>
+                        <p class="section-head__lede">Product apps, brand sites and experiments. Open any row for the full write-up.</p>
                     </div>
                 </div>
 
-                <!-- 3D Interactive Tech Cube Container -->
-                <div class="minimal-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
-                    <div class="eyebrow" style="margin-bottom: 1rem;">// 3D TECH CUBE (DRAG TO ROTATE)</div>
-                    <div id="heroTechCubeContainer" class="cube-motion-stage"></div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 1rem;">
-                        <i class="fas fa-hand-pointer"></i> Drag to spin stack physics
+                <div class="filters" role="group" aria-label="Filter projects by type" data-reveal>
+                    <button class="filter" type="button" data-filter="all" aria-pressed="true">All<span class="filter__count mono"></span></button>
+                    <button class="filter" type="button" data-filter="product" aria-pressed="false">Product apps<span class="filter__count mono"></span></button>
+                    <button class="filter" type="button" data-filter="brand" aria-pressed="false">Brand sites<span class="filter__count mono"></span></button>
+                    <button class="filter" type="button" data-filter="experiment" aria-pressed="false">Experiments<span class="filter__count mono"></span></button>
+                </div>
+                <p class="visually-hidden" id="index-live" aria-live="polite"></p>
+
+                <ul class="index">
+                    <li class="index__row" data-kind="product">
+                        <div><a class="index__name" href="#work/ssleague" data-case="ssleague">SS League</a><span class="index__kind mono">Product app</span></div>
+                        <p class="index__desc">Live football auction and team manager.</p>
+                        <p class="index__stack mono">Next.js · TypeScript</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://ssleague.vercel.app/" target="_blank" rel="noopener" aria-label="SS League live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="product">
+                        <div><a class="index__name" href="#work/mizan" data-case="mizan">Mizan</a><span class="index__kind mono">Product app</span></div>
+                        <p class="index__desc">Offline-first safe-to-spend finance PWA.</p>
+                        <p class="index__stack mono">Next.js 16 · IndexedDB</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://mizan-qa.vercel.app/" target="_blank" rel="noopener" aria-label="Mizan live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="product">
+                        <div><a class="index__name" href="#work/devai" data-case="devai">DevAI</a><span class="index__kind mono">Product app</span></div>
+                        <p class="index__desc">Launch site for an AI code generation product.</p>
+                        <p class="index__stack mono">Next.js · React</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://devais.vercel.app/" target="_blank" rel="noopener" aria-label="DevAI live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="product">
+                        <div><a class="index__name" href="#work/stockflow" data-case="stockflow">StockFlow AI</a><span class="index__kind mono">Product app</span></div>
+                        <p class="index__desc">Inventory tracking with reorder forecasting.</p>
+                        <p class="index__stack mono">Next.js · Python · PostgreSQL</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://stockflow-aim.vercel.app/" target="_blank" rel="noopener" aria-label="StockFlow AI live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="product">
+                        <div><a class="index__name" href="#work/projectfund" data-case="projectfund">ProjectFund Tracker</a><span class="index__kind mono">Product app</span></div>
+                        <p class="index__desc">Grant and fund allocation manager.</p>
+                        <p class="index__stack mono">Next.js · PostgreSQL</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://projectfund-tracker.vercel.app/" target="_blank" rel="noopener" aria-label="ProjectFund Tracker live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="product">
+                        <div><a class="index__name" href="#work/billing" data-case="billing">Billing Engine</a><span class="index__kind mono">Product app</span></div>
+                        <p class="index__desc">Recurring billing and PDF invoice service.</p>
+                        <p class="index__stack mono">Node.js · Express · PostgreSQL</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://github.com/Shamsear" target="_blank" rel="noopener" aria-label="Billing Engine on GitHub (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="brand">
+                        <div><a class="index__name" href="#work/oasis" data-case="oasis">Oasis Horizon</a><span class="index__kind mono">Brand site</span></div>
+                        <p class="index__desc">Luxury real estate site with instant filters.</p>
+                        <p class="index__stack mono">React · Tailwind CSS</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://oasisbah.vercel.app/" target="_blank" rel="noopener" aria-label="Oasis Horizon live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="brand">
+                        <div><a class="index__name" href="#work/atelier" data-case="atelier">Atelier Noir</a><span class="index__kind mono">Brand site</span></div>
+                        <p class="index__desc">Editorial fashion boutique with appointment booking.</p>
+                        <p class="index__stack mono">React · Tailwind CSS</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://ateliernoir.vercel.app/" target="_blank" rel="noopener" aria-label="Atelier Noir live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="brand">
+                        <div><a class="index__name" href="#work/sahara" data-case="sahara">Sahara Mart</a><span class="index__kind mono">Brand site</span></div>
+                        <p class="index__desc">Hypermarket storefront with live cart totals.</p>
+                        <p class="index__stack mono">HTML · CSS · JavaScript</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://saharamart.vercel.app/" target="_blank" rel="noopener" aria-label="Sahara Mart live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="experiment">
+                        <div><a class="index__name" href="#work/distortion" data-case="distortion">Distortion Studio</a><span class="index__kind mono">Experiment</span></div>
+                        <p class="index__desc">Brutalist agency site with WebGL distortion.</p>
+                        <p class="index__stack mono">Next.js · WebGL</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://distortionstudio.vercel.app/" target="_blank" rel="noopener" aria-label="Distortion Studio live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="experiment">
+                        <div><a class="index__name" href="#work/typevelocity" data-case="typevelocity">Type Velocity</a><span class="index__kind mono">Experiment</span></div>
+                        <p class="index__desc">Typing test with live speed and accuracy.</p>
+                        <p class="index__stack mono">JavaScript · Canvas</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://thetypevelocity.vercel.app/" target="_blank" rel="noopener" aria-label="Type Velocity live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                    <li class="index__row" data-kind="experiment">
+                        <div><a class="index__name" href="#work/brainquest" data-case="brainquest">BrainQuest</a><span class="index__kind mono">Experiment</span></div>
+                        <p class="index__desc">Sci-fi quiz game with sound and streaks.</p>
+                        <p class="index__stack mono">JavaScript · Framer Motion</p>
+                        <div class="index__links">
+                            <a class="icon-btn" href="https://brainquests.vercel.app/" target="_blank" rel="noopener" aria-label="BrainQuest live site (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="index__empty" id="index-empty" hidden>
+                    <p>No projects in this category yet.</p>
+                    <button class="link" type="button" id="index-reset">Show all projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience and stack -->
+        <section class="section" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2 class="section-head__title" id="experience-title">Experience and stack</h2>
+                </div>
+
+                <div class="exp">
+                    <div data-reveal>
+                        <h3 class="exp__label mono">Experience</h3>
+                        <ol class="timeline">
+                            <li class="timeline__item">
+                                <span class="timeline__when mono">2024 to now</span>
+                                <div>
+                                    <p class="timeline__role">Full-Stack Software Engineer</p>
+                                    <p class="timeline__org">Independent and project engagements · Remote, Bahrain and Doha</p>
+                                    <p class="timeline__text">Designing and building web products end to end, from data model and API to interface and deployment.</p>
+                                </div>
+                            </li>
+                            <li class="timeline__item">
+                                <span class="timeline__when mono">2020 to 2024</span>
+                                <div>
+                                    <p class="timeline__role">B.E. in Computer Science</p>
+                                    <p class="timeline__org">P.A. College of Engineering · VTU</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div data-reveal style="--i:1">
+                        <h3 class="exp__label mono">Stack</h3>
+                        <dl class="stack">
+                            <div class="stack__row"><dt class="stack__group mono">Frontend</dt><dd class="stack__items">React, Next.js 14 and 16</dd></div>
+                            <div class="stack__row"><dt class="stack__group mono">Languages</dt><dd class="stack__items">TypeScript, JavaScript, Python, SQL</dd></div>
+                            <div class="stack__row"><dt class="stack__group mono">Backend and data</dt><dd class="stack__items">Node.js, Express, PostgreSQL</dd></div>
+                            <div class="stack__row"><dt class="stack__group mono">Quality</dt><dd class="stack__items">Zod, Jest, Vitest, strict TypeScript</dd></div>
+                            <div class="stack__row"><dt class="stack__group mono">AI tooling</dt><dd class="stack__items">Cursor, Claude Code, GitHub Copilot</dd></div>
+                            <div class="stack__row"><dt class="stack__group mono">Styling</dt><dd class="stack__items">Tailwind CSS, modern CSS</dd></div>
+                        </dl>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Production Projects Showcase Section -->
-    <section id="work">
-        <div class="container">
-            <div style="margin-bottom: 2.5rem;">
-                <span class="eyebrow">// FEATURED SOFTWARE PROJECTS</span>
-                <h2 class="section-title">Engineered Products</h2>
-                <p class="section-subtitle">
-                    Select full-stack web applications, AI SaaS platforms, Node.js backend systems, and e-commerce storefronts.
-                </p>
-            </div>
+        <!-- Contact -->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="container contact">
+                <div data-reveal>
+                    <h2 class="contact__title" id="contact-title">Have a role or a project in mind?</h2>
+                    <p class="contact__lede">I am open to full-stack and AI engineering roles in Doha or remote. Email is the fastest way to reach me.</p>
 
-            <div class="projects-grid">
-                <!-- SS League -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">Real-Time State</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">SS League — Live Football Auction</h3>
-                        <p>Interactive fantasy football auction platform enabling strategic player bidding, budget depletion tracking, and stats.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://ssleague.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('ssleague')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
+                    <div class="email-line">
+                        <a class="email-line__addr" href="mailto:shamsear@gmail.com">shamsear@gmail.com</a>
+                        <button class="btn btn--ghost btn--small" type="button" data-copy-email>
+                            <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+                            Copy
+                            <span class="visually-hidden"> email address</span>
                         </button>
                     </div>
+
+                    <ul class="socials mono" aria-label="Other ways to connect">
+                        <li><a href="https://www.linkedin.com/in/shamsear/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+                        <li><a href="https://github.com/Shamsear" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+                        <li><a href="shamsear_resume.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Resume PDF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+                    </ul>
                 </div>
 
-                <!-- Node.js Billing Engine -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Express</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Enterprise Billing Engine</h3>
-                        <p>Node.js automated billing and invoice generation service with tier subscription logic and automated PDF receipts.</p>
+                <form class="form" id="contact-form" action="mailto:shamsear@gmail.com" method="post" enctype="text/plain" aria-labelledby="form-title" data-reveal style="--i:1">
+                    <h3 class="visually-hidden" id="form-title">Send a message</h3>
+
+                    <div class="field">
+                        <label class="field__label" for="cf-name">Name</label>
+                        <input class="field__input" id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-error">
+                        <p class="field__error" id="cf-name-error" aria-live="polite"></p>
                     </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <button onclick="openProjectModal('nodebilling')" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            View Architecture <i class="fas fa-code"></i>
+
+                    <div class="field">
+                        <label class="field__label" for="cf-email">Email</label>
+                        <input class="field__input" id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="cf-email-error">
+                        <p class="field__error" id="cf-email-error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="field">
+                        <label class="field__label" for="cf-message">Message</label>
+                        <textarea class="field__input" id="cf-message" name="message" rows="5" required aria-describedby="cf-message-error" placeholder="What are you hiring for, or what would you like to build?"></textarea>
+                        <p class="field__error" id="cf-message-error" aria-live="polite"></p>
+                    </div>
+
+                    <div class="form__hp" aria-hidden="true">
+                        <label for="cf-company">Company</label>
+                        <input id="cf-company" name="company" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="form__foot">
+                        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+                        <button class="btn btn--primary" type="submit">
+                            <span class="btn__label">Send message</span>
+                            <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
                         </button>
                     </div>
-                </div>
-
-                <!-- Mizan Runway -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">Next.js 16</span>
-                        <span class="tech-tag">IndexedDB PWA</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Mizan (Runway) — Financial PWA</h3>
-                        <p>Offline-first expense tracker and financial runway calculator with IndexedDB sync.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://mizan-qa.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('mizan')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-
-                <!-- DevAI -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">AI Workflows</span>
-                        <span class="tech-tag">SaaS Design</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">DevAI — AI Code Generation SaaS</h3>
-                        <p>Platform for AI code generation featuring dynamic snippet previews and terminal workflows.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://devais.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('devai')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-
-                <!-- ProjectFund Tracker -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Finance</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">ProjectFund Tracker — Grant Manager</h3>
-                        <p>Financial management application tracking project funding pools, allocation milestones, and logs.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://projectfund-tracker.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('projectfund')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-
-                <!-- StockFlow AI -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">Python AI</span>
-                        <span class="tech-tag">Analytics</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">StockFlow AI — Inventory Engine</h3>
-                        <p>Intelligent inventory tracking platform using predictive analytics to forecast reorder thresholds.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://stockflow-aim.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('stockflow')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Oasis Horizon -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">Tailwind CSS</span>
-                        <span class="tech-tag">Real Estate</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Oasis Horizon — Luxury Portal</h3>
-                        <p>Luxury real estate portal with client-side price filtering, property cards, and responsive contact flows.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://oasisbah.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('oasis')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Distortion Studio -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">WebGL Shaders</span>
-                        <span class="tech-tag">Brutalism</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Distortion Studio — Agency Showcase</h3>
-                        <p>Anti-pattern design system built for creative agencies, presenting brutalist typography and WebGL image shaders.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://distortionstudio.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('distortion')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Atelier Noir -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">React.js</span>
-                        <span class="tech-tag">Luxury UI</span>
-                        <span class="tech-tag">E-Commerce</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Atelier Noir — Fashion Boutique</h3>
-                        <p>Avant-garde luxury fashion website presenting lookbook collections and private consultation scheduling.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://ateliernoir.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('atelier')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Sahara Mart -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">HTML5 / CSS3</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Hypermarket</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Sahara Mart — Hypermarket Platform</h3>
-                        <p>Online hypermarket storefront with product category navigation, cart previews, and deal banners.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://saharamart.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('sahara')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Type Velocity -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Canvas Engine</span>
-                        <span class="tech-tag">Metrics</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">Type Velocity — Speed Typing Engine</h3>
-                        <p>Sleek typing speed test calculating real-time WPM, accuracy percentages, and instant error highlights.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://thetypevelocity.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('typevelocity')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-
-                <!-- BrainQuest -->
-                <div class="minimal-card project-card">
-                    <div>
-                        <span class="tech-tag">Framer Motion</span>
-                        <span class="tech-tag">Audio FX</span>
-                        <span class="tech-tag">Gamification</span>
-                        <h3 style="font-size: 1.25rem; margin: 0.75rem 0 0.5rem 0;">BrainQuest — Sci-Fi Cyberpunk Quiz</h3>
-                        <p>Gamified sci-fi quiz app featuring audio feedback, glass container animations, and score streak tracking.</p>
-                    </div>
-                    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center;">
-                        <a href="https://brainquests.vercel.app/" target="_blank" class="btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Live App <i class="fas fa-external-link-alt"></i>
-                        </a>
-                        <button onclick="openProjectModal('brainquest')" class="btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
-                            Specs
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Engineering Protocol Section -->
-    <section id="workflow">
-        <div class="container">
-            <div style="margin-bottom: 2.5rem;">
-                <span class="eyebrow">// AI-NATIVE PROTOCOL</span>
-                <h2 class="section-title">AI Tooling with Code Validation</h2>
-                <p class="section-subtitle">
-                    How I leverage AI coding assistants to move fast without sacrificing software quality or system reliability.
-                </p>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
-                <div class="minimal-card">
-                    <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">1. Static Typing &amp; Schemas</h3>
-                    <p style="font-size: 0.88rem;">Enforcing strict TypeScript interfaces, Zod validations, and PostgreSQL schemas to catch type errors before execution.</p>
-                </div>
-
-                <div class="minimal-card">
-                    <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                        <i class="fas fa-check-double"></i>
-                    </div>
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">2. Unit &amp; Integration Tests</h3>
-                    <p style="font-size: 0.88rem;">Writing automated tests (Jest/Vitest) to cover edge cases, API error responses, and state boundaries.</p>
-                </div>
-
-                <div class="minimal-card">
-                    <div style="width: 36px; height: 36px; border-radius: 50%; background: rgba(245, 158, 11, 0.1); color: var(--accent-gold); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                        <i class="fas fa-code-branch"></i>
-                    </div>
-                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">3. Line-by-Line Code Audits</h3>
-                    <p style="font-size: 0.88rem;">Reviewing generated logic line-by-line to ensure security compliance, clean architecture, and maintainability.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills & Experience Section -->
-    <section id="skills">
-        <div class="container">
-            <div style="margin-bottom: 2.5rem;">
-                <span class="eyebrow">// CAPABILITIES &amp; BACKGROUND</span>
-                <h2 class="section-title">Technical Stack &amp; Experience</h2>
-            </div>
-
-            <div class="grid-two">
-                <!-- Stack Column -->
-                <div class="minimal-card">
-                    <h3 style="font-size: 1.15rem; margin-bottom: 1.25rem; color: var(--accent-gold);">Core Technical Stack</h3>
-                    <div class="skill-row">
-                        <span>Frontend Frameworks</span>
-                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">React, Next.js 14/16</span>
-                    </div>
-                    <div class="skill-row">
-                        <span>Languages</span>
-                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">TypeScript, JavaScript, Python</span>
-                    </div>
-                    <div class="skill-row">
-                        <span>Backend &amp; DB</span>
-                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">Node.js, Express, PostgreSQL, SQL</span>
-                    </div>
-                    <div class="skill-row">
-                        <span>AI Coding Tools</span>
-                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">Cursor, Claude Code, Copilot</span>
-                    </div>
-                    <div class="skill-row">
-                        <span>Styling &amp; UI</span>
-                        <span style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 600;">Tailwind CSS, HTML5/CSS3</span>
-                    </div>
-                </div>
-
-                <!-- Experience Column -->
-                <div class="minimal-card">
-                    <h3 style="font-size: 1.15rem; margin-bottom: 1.25rem; color: var(--accent-gold);">Background &amp; Roles</h3>
-                    <div style="margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-subtle);">
-                        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-gold); font-weight: 600;">2024 — PRESENT</div>
-                        <div style="font-size: 1rem; font-weight: 700; color: var(--text-primary);">Full-Stack Software Engineer</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted);">Independent &amp; Project Engagements (Remote - Bahrain / Doha, Qatar)</div>
-                    </div>
-                    <div>
-                        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-gold); font-weight: 600;">2020 — 2024</div>
-                        <div style="font-size: 1rem; font-weight: 700; color: var(--text-primary);">B.E. in Computer Science</div>
-                        <div style="font-size: 0.85rem; color: var(--text-muted);">PA College of Engineering · VTU</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div style="margin-bottom: 2.5rem; text-align: center;">
-                <span class="eyebrow">// GET IN TOUCH</span>
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle" style="margin: 0 auto;">
-                    Based in Doha, Qatar. Available for Software Engineering and AI-Native developer opportunities.
-                </p>
-            </div>
-
-            <div class="minimal-card" style="max-width: 640px; margin: 0 auto;">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.75rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border-subtle);">
-                    <div>
-                        <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); text-transform: uppercase;">Direct Email</div>
-                        <span style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary);">shamsear@gmail.com</span>
-                    </div>
-                    <button onclick="copyEmail('shamsear@gmail.com')" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.8rem;">
-                        <i class="fas fa-copy"></i> Copy Email
-                    </button>
-                </div>
-
-                <form id="contactForm" style="display: flex; flex-direction: column; gap: 1rem;">
-                    <div>
-                        <label style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.35rem;">Name</label>
-                        <input type="text" id="name" required style="width: 100%; padding: 0.75rem; background: #060608; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); font-family: var(--font-sans);">
-                    </div>
-                    <div>
-                        <label style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.35rem;">Email</label>
-                        <input type="email" id="email" required style="width: 100%; padding: 0.75rem; background: #060608; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); font-family: var(--font-sans);">
-                    </div>
-                    <div>
-                        <label style="display: block; font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; margin-bottom: 0.35rem;">Message</label>
-                        <textarea id="message" rows="4" required style="width: 100%; padding: 0.75rem; background: #060608; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: var(--text-primary); font-family: var(--font-sans); resize: vertical;"></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary" style="justify-content: center; width: 100%; margin-top: 0.5rem;">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
                 </form>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer style="padding: 2rem 0; background: var(--bg-darker); text-align: center; font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">
-        <div class="container">
-            <p>© 2026 Shamsear Ebrahim · Full-Stack &amp; AI Software Engineer · Doha, Qatar</p>
+    <footer class="site-footer">
+        <div class="container site-footer__inner mono">
+            <p>© <span id="year">2026</span> Shamsear Ebrahim · Doha, Qatar</p>
+            <a href="#top" class="link">Back to top <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
         </div>
     </footer>
 
-    <!-- Project Detail Modal -->
-    <div id="projectModal" class="modal-overlay">
-        <div class="modal-card">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
-                <h3 id="modalTitle" style="font-size: 1.25rem;">Project Architecture</h3>
-                <button onclick="closeProjectModal()" style="background: none; border: none; color: var(--text-secondary); font-size: 1.5rem; cursor: pointer;">&times;</button>
-            </div>
-            <div id="modalBody"></div>
+    <!-- Case study dialog -->
+    <dialog class="case" id="case" aria-labelledby="case-title">
+        <div class="case__bar">
+            <span class="mono" id="case-label">Case study</span>
+            <button class="icon-btn case__close" type="button" aria-label="Close case study">
+                <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+            </button>
         </div>
-    </div>
+        <div class="case__scroll" id="case-body"></div>
+    </dialog>
 
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/cube-motion.js"></script>
-    <script src="assets/js/project-modal.js"></script>
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+        <span id="toast-text"></span>
+    </div>
 </body>
 </html>

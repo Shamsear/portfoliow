@@ -1,43 +1,5 @@
-<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Dark Obsidian Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121216" />
-      <stop offset="100%" stop-color="#050507" />
-    </linearGradient>
-
-    <!-- Gold & Cyan Accent Gradient -->
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="50%" stop-color="#eab308" />
-      <stop offset="100%" stop-color="#38bdf8" />
-    </linearGradient>
-
-    <!-- Subtle Glow Filter -->
-    <filter id="cubeGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="1.5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-  </defs>
-
-  <!-- Background Squircle Container -->
-  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1.5"/>
-
-  <!-- 3D Isometric Cube Outer Structure -->
-  <!-- Top Face -->
-  <polygon points="32,10 50,19 32,28 14,19" fill="#1e1e28" stroke="url(#goldGrad)" stroke-width="1.8" stroke-linejoin="round"/>
-  
-  <!-- Left Face -->
-  <polygon points="14,19 32,28 32,48 14,39" fill="#14141c" stroke="url(#goldGrad)" stroke-width="1.8" stroke-linejoin="round"/>
-  
-  <!-- Right Face -->
-  <polygon points="32,28 50,19 50,39 32,48" fill="#0c0c12" stroke="url(#goldGrad)" stroke-width="1.8" stroke-linejoin="round"/>
-
-  <!-- Center Glowing Core Node -->
-  <circle cx="32" cy="28" r="3" fill="#f59e0b" filter="url(#cubeGlow)"/>
-
-  <!-- Monogram Tech Branding {SE} -->
-  <text x="32" y="58" font-family="'Space Grotesk', system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle" fill="#f8fafc" letter-spacing="1">
-    <tspan fill="#f59e0b">{S</tspan><tspan fill="#38bdf8">E}</tspan>
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0b0b0c"/>
+  <rect x="5.5" y="5.5" width="53" height="53" rx="8" fill="none" stroke="#e0a43b" stroke-width="3"/>
+  <text x="32" y="41.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="24" font-weight="600" fill="#f4f4f2" letter-spacing="0.5">SE</text>
 </svg>

@@ -1,76 +1,41 @@
-# Frontend Developer Portfolio
+# Shamsear Ebrahim · Portfolio
 
-![Portfolio Preview](assets/images/portfolio-preview.png)
+Personal site of Shamsear Ebrahim, full-stack engineer in Doha, Qatar.
+Live at [shamseare.vercel.app](https://shamseare.vercel.app/).
 
-## 🚀 Live Demo
+## Stack
 
-Visit the live portfolio: [Your portfolio URL here]
+Static HTML, one CSS file and two small ES modules. No build step and no framework.
 
-## 📋 Overview
+```
+index.html               page markup (hero, work, method, index, experience, contact)
+assets/css/styles.css    design tokens and all styles
+assets/js/app.js         behaviour: nav, scroll spy, filters, case study dialog, contact form
+assets/js/projects.js    case study content for all projects (single source of truth)
+assets/images/work/      optimized WebP project screenshots
+```
 
-A modern, responsive portfolio website showcasing my skills, projects, and experience as a Frontend Developer. Built with HTML, CSS, and JavaScript with Tailwind CSS for styling.
+## Editing content
 
-## ✨ Features
+- **Case studies:** edit `assets/js/projects.js`. Each entry has `summary`, `context`, `built`, `hard`, `outcome`, `stack`, `live`, `repo`, `image`, `alt`.
+- **Tiles and index rows:** edit `index.html`. Every `data-case="slug"` must match a key in `projects.js`.
+- **Deep links:** `/#work/<slug>` opens a case study directly, for example `/#work/ssleague`.
+- **Copy rules:** plain language, real numbers only, no em or en dashes, no emojis.
 
-- **Responsive Design**: Fully responsive layout that works on all devices
-- **Interactive UI**: Smooth animations and transitions for enhanced user experience
-- **Project Showcase**: Filterable projects section to highlight my work
-- **Skills Visualization**: Visual representation of technical skills
-- **Contact Form**: Integrated contact form using EmailJS
-- **Modern Design**: Clean and professional look with subtle animations
+## Run locally
 
-## 🛠️ Projects Featured
+```
+npx serve .
+```
 
-1. **E-Commerce Website** - Responsive online store with shopping cart functionality
-2. **Dashboard UI** - Interactive admin dashboard with data visualization
-3. **Social Media App** - Frontend for a social networking platform
-4. **Portfolio Website** - Custom portfolio website with animations
-5. **Landing Page** - High-converting product landing page
+ES modules need an HTTP server, so opening `index.html` from the file system will not load the scripts.
 
-## 💻 Technologies Used
+## Contact form
 
-- HTML5
-- CSS3
-- JavaScript
-- React.js
-- Tailwind CSS
-- SASS/SCSS
-- Git & GitHub
-- Responsive Design
-- API Integration
-- Figma/Adobe XD
+Sent with EmailJS (loaded only when someone focuses the form). Service and template IDs live at the top of `assets/js/app.js`. In the EmailJS dashboard, restrict the public key to the production domain.
 
-## 📱 Responsive Design
+## Contact
 
-The portfolio is fully responsive and optimized for:
-- Desktop displays
-- Tablets
-- Mobile devices
-
-## 🔧 Setup and Usage
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/portfolio.git
-   ```
-
-2. Open the project folder:
-   ```
-   cd portfolio
-   ```
-
-3. Open `index.html` in your browser or use a local server.
-
-## 📞 Contact
-
-- Email: your.email@example.com
-- LinkedIn: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername/)
-- GitHub: [github.com/yourusername](https://github.com/yourusername)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-© 2024 Your Name. All Rights Reserved. 
+- Email: shamsear@gmail.com
+- GitHub: [github.com/Shamsear](https://github.com/Shamsear)
+- LinkedIn: [linkedin.com/in/shamsear](https://www.linkedin.com/in/shamsear/)
