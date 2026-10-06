@@ -6,6 +6,26 @@
  */
 
 export const PROJECTS = {
+    stockflow: {
+        title: 'StockFlow AI',
+        kind: 'Product app',
+        role: 'Full-stack build',
+        status: 'Live',
+        summary: 'A custom warehouse management dashboard for Qatar and UAE logistics, replacing spreadsheet chaos with predictive reorders.',
+        context: 'Warehouse teams often track stock across dry storage and cold rooms using manual spreadsheets, only noticing shortages when shelves are empty.',
+        built: [
+            'Stock depletion forecasting that estimates reorder thresholds per SKU based on consumption velocity.',
+            'Multi-warehouse bay tracking with real-time stock sync across phones, tablets and PCs.',
+            'Inbound receiving, FEFO expiry date protection, and driver digital proof-of-dispatch slips.'
+        ],
+        hard: 'Turning warehouse consumption forecasting into clear, actionable reorder points without overwhelming floor operators.',
+        outcome: 'Warehouse reorders are planned from live forecasts instead of discovered from empty shelves.',
+        stack: ['Next.js', 'Node.js', 'Python', 'PostgreSQL', 'Tailwind CSS'],
+        live: 'https://stockflow-aim.vercel.app/',
+        repo: 'https://github.com/Shamsear',
+        image: 'assets/images/work/stockflow.webp',
+        alt: 'StockFlow warehouse dashboard with live bay stock sync, FEFO expiry alerts, and driver dispatch.'
+    },
     ssleague: {
         title: 'SS League',
         kind: 'Product app',
@@ -25,6 +45,29 @@ export const PROJECTS = {
         repo: 'https://github.com/Shamsear',
         image: 'assets/images/work/ssleague.webp',
         alt: 'SS Super Soccer League platform showing live standings, tournament rankings, and player management.'
+    },
+    billing: {
+        title: 'EyeNova Billing',
+        kind: 'Product app',
+        role: 'Full-stack and desktop build',
+        status: 'In production (desktop POS)',
+        summary: 'A native desktop billing and POS system for optical retail stores, sharing live cloud schemas to keep counter sales and inventory in sync.',
+        context: 'Optical retail counters deal with prescription contact lenses, custom spectacle lenses and walk-in purchases. Running sales through disconnected spreadsheets created manual re-entry errors and stock drift.',
+        built: [
+            'A keyboard-first POS counter screen (F2 scan, F6 pay) with barcode lookup, quick-cash change calculation, and payment terminal capture.',
+            'Optical prescription engine supporting dual-eye contact lens powers (OD/OS) and spectacle lens upgrades.',
+            'Live Neon PostgreSQL synchronization via Npgsql, sharing models with the web store so in-store sales decrement online stock instantly.',
+            'Atomic ACID transactions ensuring orders, invoices and stock decrements commit together in a single transaction.',
+            'Bilingual Arabic/English 80mm thermal receipt printing (ESC/POS) and formal A4 tax invoice generation using QuestPDF.',
+            'Physical stock audit reconciliation with serialized database locking to prevent count conflicts during open store hours.'
+        ],
+        hard: 'Handling bilingual Arabic RTL text formatting on standard 80mm ESC/POS thermal printers while maintaining sub-second checkout transactions across multiple counter terminals.',
+        outcome: 'Store transactions complete in seconds with zero stock drift between the retail counter and online channels.',
+        stack: ['C#', '.NET 10', 'WPF', 'PostgreSQL (Neon)', 'QuestPDF', 'ESC/POS'],
+        live: null,
+        repo: 'https://github.com/Shamsear',
+        image: 'assets/images/work/billing.webp',
+        alt: 'EyeNova Billing desktop POS checkout interface with optical prescription line items, live inventory status, and payment tenders.'
     },
     mizan: {
         title: 'Mizan',
@@ -66,46 +109,6 @@ export const PROJECTS = {
         image: 'assets/images/work/devai.webp',
         alt: 'DevAI marketing site with headline Build websites 10x faster with DevAI and live developer metrics.'
     },
-    distortion: {
-        title: 'Distortion Studio',
-        kind: 'Experiment',
-        role: 'Concept, design and build',
-        status: 'Live',
-        summary: 'A showcase site for a creative agency built on purpose against the usual rules, with brutalist type and WebGL image distortion.',
-        context: 'A study in how far a site can push type and motion before it stops being usable, and where to draw that line.',
-        built: [
-            'High-contrast brutalist typography on a strict CSS grid.',
-            'Custom WebGL shaders that warp project images on hover.',
-            'Case study pages for fictional fashion and fintech clients.'
-        ],
-        hard: 'Pushing type and shader effects hard while keeping every page readable and easy to navigate.',
-        outcome: 'A reference piece for loud visual direction that still loads fast and stays navigable.',
-        stack: ['Next.js', 'WebGL shaders', 'CSS Grid'],
-        live: 'https://distortionstudio.vercel.app/',
-        repo: 'https://github.com/Shamsear',
-        image: 'assets/images/work/distortion.webp',
-        alt: 'Distortion Studio experimental agency website with terminal interface and matrix glitch aesthetic.'
-    },
-    stockflow: {
-        title: 'StockFlow AI',
-        kind: 'Product app',
-        role: 'Full-stack build',
-        status: 'Live',
-        summary: 'Inventory tracking that forecasts when each item will run out and flags reorders before stockouts.',
-        context: 'Small teams track stock in spreadsheets and only notice shortages when a shelf is empty.',
-        built: [
-            'Stock depletion forecasting that estimates reorder points per SKU.',
-            'Quantity tracking across multiple warehouses.',
-            'Reorder alerts and a supplier log.'
-        ],
-        hard: 'Turning forecasts into clear reorder thresholds that people can act on.',
-        outcome: 'Reorders are planned from forecasts instead of discovered from empty shelves.',
-        stack: ['Next.js', 'Node.js', 'Python', 'PostgreSQL', 'Tailwind CSS'],
-        live: 'https://stockflow-aim.vercel.app/',
-        repo: 'https://github.com/Shamsear',
-        image: 'assets/images/work/stockflow.webp',
-        alt: 'StockFlow warehouse dashboard with live bay stock sync and driver dispatch.'
-    },
     projectfund: {
         title: 'ProjectFund Tracker',
         kind: 'Product app',
@@ -126,23 +129,25 @@ export const PROJECTS = {
         image: 'assets/images/work/projectfund.webp',
         alt: 'Project Fund Tracker multi-account ledger and petty cash management login portal.'
     },
-    billing: {
-        title: 'Billing Engine',
-        kind: 'Product app',
-        role: 'Backend build',
-        status: 'No public demo',
-        summary: 'A Node.js service for recurring billing, subscription tiers and automatic PDF invoices.',
-        context: 'Subscription businesses need invoices, renewals and payment updates handled without manual work.',
+    distortion: {
+        title: 'Distortion Studio',
+        kind: 'Experiment',
+        role: 'Concept, design and build',
+        status: 'Live',
+        summary: 'A showcase site for a creative agency built on purpose against the usual rules, with brutalist type and WebGL image distortion.',
+        context: 'A study in how far a site can push type and motion before it stops being usable, and where to draw that line.',
         built: [
-            'Recurring billing schedules and subscription tier calculations.',
-            'Automatic PDF invoice generation and transaction logging.',
-            'Webhook handlers for payment gateway status updates.'
+            'High-contrast brutalist typography on a strict CSS grid.',
+            'Custom WebGL shaders that warp project images on hover.',
+            'Case study pages for fictional fashion and fintech clients.'
         ],
-        hard: 'Handling payment gateway webhooks reliably alongside scheduled billing runs.',
-        outcome: 'Invoices and renewals run on schedule with a full audit log.',
-        stack: ['Node.js', 'Express', 'PostgreSQL', 'PDFKit', 'Docker'],
-        live: null,
-        repo: 'https://github.com/Shamsear'
+        hard: 'Pushing type and shader effects hard while keeping every page readable and easy to navigate.',
+        outcome: 'A reference piece for loud visual direction that still loads fast and stays navigable.',
+        stack: ['Next.js', 'WebGL shaders', 'CSS Grid'],
+        live: 'https://distortionstudio.vercel.app/',
+        repo: 'https://github.com/Shamsear',
+        image: 'assets/images/work/distortion.webp',
+        alt: 'Distortion Studio experimental agency website with terminal interface and matrix glitch aesthetic.'
     },
     oasis: {
         title: 'Oasis Horizon',
