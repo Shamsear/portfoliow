@@ -24,7 +24,7 @@ export const PROJECTS = {
         live: 'https://ssleague.vercel.app/',
         repo: 'https://github.com/Shamsear',
         image: 'assets/images/work/ssleague.webp',
-        alt: 'SS League home page with Login and Register actions and links to players, teams and the season archive.'
+        alt: 'SS Super Soccer League platform showing live standings, tournament rankings, and player management.'
     },
     mizan: {
         title: 'Mizan',
@@ -44,8 +44,7 @@ export const PROJECTS = {
         live: 'https://mizan-qa.vercel.app/',
         repo: 'https://github.com/Shamsear',
         image: 'assets/images/work/mizan.webp',
-        contain: true,
-        alt: 'Mizan concept screen showing a safe-to-spend amount for today, a budget pacing bar and buttons to add expense or income.'
+        alt: 'Mizan mobile budgeting interface showing daily safe-to-spend tracking and expense logging.'
     },
     devai: {
         title: 'DevAI',
@@ -65,7 +64,7 @@ export const PROJECTS = {
         live: 'https://devais.vercel.app/',
         repo: 'https://github.com/Shamsear',
         image: 'assets/images/work/devai.webp',
-        alt: 'DevAI landing page with the headline Build websites 10x faster with DevAI and floating panels showing an AI code suggestion.'
+        alt: 'DevAI marketing site with headline Build websites 10x faster with DevAI and live developer metrics.'
     },
     distortion: {
         title: 'Distortion Studio',
@@ -85,7 +84,7 @@ export const PROJECTS = {
         live: 'https://distortionstudio.vercel.app/',
         repo: 'https://github.com/Shamsear',
         image: 'assets/images/work/distortion.webp',
-        alt: 'Distortion Studio home page with oversized brutalist typography on a dark background.'
+        alt: 'Distortion Studio experimental agency website with terminal interface and matrix glitch aesthetic.'
     },
     stockflow: {
         title: 'StockFlow AI',
@@ -103,7 +102,9 @@ export const PROJECTS = {
         outcome: 'Reorders are planned from forecasts instead of discovered from empty shelves.',
         stack: ['Next.js', 'Node.js', 'Python', 'PostgreSQL', 'Tailwind CSS'],
         live: 'https://stockflow-aim.vercel.app/',
-        repo: 'https://github.com/Shamsear'
+        repo: 'https://github.com/Shamsear',
+        image: 'assets/images/work/stockflow.webp',
+        alt: 'StockFlow warehouse dashboard with live bay stock sync and driver dispatch.'
     },
     projectfund: {
         title: 'ProjectFund Tracker',
@@ -121,7 +122,9 @@ export const PROJECTS = {
         outcome: 'Funding status can be read at any time instead of rebuilt for each report.',
         stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Chart.js'],
         live: 'https://projectfund-tracker.vercel.app/',
-        repo: 'https://github.com/Shamsear'
+        repo: 'https://github.com/Shamsear',
+        image: 'assets/images/work/projectfund.webp',
+        alt: 'Project Fund Tracker multi-account ledger and petty cash management login portal.'
     },
     billing: {
         title: 'Billing Engine',
