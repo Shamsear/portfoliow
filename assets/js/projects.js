@@ -8,24 +8,24 @@
 export const PROJECTS = {
     stockflow: {
         title: 'StockFlow AI',
-        kind: 'Product & Asset Platform',
-        role: 'Full-stack & asset tracking build',
+        kind: 'Inventory & Operations Platform',
+        role: 'Full-stack engineering & data modeling',
         status: 'Live',
-        summary: 'A centralized inventory and IT asset tracking platform for Qatar and GCC operations, replacing spreadsheet drift with hardware tracking and reorder forecasting.',
-        context: 'Operations teams and IT departments often track high-value equipment, serial numbers, and consumable stock across multiple sites using manual spreadsheets, causing missing audit trails and stockouts.',
+        summary: 'A custom warehouse and inventory management dashboard for Qatar and GCC operations, replacing spreadsheet chaos with automated reorders and bay tracking.',
+        context: 'Logistics and warehouse operations often track inventory across multiple storage bays and cold rooms using manual spreadsheets, causing stockouts, misplaced items, and expired inventory.',
         built: [
-            'Engineered an asset tracking dashboard to log hardware serial numbers, workstation device allocations, and maintenance history.',
-            'Automated stock depletion forecasting and reorder threshold alerts per SKU based on consumption velocity.',
-            'Tracked equipment warranty renewals and service schedules to support IT procurement and operations.',
-            'Multi-location bay tracking with real-time sync across mobile devices and desktop workstations.'
+            'Stock depletion velocity engine that forecasts reorder thresholds per SKU to prevent inventory shortages.',
+            'Multi-facility bay tracking with real-time stock reconciliation across mobile devices, tablets, and desktop workstations.',
+            'Inbound receiving pipelines, FEFO (First-Expired, First-Out) batch tracking, and digital driver dispatch slips.',
+            'Centralized audit history to trace stock transfers, batch allocations, and inventory adjustments.'
         ],
-        hard: 'Designing a schema that balances rapid warehouse stock movements with strict IT asset auditing, serial number tracking, and automated warranty alert cycles.',
-        outcome: 'Asset allocations and warehouse reorders are managed from live telemetry instead of disconnected spreadsheets.',
-        stack: ['Next.js', 'Python', 'PostgreSQL', 'Tailwind CSS', 'Asset Tracking'],
+        hard: 'Designing a reactive PostgreSQL schema and real-time state synchronization that prevents race conditions when multiple warehouse floor staff scan the same bin simultaneously.',
+        outcome: 'Warehouse reorders and bay inventory are managed from real-time telemetry instead of disconnected spreadsheets.',
+        stack: ['Next.js', 'Python', 'PostgreSQL', 'Tailwind CSS', 'REST APIs'],
         live: 'https://stockflow-aim.vercel.app/',
         repo: 'https://github.com/Shamsear',
         image: 'assets/images/work/stockflow.webp',
-        alt: 'StockFlow warehouse dashboard with live bay stock sync, hardware asset tracking, and reorder alerts.'
+        alt: 'StockFlow warehouse dashboard with live bay stock sync, FEFO expiry alerts, and driver dispatch.'
     },
     ssleague: {
         title: 'SS League',

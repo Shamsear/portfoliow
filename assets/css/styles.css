@@ -771,7 +771,7 @@ main, header, footer { position: relative; z-index: 1; }
 
 .timeline__item {
     display: grid;
-    grid-template-columns: 9rem minmax(0, 1fr);
+    grid-template-columns: 11rem minmax(0, 1fr);
     gap: var(--s-4);
     padding-block: var(--s-5);
     border-block-end: 1px solid var(--line);
@@ -780,6 +780,7 @@ main, header, footer { position: relative; z-index: 1; }
 .timeline__when { color: var(--ink-3); padding-block-start: 0.2rem; }
 
 .timeline__role { font-size: var(--fs-lg); font-weight: 500; letter-spacing: -0.015em; }
+.timeline__role .faint { font-size: var(--fs-xs); font-weight: 400; margin-inline-start: var(--s-2); vertical-align: middle; }
 
 .timeline__org { color: var(--ink-2); font-size: var(--fs-sm); }
 
