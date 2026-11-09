@@ -8,23 +8,24 @@
 export const PROJECTS = {
     stockflow: {
         title: 'StockFlow AI',
-        kind: 'Product app',
-        role: 'Full-stack build',
+        kind: 'Product & Asset Platform',
+        role: 'Full-stack & asset tracking build',
         status: 'Live',
-        summary: 'A custom warehouse management dashboard for Qatar and UAE logistics, replacing spreadsheet chaos with predictive reorders.',
-        context: 'Warehouse teams often track stock across dry storage and cold rooms using manual spreadsheets, only noticing shortages when shelves are empty.',
+        summary: 'A centralized inventory and IT asset tracking platform for Qatar and GCC operations, replacing spreadsheet drift with hardware tracking and reorder forecasting.',
+        context: 'Operations teams and IT departments often track high-value equipment, serial numbers, and consumable stock across multiple sites using manual spreadsheets, causing missing audit trails and stockouts.',
         built: [
-            'Stock depletion forecasting that estimates reorder thresholds per SKU based on consumption velocity.',
-            'Multi-warehouse bay tracking with real-time stock sync across phones, tablets and PCs.',
-            'Inbound receiving, FEFO expiry date protection, and driver digital proof-of-dispatch slips.'
+            'Engineered an asset tracking dashboard to log hardware serial numbers, workstation device allocations, and maintenance history.',
+            'Automated stock depletion forecasting and reorder threshold alerts per SKU based on consumption velocity.',
+            'Tracked equipment warranty renewals and service schedules to support IT procurement and operations.',
+            'Multi-location bay tracking with real-time sync across mobile devices and desktop workstations.'
         ],
-        hard: 'Turning warehouse consumption forecasting into clear, actionable reorder points without overwhelming floor operators.',
-        outcome: 'Warehouse reorders are planned from live forecasts instead of discovered from empty shelves.',
-        stack: ['Next.js', 'Node.js', 'Python', 'PostgreSQL', 'Tailwind CSS'],
+        hard: 'Designing a schema that balances rapid warehouse stock movements with strict IT asset auditing, serial number tracking, and automated warranty alert cycles.',
+        outcome: 'Asset allocations and warehouse reorders are managed from live telemetry instead of disconnected spreadsheets.',
+        stack: ['Next.js', 'Python', 'PostgreSQL', 'Tailwind CSS', 'Asset Tracking'],
         live: 'https://stockflow-aim.vercel.app/',
         repo: 'https://github.com/Shamsear',
         image: 'assets/images/work/stockflow.webp',
-        alt: 'StockFlow warehouse dashboard with live bay stock sync, FEFO expiry alerts, and driver dispatch.'
+        alt: 'StockFlow warehouse dashboard with live bay stock sync, hardware asset tracking, and reorder alerts.'
     },
     ssleague: {
         title: 'SS League',
@@ -47,27 +48,47 @@ export const PROJECTS = {
         alt: 'SS Super Soccer League platform showing live standings, tournament rankings, and player management.'
     },
     billing: {
-        title: 'EyeNova Billing',
-        kind: 'Product app',
-        role: 'Full-stack and desktop build',
-        status: 'In production (desktop POS)',
-        summary: 'A native desktop billing and POS system for optical retail stores, sharing live cloud schemas to keep counter sales and inventory in sync.',
-        context: 'Optical retail counters deal with prescription contact lenses, custom spectacle lenses and walk-in purchases. Running sales through disconnected spreadsheets created manual re-entry errors and stock drift.',
+        title: 'EyeNova POS & Retail Hardware',
+        kind: 'Systems & Desktop POS',
+        role: 'Hardware integration & full-stack desktop build',
+        status: 'In production (commercial deployment)',
+        summary: 'Retail POS counter systems and hardware deployment for optical stores, connecting physical peripherals to a desktop POS with live cloud sync.',
+        context: 'Optical retail counters require fast, dependable hardware checkouts—handling optical prescriptions, barcode scans, cash drawer triggers, and thermal receipts without driver lockups or data drift.',
         built: [
-            'A keyboard-first POS counter screen (F2 scan, F6 pay) with barcode lookup, quick-cash change calculation, and payment terminal capture.',
-            'Optical prescription engine supporting dual-eye contact lens powers (OD/OS) and spectacle lens upgrades.',
-            'Live Neon PostgreSQL synchronization via Npgsql, sharing models with the web store so in-store sales decrement online stock instantly.',
-            'Atomic ACID transactions ensuring orders, invoices and stock decrements commit together in a single transaction.',
-            'Bilingual Arabic/English 80mm thermal receipt printing (ESC/POS) and formal A4 tax invoice generation using QuestPDF.',
-            'Physical stock audit reconciliation with serialized database locking to prevent count conflicts during open store hours.'
+            'Configured physical retail POS counter systems, connecting and configuring USB and serial barcode scanners and automated cash drawers.',
+            'Programmed and debugged ESC/POS communication protocols for 80mm thermal receipt printers, resolving port locking and driver conflict issues.',
+            'Built a keyboard-first desktop checkout interface (F2 scan, F6 pay) with sub-second quick-cash change calculation and payment terminal capture.',
+            'Synchronized counter transactions to cloud PostgreSQL (Neon) with atomic ACID transactions, ensuring local sales and online stock stay in lockstep.',
+            'Handled bilingual Arabic RTL and English receipt layout printing directly through ESC/POS raw command sequences.'
         ],
-        hard: 'Handling bilingual Arabic RTL text formatting on standard 80mm ESC/POS thermal printers while maintaining sub-second checkout transactions across multiple counter terminals.',
-        outcome: 'Store transactions complete in seconds with zero stock drift between the retail counter and online channels.',
-        stack: ['C#', '.NET 10', 'WPF', 'PostgreSQL (Neon)', 'QuestPDF', 'ESC/POS'],
+        hard: 'Handling low-level ESC/POS byte streaming and Arabic text shaping on thermal printers while keeping multi-station USB/serial port locks conflict-free.',
+        outcome: 'Sub-second counter transactions with zero hardware lockups and 100% stock sync between physical store counters and cloud databases.',
+        stack: ['C#', '.NET 10 WPF', 'ESC/POS', 'Hardware Drivers', 'PostgreSQL (Neon)', 'QuestPDF'],
         live: null,
         repo: 'https://github.com/Shamsear',
         image: 'assets/images/work/billing.webp',
         alt: 'EyeNova Billing desktop POS checkout interface with optical prescription line items, live inventory status, and payment tenders.'
+    },
+    networkrecovery: {
+        title: 'Multi-Station Network Recovery',
+        kind: 'IT Infrastructure & Scripts',
+        role: 'Network setup & systems automation',
+        status: 'Deployed in production',
+        summary: 'Enterprise workstation networking, DNS resolver fallback architecture, and automated PowerShell recovery scripts for office workstations in Doha.',
+        context: 'Multi-station workstation setups frequently encounter connectivity disruptions from DNS drops, network cache corruption, IP lease drops, and disconnected network storage.',
+        built: [
+            'Configured static IP routing, subnet masks, and prioritized DNS resolver fallbacks across multi-station office workstations.',
+            'Configured shared network storage (LAN/SMB) with secure user permission hierarchies and mapped network drives.',
+            'Authored diagnostic batch and PowerShell scripts to automate network connectivity flushes, DHCP renewals, and system cache cleanups.',
+            'Standardized command-line diagnostic routines using ping, tracert, netstat, and nslookup for rapid root-cause isolation.'
+        ],
+        hard: 'Automating network recovery routines so non-technical staff can restore dropped connections in one click without elevated admin risk.',
+        outcome: 'Stabilized workstation network reliability and reduced routine helpdesk tickets through automated self-healing scripts.',
+        stack: ['PowerShell', 'Batch Scripts', 'TCP/IP', 'DNS & DHCP', 'LAN/WLAN', 'Windows Server'],
+        live: null,
+        repo: 'https://github.com/Shamsear',
+        image: null,
+        alt: 'Multi-station network diagnostics and automated recovery scripts.'
     },
     mizan: {
         title: 'Mizan',

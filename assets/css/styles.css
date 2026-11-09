@@ -789,7 +789,7 @@ main, header, footer { position: relative; z-index: 1; }
 
 .stack__row {
     display: grid;
-    grid-template-columns: 9rem minmax(0, 1fr);
+    grid-template-columns: 11rem minmax(0, 1fr);
     gap: var(--s-4);
     padding-block: var(--s-4);
     border-block-end: 1px solid var(--line);
@@ -813,14 +813,17 @@ main, header, footer { position: relative; z-index: 1; }
 
 .contact__lede { color: var(--ink-2); max-width: 44ch; margin-block: var(--s-5) var(--s-6); }
 
-.email-line {
+.email-line,
+.phone-line {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: var(--s-3);
+    margin-block-end: var(--s-3);
 }
 
-.email-line__addr {
+.email-line__addr,
+.phone-line__addr {
     font-size: var(--fs-xl);
     letter-spacing: -0.02em;
     text-decoration: underline;
@@ -831,7 +834,21 @@ main, header, footer { position: relative; z-index: 1; }
     word-break: break-all;
 }
 
-.email-line__addr:hover { text-decoration-color: var(--accent); }
+.email-line__addr:hover,
+.phone-line__addr:hover { text-decoration-color: var(--accent); }
+
+.qid-callout {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    padding: var(--s-2) var(--s-3);
+    margin-block-end: var(--s-5);
+    border-radius: var(--r-sm);
+    background: var(--bg-surface);
+    border: 1px solid var(--line-strong);
+    font-size: var(--fs-xs);
+    color: var(--ink);
+}
 
 .socials {
     display: flex;

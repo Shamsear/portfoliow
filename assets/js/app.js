@@ -6,6 +6,7 @@
 import { PROJECTS } from './projects.js';
 
 const EMAIL = 'shamsear@gmail.com';
+const PHONE = '+974 70485214';
 const EMAILJS = {
     src: 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js',
     publicKey: 'Nb8ThHEgrWHlteSAX',
@@ -338,7 +339,7 @@ function initCaseStudies() {
 }
 
 /* --------------------------------------------------------------------------
-   Copy email
+   Copy email and phone
    -------------------------------------------------------------------------- */
 function initCopyEmail() {
     $$('[data-copy-email]').forEach((btn) => {
@@ -356,6 +357,27 @@ function initCopyEmail() {
                     sel.addRange(range);
                 }
                 toast('Press Ctrl+C or Cmd+C to copy the email');
+            }
+        });
+    });
+}
+
+function initCopyPhone() {
+    $$('[data-copy-phone]').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(PHONE);
+                toast('Phone number copied to clipboard');
+            } catch {
+                const addr = $('.phone-line__addr');
+                if (addr) {
+                    const range = document.createRange();
+                    range.selectNodeContents(addr);
+                    const sel = window.getSelection();
+                    sel.removeAllRanges();
+                    sel.addRange(range);
+                }
+                toast('Press Ctrl+C or Cmd+C to copy phone number');
             }
         });
     });
@@ -493,6 +515,7 @@ initReveal();
 initFilters();
 initCaseStudies();
 initCopyEmail();
+initCopyPhone();
 initContactForm();
 $$('.tile__media img').forEach(attachImageFallback);
 
